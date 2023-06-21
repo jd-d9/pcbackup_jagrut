@@ -1,0 +1,486 @@
+@font-face {
+    font-family: myriad;
+    src: url(Image/MYRIADPRO-REGULAR.OTF);
+}
+
+/* start top nav  */
+.top-nav {
+    background-color: #162768;
+    padding: 7px 20px;
+    font-size: 14px;
+    position: relative;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-nav li {
+    display: inline-block;
+    border-right: 1px solid white;
+    padding: 0px 10px;
+}
+
+.top-nav li a {
+    color: white;
+    text-decoration: none;
+    font-family: myriad;
+}
+
+.top-nav li img {
+    height: 20px;
+    padding-right: 5px;
+}
+
+.logo-center {
+    position: absolute;
+    left: 43%;
+    top: 0;
+    z-index: 8;
+}
+
+.logo-center img {
+    height: 120px;
+}
+
+/* end top nav  */
+
+/* <!-- Start Main Navbar  --> */
+.main-navbar {
+    background-color: #edeeee !important;
+    font-size: 14px;
+}
+
+.main-navbar li img {
+    height: 34px;
+}
+
+.main-navbar li a {
+    color: #162768 !important;
+    font-family: myriad;
+}
+
+.main-navbar li {
+    padding-right: 34px
+}
+
+.main-navbar .navbar {
+    padding-bottom: 0px !important;
+}
+
+.main-navbar .dropdown-menu {
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.main-navbar .dropdown-menu li {
+    padding: 0px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.main-navbar .dropdown-menu::before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100%;
+    top: 0px;
+    background-color: #162768;
+}
+
+.main-navbar .dropdown-menu::after {
+    content: '';
+    left: 12px;
+    bottom: 100%;
+    border: 10px solid transparent;
+    position: absolute;
+    border-bottom: 12px solid #162768;
+}
+
+.dropdown:hover ul.dropdown-menu {
+    display: block;
+    margin-top: 10px;
+}
+
+/* <!-- End Main Navbar  --> */
+
+/* <!-- start slider part  --> */
+.slider-wrap {
+    background-image: url(Image/bg.2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 509px;
+    width: 100%;
+    display: table;
+}
+
+.slider-detail {
+    width: 448px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 70px;
+    font-family: myriad;
+
+
+}
+
+.slider-detail h2,
+h6 {
+    font-style: italic;
+    font-family: myriad;
+
+}
+
+.slider-detail h1 {
+    color: #162768;
+    padding-bottom: 13px;
+
+}
+
+.slide-btn {
+    background-color: #162768 !important;
+    color: white;
+    border-radius: 0;
+    padding: 10px 44px;
+    font-size: 13px;
+}
+
+.slide-btn:hover {
+    background-color: white !important;
+    color: #162768 !important;
+    font-weight: 500;
+}
+
+.share-to-socials {
+    vertical-align: bottom;
+    display: table-cell;
+    text-align: end;
+    padding-bottom: 39px;
+}
+
+.dropup img {
+    height: 50px;
+}
+
+.dropup ul {
+    min-width: unset !important;
+    background: transparent;
+    box-shadow: none !important;
+    border: none;
+    padding-left: 17px;
+    padding-bottom: 0px
+}
+
+.dropup ul img {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.dropup button {
+    border: none !important;
+}
+
+/* <!-- end slider part  -->  */
+
+/* <!-- start appoitments  --> */
+.working-time {
+    background-color: #1d348f;
+    height: 380px;
+    color: white;
+    font-size: 25px;
+    font-family: myriad;
+    padding: 15px;
+    padding: 34px 46px;
+    font-weight: 400;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 11px 12px 0px #7e7c7c;
+}
+
+.time-inner p {
+    /* font-weight: 500; */
+    font-size: 18px;
+}
+
+.time-inner {
+    padding-top: 53px;
+}
+
+.appoitment {
+    background-color: #172c7f;
+    height: 420px;
+    position: relative;
+    bottom: 40px;
+    color: white;
+    font-size: 25px;
+    padding: 34px 46px;
+    font-weight: 400;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 11px 12px 0px #7e7c7c;
+}
+
+.emergency {
+    background-color: #112058;
+    height: 380px;
+    color: white;
+    font-size: 25px;
+    padding: 34px 46px;
+    font-weight: 400;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 11px 12px 0px #7e7c7c;
+}
+
+.button-std .btn {
+    background-color: white !important;
+    padding: 8px 30px;
+    font-weight: 500;
+    color: #112058 !important;
+}
+
+.button-std .btn:hover {
+    background-color: #112058 !important;
+    color: white !important;
+    box-shadow: 1px 2px 3px #7e7c7c;
+}
+
+/* <!-- end appoitments  --> */
+
+/* <!-- Start Watts health center  -->  */
+.watts-wrapper {
+    background-image: url(Image/bg.3.png);
+    background-size: cover;
+}
+
+.main-head {
+    position: relative;
+    color: #162768;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    font-family: myraid;
+}
+
+.main-head::after {
+    content: "";
+    position: absolute;
+    top: 94px;
+    left: 51.5%;
+    height: 3px;
+    width: 42px;
+    background-color: #162768;
+}
+
+.main-head::before {
+    content: "";
+    position: absolute;
+    top: 94px;
+    right: 51.5%;
+    height: 3px;
+    width: 42px;
+    background-color: #162768;
+}
+
+.watts-text {
+    font-family: myraid;
+
+}
+
+.button-watts .btn {
+    background-color: #112058 !important;
+    padding: 8px 30px;
+    font-weight: 500;
+    color: white !important;
+}
+
+.button-watts .btn:hover {
+    background-color: white !important;
+    color: #112058 !important;
+    box-shadow: 1px 2px 3px #7e7c7c;
+}
+
+/* <!-- end Watts health center  --> */
+
+/* <!-- start programs and services  --> */
+.services-wrapper {
+    padding-top: 30px !important;
+}
+
+.services-standard {
+    height: 238px;
+    border: 2px solid #162768;
+    padding: 23px;
+    position: relative;
+    box-shadow: 0 14px 6px -6px #0000002b;
+    font-family: myraid;
+}
+
+.services-standard:hover {
+    background-color: #112058;
+    color: white;
+}
+
+.services-standard h5 {
+    color: #162768;
+    padding-bottom: 27px;
+    padding-left: 103px;
+    font-family: myraid;
+
+}
+
+.services-standard:hover h5 {
+    color: white;
+}
+
+.services-standard img {
+    position: absolute;
+    top: -32px;
+    left: -16px;
+    border: 15px solid white;
+    border-radius: 50%;
+    height: 120px;
+}
+
+/* <!-- end programs and services  --> */
+
+/* <!-- start our partners  -->  */
+
+#our-partners .owl-dots {
+    display: none !important;
+}
+
+#our-partners .owl-prev .prev-next-button {
+    position: absolute !important;
+    top: 28%;
+    left: -52px;
+}
+
+#our-partners .owl-next .prev-next-button {
+    position: absolute !important;
+    top: 28%;
+
+    right: -58px;
+}
+
+/* <!-- end our partners  -->  */
+
+/* <!-- start contact us  --> */
+.contact-us {
+    background-image: url(Image/bg.4.png);
+    padding-bottom: 40px;
+}
+.contact-us .col-12{
+    width: 47%!important;
+}
+.contact-us .form-control {
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+    margin-bottom: 20px;
+}
+
+.button-watts .btn {
+    background-color: #112058 !important;
+    padding: 8px 30px;
+    font-weight: 500;
+    color: white !important;
+}
+
+.button-watts .btn:hover {
+    background-color: white !important;
+    color: #112058 !important;
+    box-shadow: 1px 2px 3px #7e7c7c;
+}
+
+.location-text {
+    background-color: #162768;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 23px;
+    position: relative;
+}
+
+.location-text img {
+    height: 38px;
+    padding-right: 25px;
+
+}
+.prev-slide {
+    position: absolute;
+    left: -12%;
+    top: 38%;
+}
+.next-slide {
+    position: absolute;
+    right: -19%;
+    top: 38%;
+}
+iframe {
+    border: 2px solid #162768 !important;
+    width: 100% !important;
+    height: 345px;
+}
+ #contact .owl-dots {
+    display: none !important;
+}
+
+/* <!-- end contact us  --> */
+
+/* <!-- Start footer  --> */
+footer {
+    background-color: #d4d4d4;
+}
+
+footer .part-one img {
+    height: 65px;
+}
+
+.social img {
+    height: 43px !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-family: myraid;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul h6 {
+    color: #162768 !important;
+    font-style: normal;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: myraid;
+
+}
+
+footer ul h6::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 47px;
+    background-color: #162768;
+    top: 73px;
+
+}
+footer .part-one p{
+ font-family: myraid;
+}
+footer ul li {
+    padding-bottom: 10px;
+}
+
+/* <!-- end footer  --> */
+
+/* <!-- start footer end  -->  */
+.footer-end {
+    background-color: #162768;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: myraid;
+}
+
+/* <!-- end footer end  -->  */

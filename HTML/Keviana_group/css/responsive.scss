@@ -1,0 +1,1052 @@
+// for 1600px
+@media (max-width: 1600px) {
+    .sliderpart {
+        .carousel-caption {
+            height: 500px;
+        }
+    }
+
+    .aboutus {
+        .textbox {
+            h2 {
+                margin-top: 30px;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            .iconbox {
+                h6 {
+                    line-height: 0.9;
+                }
+            }
+        }
+    }
+
+    .clientspeacks {
+        .container-fluid {
+            padding: 0px 30px !important;
+        }
+    }
+}
+
+@media (max-width: 1525px) {
+    .aboutus {
+        .textbox {
+            .iconbox {
+                i {
+                    font-size: 50px;
+                }
+
+                h6 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .sliderpart {
+        .carousel-caption {
+            height: 450px;
+        }
+    }
+
+    .aboutus {
+        .imgbox {
+            margin-top: 25px;
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clienttext {
+                p {
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    p {
+        font-size: 17px !important;
+    }
+
+    .navbar {
+        .logo {
+            width: 150px;
+            height: 55px;
+        }
+
+        .nav-item {
+            padding-left: 25px;
+        }
+    }
+
+    .ourbestservices {
+        .services {
+            .servicetext {
+                h4 {
+                    font-size: 23px;
+                }
+
+                i {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clientdetail {
+                .profile {
+                    .profilephoto {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width: 1330px) {
+// }
+
+@media (max-width: 1200px) {
+    .headings {
+        word-spacing: 2px;
+        font-size: 25px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    .readmore {
+        font-size: 17px !important;
+        padding: 12px 30px;
+    }
+
+    .sliderpart {
+        .carousel-caption {
+            height: 380px;
+
+            h1 {
+                font-size: 55px;
+            }
+
+            a {
+                font-size: 21px;
+            }
+
+            p {
+                margin: 10px 0 30px;
+            }
+        }
+    }
+
+    .aboutus {
+        .textbox {
+            h2 {
+                font-size: 25px;
+            }
+
+            .iconbox {
+                i {
+                    font-size: 40px;
+                }
+
+                h6 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .owl-nav {
+        top: 80%;
+
+        button {
+            i {
+                padding: 10px 20px;
+                font-size: 22px;
+            }
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clienttext {
+                padding: 15px 30px;
+
+                &::before {
+                    padding: 15px;
+                    font-size: 30px;
+                }
+
+                p {
+                    height: 70px;
+                }
+            }
+
+            .clientdetail {
+                margin-top: 30px;
+
+                .profile {
+                    gap: 10px;
+
+                    .profilephoto {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .callback {
+        height: 400px;
+
+        .callbackform {
+            transform: translateY(-60px);
+
+            h4 {
+                font-size: 22px;
+            }
+
+            form {
+
+                input,
+                textarea {
+                    padding: 6px 5px;
+                    margin-top: 20px;
+                }
+
+                textarea {
+                    height: 130px;
+                }
+            }
+        }
+    }
+
+    .callbackicons {
+        .foricon {
+            gap: 10px;
+
+            .icon {
+                padding-top: 12px;
+                width: 60px;
+                height: 60px;
+
+                i {
+                    font-size: 30px;
+                }
+            }
+
+            .icontext {
+                margin-top: 20px;
+
+                h5 {
+                    font-size: 21px;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .logo {
+            width: 150px;
+            height: 90px;
+        }
+
+        a {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .subscribe {
+            font-size: 20px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        span {
+            padding: 10px;
+
+            i {
+                font-size: 16px;
+            }
+        }
+
+        .socialicon {
+            margin-top: 20px;
+
+            i {
+                font-size: 18px;
+                padding-top: 9px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1152px) {
+    .container-fluid {
+        padding: 10px 60px !important;
+    }
+
+    .navbar {
+        padding: 0 !important;
+
+        .nav-item {
+            padding-left: 15px;
+
+            .nav-link {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .aboutus {
+        .textbox {
+            margin-left: 30px;
+
+            h2 {
+                margin-top: 20px;
+            }
+
+            .iconbox {
+                padding: 10px;
+
+                i {
+                    font-size: 35px;
+                }
+
+                h6 {
+                    line-height: 0.3;
+                }
+            }
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clienttext {
+                &::after {
+                    border-top: 20px solid #0c1438;
+                    border-right: 20px solid transparent;
+                }
+            }
+
+            .clientdetail {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1067px) {
+    .sliderpart {
+        .carousel-caption {
+            height: 350px;
+        }
+    }
+
+    .aboutus {
+        .textbox {
+            p {
+                line-height: 1.3;
+            }
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clienttext {
+                padding: 10px 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1028px) {
+    .sliderpart {
+        .carousel-caption {
+            height: 350px;
+        }
+    }
+
+    .ourbestservices {
+        .services {
+            .servicetext {
+                h4 {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clienttext {
+                padding: 5px 20px !important;
+
+                &::before {
+                    top: -30px;
+                }
+            }
+
+            .clientdetail {
+                .profile {
+                    .profiledetail {
+                        h5 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .navbar {
+        position: relative !important;
+
+        .nav-item {
+            padding-left: unset;
+
+            .nav-link {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .aboutus {
+        .imgbox {
+            margin-top: unset;
+        }
+
+        .textbox {
+            margin-left: unset;
+
+            p {
+                line-height: unset;
+            }
+
+            .iconbox {
+                padding: 20px;
+
+                i {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clienttext {
+                padding: 20px 40px !important;
+            }
+
+            .clientdetail {
+                margin-top: 30px;
+                margin-bottom: 20px;
+
+                .profiledetail {
+                    h5 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .logo {
+            width: 150px;
+            height: 70px;
+        }
+    }
+}
+
+// @media (max-width: 800px) {}
+
+@media(max-width: 767px) {
+    p {
+        font-size: 15px !important;
+    }
+
+    .headings {
+        word-spacing: 2px;
+        font-size: 21px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .readmore {
+        font-size: 15px !important;
+        padding: 10px 25px;
+    }
+
+    .navbar {
+        .nav-item {
+            .nav-link {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .sliderpart {
+        .carousel-caption {
+            height: 300px;
+
+            h1 {
+                font-size: 45px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+
+            p {
+                margin: 10px 0 20px;
+            }
+        }
+    }
+
+    .aboutus {
+        .textbox {
+            margin-top: 10px;
+
+            h2 {
+                font-size: 21px;
+                margin-top: unset;
+            }
+        }
+    }
+
+    .ourbestservices {
+        .services {
+            .servicetext {
+                font-size: 16px;
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                i {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+
+    .owl-nav {
+        button {
+            i {
+                padding: 8px 15px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .ourstrength {
+        figcaption {
+            font-size: 18px !important;
+        }
+    }
+
+    .callbackicons {
+        .foricon {
+            justify-content: flex-start;
+
+            .icon {
+                padding-top: unset;
+                width: 55px;
+                height: 55px;
+
+                i {
+                    font-size: 25px;
+                    line-height: 2;
+                }
+            }
+
+            .icontext {
+                h5 {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        a {
+            font-size: 15px;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            li {
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .noticetext {
+        padding: 5px 60px !important;
+    }
+}
+
+// @media(max-width: 736px) {}
+
+@media(max-width: 667px) {
+    .sliderpart {
+        .carousel-caption {
+            height: 280px;
+        }
+    }
+
+    .noticetext {
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            margin: 0 !important;
+        }
+    }
+
+    .callback {
+        height: 300px;
+
+        .callbackform {
+            padding: 30px;
+            transform: translateY(-45px);
+
+            h4 {
+                font-size: 18px;
+            }
+
+            form {
+
+                input,
+                textarea {
+                    margin-top: 10px;
+                }
+
+                textarea {
+                    margin-bottom: 20px !important;
+                }
+
+                textarea {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+// @media(max-width: 640px) {}
+
+@media(max-width: 600px) {
+    .container-fluid {
+        padding: 10px 20px !important;
+    }
+
+    .readmore {
+        padding: 7px 20px;
+    }
+
+    .navbar {
+        .logo {
+            width: 120px;
+            height: 45px;
+        }
+    }
+
+    .sliderpart {
+        .carousel-caption {
+            height: 215px;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            a {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 5px 0 12px;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 568px) {
+    .aboutus {
+        .textbox {
+            .iconbox {
+                margin-bottom: 10px;
+                padding: 10px;
+
+                i {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .ourbestservices {
+        .services {
+            border: 1px dashed #40d690;
+
+            .servicetext {
+                padding: 5px;
+
+                a {
+                    margin-top: unset;
+                }
+
+                i {
+                    right: 5px;
+                    top: unset;
+                    bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .clientspeacks {
+        .container-fluid {
+            padding: 0px 10px !important;
+        }
+
+        .clientarea {
+            .clienttext {
+                padding: 10px 30px !important;
+            }
+        }
+    }
+
+    .callback{
+        margin: 60px 0;
+    }
+}
+
+// @media(max-width: 536px) {}
+
+@media(max-width: 480px) {
+    p {
+        font-size: 13px !important;
+    }
+
+    .headings {
+        word-spacing: unset;
+        font-size: 18px;
+    }
+
+    .subheading {
+        font-size: 15px;
+    }
+
+    .readmore {
+        font-size: 12px !important;
+    }
+
+    .navbar {
+        .logo {
+            width: 100px;
+            height: 35px;
+        }
+        .nav-item{
+            .nav-link{
+                font-size: 13px;
+            }
+        }
+    }
+
+    .sliderpart {
+        .carousel-caption {
+            height: 180px;
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .aboutus {
+        .textbox {
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .ourbestservices {
+        .services {
+            .servicetext {
+                margin-top: 10px;
+                h4{
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .owl-nav {
+        button {
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .clientspeacks {
+        .clientarea {
+            .clienttext {
+                &::before {
+                    font-size: 25px;
+                }
+            }
+    
+            .clientdetail {
+                .profile {
+                    .profilephoto {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .profiledetail {
+                        margin-top: 20px;
+    
+                        h5 {
+                            font-size: 15px;
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ourstrength {
+        figcaption {
+            font-size: 15px !important;
+        }
+    }
+
+    .callbackicons {
+        .foricon {
+            .icon {
+                width: 50px;
+                height: 50px;
+
+                i {
+                    font-size: 20px;
+                    line-height: 2.3;
+                }
+            }
+
+            .icontext {
+                h5 {
+                    font-size: 18px;
+                    line-height: 0.9;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .logo{
+            width: 130px;
+        }
+        a {
+            font-size: 13px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+
+        ul {
+            li {
+                margin-top: unset;
+            }
+        }
+
+        .subscribe{
+            font-size: 15px !important;
+        }
+
+        span {
+    
+            i {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 414px) {
+    .sliderpart {
+        .carousel-caption {
+            height: 150px;
+
+            h1 {
+                font-size: 25px;
+                margin-bottom: unset;
+            }
+            p{
+                margin: 0 0 10px;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    p {
+        font-size: 11px !important;
+    }
+
+    .subheading {
+        font-size: 13px;
+    }
+
+    .readmore {
+        font-size: 10px !important;
+    }
+
+    .sliderpart {
+        .carousel-caption {
+            height: 130px;
+
+            h1 {
+                font-size: 22px;
+            }
+            a{
+                font-size: 12px;
+            }
+            p{
+                margin: 0 0 5px;
+            }
+        }
+    }
+
+    .aboutus {
+        .textbox {
+            p{
+                margin-top: 10px;
+            }
+            .iconbox {
+                h6 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .ourbestservices {
+        .services {
+            .servicetext {
+                font-size: 14px;
+                margin-top: 5px;
+                h4{
+                    font-size: 15px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+    
+}
+
+// @media(max-width: 360px) {}
+
+@media(max-width: 320px) {
+    .container-fluid {
+        padding: 5px 10px !important;
+    }
+
+    .readmore {
+        font-size: 10px !important;
+        padding: 5px 10px;
+    }
+
+    .sliderpart {
+        .carousel-caption {
+            height: 120px;
+
+            h1 {
+                font-size: 20px;
+            }
+            a{
+                font-size: 12px;
+            }
+            p{
+                margin: 0 0 5px;
+            }
+        }
+    }
+
+    .owl-nav {
+        top: 76%;
+    }
+
+    .clientspeacks {
+        .container-fluid{
+            padding: 0 !important;
+        }
+    }
+
+    .callback {
+        .callbackform {
+            padding: 20px;
+        }
+    }
+
+    .callbackicons {
+        .foricon {
+            .icontext {
+                h5 {
+                    font-size: 15px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+1) Different way of using vue: A)vue can used to control part of html pages or entire pages. Widgets approach on multi-page application.  <<==================
+			       B)vue can also be use to control the entire frontend of web application. SPA approach, server sends one html page, thereafter vue takeover and control the ui. 	
+
+2) What is vue? - Vue is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based
+		programming model that helps you efficiently develop user interfaces, be they simple or complex.
+
+3) SPA - A single-page application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, 
+	instead of the default method of a web browser loading entire new pages. The goal is faster transitions that make the website feel more like a native app.
+
+4) Learn v-bind & shorthands.
+
+5) Data/methods/computed/watch  - configuration method of vue.
+		methods - use with event binding and data binding. use for data or events that's really need to re-evaluted all the time. Executed with every re-render cycle of the component.
+		computed - use with data binding. use for data that depends on other data. It only re-evelute if one of their 'used value' changed.
+		watch - not use directly in template. Allow to run any code in reaction to change some data. use for any non-data update you want to make. (It take last data value as argument).    <<=======================
+
+6) Add dynamic stylling and class.
+
+7) v-if,v-else,v-else-if,v-show(v-show just add style to display none where the v-if is remove element from the dom).
+
+8) v-for
+
+9) Vue reactivity  <<==========================
+
+10) Life-cycle hooks.
+
+11) Why we building complex ui with multiple components.  <<=======================
+
+12) Work with vue/cli.
+
+13) Create and add new component.
+
+14) Parent-child communication with Props - Props stay for property or custom html attribute. We add it in parent component and set value in child component. (props-behaviour  <<=====================)
+
+15) Child-parent communication with emit(bind custom event - this.$emit('event-name', value)).
+
+16) Provide-inject  <<==================
+
+17) Slot - Use to add more htmls as child of components at time when we use components in vue app.
+    Named-slot - use with default html <template> tag with "v-slot:slotnamehere" attribute with provided slot name.
+
+18) Use locally/globally component in vue app.
+
+19) Get idea about <keep-alive> and <teleport to="body"> tag.
+
+20) Forms attr - v-model/input. Add form validation.
+
+21) Adding backend with firebase.
+
+22) Route - It allow the user to switch between to pages without refreshing the page, this typically results in a more user experience. <router-view> / <router-link to="path">
+
+23) Adding animation and transition and transition-group - <transition-group tag="html-tag-name like ul">.
+    Adding route transition with use of v-slot. - <router-view v-slot="slotProps">
+				 			<transition name="route">
+				     				<component :is="slotProps.Component"></component>      <=============== :is
+							</transition>
+			    			  <router-view>
+24) vuex - vuex is a state management library. It serves centralize store for all components. State/Mutation/Getters/Action      <===============
+
+25) Authentication - Authentication is process to give access to user which credential will match with server stored credential.
+    Secure routes after authentication.  

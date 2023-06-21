@@ -1,0 +1,11 @@
+==> Import jQuery globally in main.js:
+    window.Popper = require('popper.js').default;
+    window.$ = window.jQuery = require('jquery');
+    require('bootstrap');
+
+
+==> Use with window key before $ sign as below 
+    window.$('#exampleModal').modal('show');
+
+
+Note: import 'bootstrap/dist/js/bootstrap.min.js'; ==> Remove this import from main.js as well.

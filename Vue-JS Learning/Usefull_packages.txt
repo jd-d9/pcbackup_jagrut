@@ -1,0 +1,8 @@
+1. vue-signature-pad  ==> For making signature.
+2. html2pdf.js  ==> For make pdf of any component using id attribute.
+3. jodit-vue  ==> For add note-box.
+4. moment  ==> For change date formate(usually use for due-date functionality).
+5. vue-toast-notification  ==> For showing toast message.
+6. sweet-alert  ==> for confirm/alert. ==> https://sweetalert2.github.io/
+7. datatables.net-dt  ==> Datatable. ==> https://www.positronx.io/vue-js-dynamic-jquery-datatables-tutorial-example/
+8. custom select-option  ==> Create custom select-option. ==> https://developer.snapappointments.com/bootstrap-select/

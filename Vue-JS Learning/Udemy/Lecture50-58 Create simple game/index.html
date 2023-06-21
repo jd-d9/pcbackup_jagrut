@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Monster Slayer</h1>
+    </header>
+    <div id="game">
+      <section id="monster" class="container">
+        <h2>Monster Health</h2>
+        <div class="healthbar">
+          <div class="healthbar__value" :style="monsterHealthValue"></div>  <!-- we can direct write this {width: monsterHealth + '%'} - for cleancode i make this function in computed prperty -->
+        </div>
+      </section>
+      <section id="player" class="container">
+        <h2>Your Health</h2>
+        <div class="healthbar">
+          <div class="healthbar__value" :style="playerHealthValue"></div>  <!-- we can direct write this {width: playerHealth + '%'} - for cleancode i make this function in computed prperty -->
+        </div>
+      </section>
+      <section id="player" class="container" v-if="winner">
+        <h3>Game Over!</h3>
+        <h2 v-if="winner === 'player'">Hurrey, You Won</h2>
+        <h2 v-else-if="winner === 'monster'">You Lose!</h2>
+        <h2 v-else>It's a draw</h2>
+        <button @click="startNewGame">START NEW GAME</button>
+      </section>
+      <section id="controls" v-else> <!-- else part of v-if="winner" --- hide when game over -->
+        <button @click="attackOnMonster">ATTACK</button>
+        <button @click="specialAttack"
+        :disabled="mayClickOnSpecialAttack">SPECIAL ATTACK</button> <!-- we can press this button once after every 3 clicks otherthan it is disabled. -->
+        <button @click="healPlayer">HEAL</button>
+        <button @click="surrenderGame">SURRENDER</button>
+      </section>
+      <!-- <section id="log" class="container">
+        <h2>Battle Log</h2>
+        <ul></ul>
+      </section> -->
+    </div>
+  </body>
+</html>

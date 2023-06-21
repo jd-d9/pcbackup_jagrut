@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+      <header>
+          <h1>Vue Course Goals</h1>
+      </header>
+      <section id="user-goals">
+          <h2>My course goals</h2>
+          <input type="text" v-model="enteredGoalValue"/>
+          <button @click="addGoal">Add Goal</button>
+          <button class="ms-2" @click="hideShowList">Hide and Show</button>
+          <p v-if="goals.length === 0">No goals have been added yet - please start adding some!</p>
+          <ul v-else :class="{hide: hideShowToggler}">
+              <li v-for="(goal, index) in goals" 
+              :key="goal" 
+              @click="removeGoal(index)">{{ index }} - {{ goal }}
+              </li>   <!-- if we need two or more argument than use parantheses and separated value using , like this (goal,key,index) in goals 
+                            if goals = {name:'jd', place:'jnd'}. key give name and place //// value give jd and jnd //// index give 0 and 1.
+                            v-bind:key(:key) is use for unique. it is not required but good habit to add this when use v-for //// also key is show our element default identity.                                                    
+                      -->
+          </ul>
+      </section>
+  </body>
+</html>

@@ -1,0 +1,679 @@
+@media (max-width: 1600px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 695px;
+    }
+}
+@media (max-width: 1525px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 655px;
+    }
+}
+@media (max-width: 1440px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 615px;
+    }
+    /* partners style */
+    .our-partners .owl-nav{
+        top: 62px;
+        left: -5%;
+        width: 110%;
+    }
+}
+@media (max-width: 1366px)  {
+    /* static slider style */
+    .left-text-part, .image-part{
+        height: 580px;
+    }
+    .image-part-inner img{
+        height: 440px;
+    }
+    /* appoiment style */
+    .card-shadow{
+        left: 0;
+    }
+    /* program & service style */
+    .service-card .card-icon img{
+        height: 130px;
+    }
+    .service-card .cardHeading h6{
+        right: 5px;
+        width: 70%;
+    }
+    .service-card .cardContent p{
+        margin-top: 75px;
+    }
+    /* contact-us style */
+    .map-location iframe{
+        width: 590px;
+    }
+    /* partners style */
+    .our-partners .owl-carousel .owl-item img {
+        width: 270px !important;
+    }
+}
+@media (max-width: 1330px)  {
+    /* helth center style */
+    .helth-center-left{
+        display: table;
+        height: 460px;
+    }
+    .helth-center-left-inner img{
+        height: 450px;
+    }
+    .health-card-right{
+        margin: 20px 0;
+    }
+    .health-card-right-inner img{
+        height: 25px;
+        margin: 5px 20px 0 0;
+    }
+    .health-card-right-inner-btn{
+        margin-top: 10px !important;
+    }
+    /* contact-us style */
+    .map-location iframe{
+        width: 572px;
+    }
+}
+@media (max-width: 1200px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 507px;
+    }
+    /* owl-nav-button */
+    .left-owl-nav,.right-owl-nav{
+        height: 40px;
+    }
+    /* partners style */
+    .our-partners .owl-nav{
+        left: -3.5%;
+        width: 107%;
+    }
+}
+@media (max-width: 1199px)  {
+    /* upperNav style */
+    .upper-nav-inner-one img, .upper-nav-inner-two img{
+        height: 16px;
+    }
+    .logo-back-circle{
+        top: -80px;
+        width: 170px;
+        height: 170px;
+    }
+    .logo-back-circle img{
+        margin-top: 50%;
+        height: 50px;
+    }
+    /* navbar style */
+    #navbarTogglerDemo ul li img{
+        height: 25px;
+    }
+    #navbarTogglerDemo ul li{
+        padding: 0 6px;
+    }
+    /* static slider style */
+    .left-text-part, .image-part{
+        height: 480px;
+    }
+    .image-part-inner img{
+        height: 390px;
+    }
+    .inner-text-part h1{
+        font-size: 35px;
+    }
+    .inner-text-part h2{
+        font-size: 25px;
+    }
+    /* appoinment style */
+    .card-head img{
+        height: 23px;
+    }
+    .card-head h4{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .card-body{
+        margin: 20px 0;
+    }
+    .card-footer{
+        margin-top: 30px;
+    }
+    .appoinment-card-center .card-footer{
+        margin-top: 28px;
+    }
+    .appoinment-card-right h3{
+        font-size: 30px;
+    }
+    .appoinment-card-right .card-footer{
+        margin-top: 40px;
+    }
+    /* program & service style */
+    .service-card .cardHeading h6{
+        font-size: 20px;
+        width: 65%;
+    }
+    .service-card .card-icon img{
+        height: 115px;
+    }
+    .service-card .card-icon{
+        top: -35px;
+        left: -25px;
+    }
+    .service-card .cardContent p{
+        margin-top: 65px;
+    }
+    /* contact-us style */
+    .contact-form input, .contact-form textarea{
+        padding: 5px 15px;
+    }
+    .contact-slider h4{
+        font-size: 20px;
+    }
+    .map-location iframe{
+        width: 521px;
+        height: 555px;
+    }
+    /* partners style */
+    .our-partners .owl-carousel .owl-item img {
+        width: 250px !important;
+    }
+    /* footer style */
+    .footer-logo{
+        width: 150px;
+    }
+    .social-icons .icon{
+        width: 40px;
+        height: 40px;
+        line-height: 2.8;
+    }
+    .social-icons .icon a{
+        font-size: 16px;
+    }
+    .footer-list h5{
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+    .footer-list .list{
+        transform: translateX(-5px);
+    }
+    .footer-notice{
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 1152px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 500px;
+    }
+}
+@media (max-width: 1067px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 455px;
+    }
+}
+@media (max-width: 1028px)  {
+    /* partners style */
+    .our-partners .owl-nav{
+        left: -2%;
+        width: 104%;
+    }
+    /* contact-us style */
+    .map-location iframe{
+        width: 438px;
+    }
+}
+@media (max-width:992px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 420px;
+    }
+}
+@media (max-width:991px)  {
+    /* upperNav style start here */
+    .for-display{
+        display: none;
+    }
+    /* navbar style */
+    .navbar{
+        padding: 0;
+    }
+    .navbar-brand{
+        display: inline-block;
+    }
+    .navbar-brand img{
+        height: 40px;
+    }
+    .navbar-toggler{
+        line-height: 0.5;
+        padding: 4px 8px;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .navbar .nav-link div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .nav-link div p{
+        order: 1;
+    }
+    .navbar .nav-link div img{
+        order: 2;
+    }
+    #navbarTogglerDemo ul li::before{
+        background-color: rgba(0, 183, 255,0.1);
+        border-radius: 5px;
+        height: 100%;
+    }
+    #navbarTogglerDemo ul li:hover::before{
+        opacity: 1;
+        transition: all 0.3s ease-out;
+        top: 0;
+    }
+    /* rounded-button style */
+    .rounded-button{
+        padding: 8px 25px;
+    }
+    /* static slider style */
+    .left-text-part, .image-part{
+        height: 420px;
+    }
+    .image-part-inner img{
+        height: 340px;
+    }
+    .inner-text-part h1{
+        font-size: 30px;
+    }
+    .inner-text-part h2{
+        font-size: 20px;
+    }
+    .inner-text-part .read-more-btn{
+        padding: 8px 20px;
+    }
+    /* share-btn style */
+    .share-btn-ddhead{
+        line-height: 2.6;
+        width: 40px;
+        height: 40px;
+    }
+    .share-btn-ddhead img{
+        height: 20px;
+    }
+    .share-btn-dropdown{
+        bottom: 40px;
+        left: -5px;
+    }
+    /* appoinment style */
+    .appoinment{
+        padding-bottom: 20px;
+    }
+    .appoinment .rounded-button{
+        padding: 8px 10px;
+    }
+    .appoinment-card .card-head div,
+    .appoinment-card-center .card-head div,
+    .appoinment-card-right .card-head div{
+        justify-content: center;
+    }
+    .appoinment-card, .appoinment-card-center, .appoinment-card-right{
+        margin: 15px 0;
+        text-align: center !important;
+    }
+    .appoinment-card-center{
+        transform: translateY(0);
+    }
+    .card-shadow{
+        left: 10%;
+    }
+    /* heading style */
+    .heading{
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .heading h2{
+        font-size: 30px;
+    }
+    .heading img{
+        height: 15px;
+    }
+    /* helth center style */
+    .helth-center-left{
+        height: 400px;
+    }
+    .helth-center-left-inner img{
+        height: 390px;
+    }
+    .health-card-right-inner img{
+        height: 20px;
+        margin: 5px 15px 0 0;
+    }
+    .health-card-right p{
+        margin-bottom: 10px;
+    }
+    /* program & service style */
+    .service-card{
+        margin: 30px 5px 25px 5px;
+    }
+    .service-card .cardHeading h6{
+        width: 70%;
+    }
+    .service-card .card-shadow{
+        left: 0;
+    }
+    /* contact-us style */
+    .contact-form{
+        padding: 10px 20px;
+    }
+    .contact-slider h4{
+        font-size: 20px;
+    }
+    .contact-slider .owl-carousel .owl-item img {
+        width: 40px !important;
+        margin-bottom: 10px;
+    }
+    .for-margin-only{
+        margin-top: 0px !important;
+    }
+    .map-location iframe{
+        width: 440px;
+        height: 505px;
+    }
+    /* owl-nav-button */
+    .left-owl-nav,.right-owl-nav{
+        height: 30px;
+    }
+    /* partners style */
+    .our-partners .owl-nav{
+        top: 50px;
+        left: -5%;
+        width: 110%;
+    }
+    .our-partners .owl-carousel .owl-item img {
+        width: 210px !important;
+    }
+    /* footer style */
+    .footer{
+        padding: 20px 0;
+    }
+    .footer-list h5{
+        margin: 20px 0 10px 0;
+    }
+    .footer-notice h5{
+        font-size: 15px;
+    }
+}
+@media (max-width:800px)  {
+    /* static slider style */
+    .static-slider{
+        background-image: url(../image/backgroundImage1.png);
+    }
+    /* contact-us style */
+    .map-location iframe{
+        width: 344px;
+    }
+}
+@media (max-width:768px)  {
+    /* contact-us style */
+    .map-location iframe{
+        width: 328px;
+    }
+}
+@media (max-width:767px)  {
+    .container{
+        max-width: 720px;
+    }
+    .for-right-border {
+        padding-right: 14px;
+        margin-right: 8px;
+    }
+    /* static slider style */
+    .static-slider{
+        background-image: url(../image/backgroundImage2.png);
+    }
+    .left-text-part, .image-part{
+        height: unset;
+    }
+    .left-text-part{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .image-part-inner img{
+        height: 300px;
+    }
+    /* appoinment style */
+    .appoinment-card, .appoinment-card-center, .appoinment-card-right{
+        padding: 20px 30px !important;
+    }
+    .card-body{
+        margin: 10px 0;
+    }
+    .card-footer,.appoinment-card-center .card-footer, .appoinment-card-right .card-footer{
+        margin-top: 10px;
+    }
+    .appoinment-card-right h3{
+        font-size: 25px;
+    }
+    /* heading style */
+    .heading h2{
+        font-size: 25px;
+        line-height: 0.5;
+    }
+    /* health center style */
+    .helth-center-left{
+        display: block;
+        height: unset;
+        text-align: center;
+    }
+    .helth-center-left-inner{
+        display: inherit;
+    }
+    .helth-center-left-inner img{
+        height: 290px;
+    }
+    .health-card-right-inner-btn{
+        text-align: center;
+    }
+    /* program & service style */
+    .service-card{
+        margin: 15px 5px 20px 5px;
+    }
+    .service-card .card-shadow{
+        left: 22%;
+    }
+    .service-card .card-icon img {
+        height: 97px;
+    }
+    .service-card .card-icon {
+        top: 1px;
+        left: 1px;
+    }
+    .service-card .cardHeading h6, .service-card .cardContent p {
+        position: unset;
+        text-align: start;
+        width: 84%;
+        margin: 0 0 5px auto;
+    }
+    /* contact-us style */
+    .map-location{
+        position: inherit;
+        left: -6%;
+    }
+    .map-location iframe{
+        height: 180px;
+        width: 112%;
+    }
+    /* partners style */
+    .our-partners .owl-nav {
+        top: 80%;
+        left: 43%;
+        width: 15%;
+    }
+}
+@media (max-width:640px)  {
+    /* partners style */
+    .our-partners .owl-carousel .owl-item img {
+        width: 190px !important;
+    }
+}
+@media (max-width:600px)  {
+    /* uppernav style */
+    .info-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* appoinment style */
+    .card-shadow {
+        left: 3%;
+    }
+    /* program & service style */
+    .service-card .card-shadow {
+        left: 15%;
+    }
+    /* contact-us style */
+    .map-location{
+        left: -2%;
+    }
+    .map-location iframe{
+        width: 105%;
+    }
+    /* partners style */
+    .our-partners .owl-nav {
+        top: 80%;
+        left: 42%;
+        width: 16%;
+    }
+    .our-partners .owl-carousel .owl-item img {
+        width: 255px !important;
+    }
+    /* footer style */
+    .footer-list .list li a {
+        white-space: normal;
+    }
+}
+@media (max-width:575px)  {
+    /* appoinment style */
+    .appoinment-card, .appoinment-card-center, .appoinment-card-right{
+        margin: 12px 0 0 0;
+        box-shadow: 0px 3px 4px rgba(128, 128, 128,0.6);
+    }
+    .card-shadow{
+        display: none;
+    }
+    /* programs & services style */
+    .service-card{
+        margin: 5px 5px 10px 5px;
+        box-shadow: 0px 3px 4px rgba(128, 128, 128,0.4);
+    }
+    /* contact-us style */
+    .map-location{
+        left: -3%;
+    }
+    .map-location iframe{
+        width: 108%;
+    }
+    /* footer style */
+    .footer-list .list{
+        margin-bottom: 0;
+    }
+}
+@media (max-width:536px)  {
+    /* program & service style */
+    .service-card .cardHeading h6, .service-card .cardContent p {
+        width: 79%;
+    }
+    .service-card .card-icon {
+        top: 11px;
+    }
+    .service-card .card-icon img{
+        height: 100px;
+    }
+    /* partners style */
+    .our-partners .owl-carousel .owl-item img {
+        width: 240px !important;
+    }
+}
+@media (max-width:480px)  {
+    /* static-slider style */
+    .image-part-inner img {
+        height: 240px;
+    }
+    /* health-card style */
+    .helth-center-left-inner img {
+        height: 245px;
+    }
+    /* partners style */
+    .our-partners .owl-nav {
+        left: 41%;
+        width: 18%;
+    }
+    .our-partners .owl-carousel .owl-item img {
+        width: 205px !important;
+    }
+}
+@media (max-width:440px)  {
+    /* upper-nav style */
+    .info-text{
+        display: none;
+    }
+    /* program & service style */
+    .service-card .cardHeading h6, .service-card .cardContent p {
+        width: 73%;
+    }
+    .service-card .card-icon {
+        top: 22px;
+    }
+}
+@media (max-width:414px)  {
+    /* contact-us style */
+    .contact-slider .owl-carousel .owl-item img {
+        width: 30px !important;
+    }
+    /* partners style */
+    .our-partners .owl-carousel .owl-item img {
+        width: 185px !important;
+    }
+    .our-partners .owl-nav{
+        top: 76%;
+    }
+}
+@media (max-width:375px)  {
+    /* static-slider style */
+    .static-slider{
+        background-image: url(../image/backgroundImage3.png);
+    }
+    /* program & services style */
+    .service-card .card-icon {
+        top: 30px;
+    }
+    .service-card .card-icon img {
+        height: 90px;
+    }
+    /* contact-us style */
+    .map-location{
+        left: -4%;
+    }
+    /* partners style */
+    .our-partners .owl-carousel .owl-item img {
+        width: 205px !important;
+    }
+}
+@media (max-width:320px)  {
+    /* program & services style */
+    .service-card .card-icon {
+        top: 45px;
+    }
+    .service-card .card-icon img {
+        height: 85px;
+    }
+}

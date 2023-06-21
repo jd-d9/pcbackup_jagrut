@@ -1,0 +1,600 @@
+/* landing page */
+@media (max-width: 1600px)  {
+    .portfolio-card:hover .card-body {
+        top: 31%;
+    }
+}
+
+@media (max-width: 1440px)  {
+    .portfolio-card:hover .card-body {
+        top: 27%;
+    }
+}
+
+@media (max-width: 1366px)  {
+    .service-item {
+        padding: 0 20px;
+    }
+    .service-item-contact {
+        padding: 30px 20px !important;
+    }
+    .portfolio-card:hover .card-body {
+        top: 21%;
+    }
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 430px;
+    }
+    /* pages */
+    .service-card {
+        height: 400px;
+        padding: 30px 30px;
+    }
+    .service-card:hover::before {
+        left: 3%;
+        top: 3%;
+        width: 94%;
+        height: 94%;
+    }
+    .testimonial-card {
+        height: 430px;
+    }
+    .portfolio-item {
+        max-width: 330px;
+    }
+    .portfolio-details p {
+        height: 45%;
+    }
+}
+
+@media (max-width: 1280px)  {
+    .portfolio-card:hover .card-body {
+        top: 8%;
+    }
+}
+
+@media (max-width: 1200px)  {
+    .navbar-dark .navbar-brand img {
+        width: 180px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: unset;
+        padding: 30px 0;
+    }
+    h1 {
+        font-size: 2.1rem !important;
+    }
+    .display-1 {
+        font-size: calc(1.350rem + 3.8vw) !important;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    h5 {
+        font-size: 1.14rem;
+    }
+    .carousel-caption .btn-primary, .carousel-caption .btn-outline-light,
+    #about-us-slider .btn-primary, .contact-button {
+        padding: 13px 38px !important;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .facts {
+        margin-top: -60px;
+    }
+    .facts-item {
+        height: 120px !important;
+    }
+    .portfolio-card:hover .card-body {
+        top: 0%;
+    }
+
+    .contact-details a {
+        margin-right: 10px;
+    }
+    .footer-about {
+        padding: 0;
+    }
+    /* pages */
+    .team-member:hover .member-social {
+        top: 70%;
+    }
+}
+
+@media (max-width: 1199px)  {
+    /* pages */
+    .service-detail {
+        margin-top: 20px;
+    }
+    .service-card  {
+        height: 430px;
+    }
+    .testimonial-card {
+        height: 380px;
+    }
+    .visit-office-icon {
+        transform: translateY(-7px);
+    }
+    .visit-office {
+        height: unset !important;
+    }
+    .portfolio-item {
+        max-width: 420px;
+    }
+    .portfolio-details p {
+        height: 60%;
+    }
+}
+
+@media (max-width: 1152px)  {
+    .service-item  {
+        height: 370px;
+    }
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 440px;
+    }
+    .testimonial-carousel .owl-item .testimonial-item > div{
+        padding: 25px 30px !important;
+    }
+}
+
+@media (max-width: 1151px)  {
+    .portfolio-card:hover .card-body {
+        top: 30%;
+    }
+    .owl-nav {
+        left: 45.5%;
+    }
+}
+
+@media (max-width:991px)  {
+    .navbar-dark {
+        background: transparent !important;
+    }
+    .navbar-dark .navbar-brand .logo-black {
+        display: inline-block;
+    }
+    .navbar-dark .navbar-brand .logo-white {
+        display: none;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 7px 0;
+        margin-left: 0;
+    }
+    .carousel-caption h5 {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+    .about-us-portion, .contact-us-portion .section-title + h5 {
+        text-align: center !important;
+    }
+    .order-class-one {
+        order: 1 !important;
+    }
+    .order-class-two {
+        order: 2 !important;
+    }
+    .order-class-three {
+        order: 3 !important;
+    }
+    .order-class-three .margin-top-only {
+        margin-top: 40px !important;
+    }
+    #portfolio-slider::before {
+        width: 0;
+    }
+    .testimonial-carousel .owl-item.center .testimonial-item{
+        background-color: white !important;
+        transform: scale(1) !important;
+        box-shadow: 0 0 8px #DDDDDD !important;
+    }
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 290px;
+        margin: 0 10px;
+    }
+    .contact-icon i {
+        padding: 12px 16px;
+        font-size: 27px;
+    }
+    /* pages */
+    .team-member:hover .member-social {
+        top: 60%;
+    }
+    .member-detail {
+        width: 90%;
+        padding: 7px 5px;
+    }
+    .phone-and-mail {
+        gap: 0px;
+    }
+    .service-card  {
+        height: 400px;
+    }
+    .testimonial-card {
+        height: 320px;
+    }
+    .portfolio-item {
+        max-width: 310px;
+    }
+    .portfolio-details p {
+        height: 40%;
+    }
+}
+
+@media (max-width: 912px) {
+    .portfolio-card:hover .card-body {
+        top: 12%;
+    }
+}
+
+@media (max-width: 820px) {
+    .carousel-caption h5 {
+        max-width: 700px;
+    }
+    .portfolio-card:hover .card-body {
+        top: 0%;
+    }
+}
+
+@media (max-width:800px)  {
+    .carousel-caption h5 {
+        max-width: 620px;
+    }
+    .owl-nav {
+        left: 44%;
+        width: 90px;   
+    }
+}
+
+@media (max-width:767px)  {
+    .navbar {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .navbar-dark .navbar-brand img {
+        width: 140px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .display-1 {
+        font-size: calc(1.250rem + 3vw) !important
+    }
+    .carousel-caption h5 {
+        margin-bottom: 25px !important;
+    }
+    .carousel-caption .btn-primary, .carousel-caption .btn-outline-light, 
+    #about-us-slider .btn-primary, .contact-button {
+        padding: 8px 28px !important;
+    }
+    .facts-item {
+        height: 100px !important;
+    }
+    h1 {
+        font-size: 1.9rem !important;
+    }
+    h5 {
+        font-size: 1.07rem !important;
+    }
+    .order-class-three .margin-top-only {
+        margin-top: 25px !important;
+    }
+    .service-item {
+        height: 310px;
+    }
+    .portfolio-card:hover .card-body {
+        top: 50%;
+    }
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 320px;
+    }
+    .contact-icon {
+        margin-top: 15px;
+    }
+    .footer-about > div.d-flex {
+        align-items: flex-start !important;
+        text-align: start !important;
+    }
+    .footer-about .input-group input {
+        width: 430px;
+    }
+    /* pages */
+    .team-member:hover .member-social {
+        top: 80%;
+    }
+    .team-image img {
+        width: 100%;
+    }
+    .member-detail {
+        width: 80%;
+        padding: 15px 5px;
+    }
+    .phone-and-mail {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .service-card  {
+        height: 300px;
+    }
+    .service-card:hover::before {
+        left: 4%;
+        top: 4%;
+        width: 92%;
+        height: 92%;
+    }
+    .testimonial-card {
+        height: 360px;
+    }
+    .visit-office-icon {
+        transform: translateY(-17px);
+    }
+    .gallary-menu {
+        display: none;
+    }
+    .portfolio-item {
+        max-width: 550px;
+    }
+    .portfolio-details p {
+        height: 60%;
+    }
+}
+
+@media (max-width:667px)  {
+    .carousel-caption h5 {
+        max-width: 470px;
+    }
+}
+
+@media (max-width:640px)  {
+    .portfolio-card:hover .card-body {
+        top: 39%;
+    }
+}
+
+@media (max-width:599px)  {
+    .navbar-dark {
+        padding: 5px 20px !important;
+    }
+    .owl-nav {
+        left: 42%;
+    }
+    .our-team-slider .owl-nav {
+        transform: translateY(-30px);
+        left: 40%;
+    }
+}
+
+@media (max-width:575px)  {
+    .footer-about {
+        border: 6px solid var(--dark);
+    }
+}
+
+@media (max-width:568px)  {
+    .footer-about .input-group input {
+        width: 410px;
+    }
+    /* pages */
+    .ask-question input,
+    .ask-question a {
+        padding: 10px 20px !important;
+    }
+}
+@media (max-width:540px)  {
+    .carousel-caption h5 {
+        max-width: 420px;
+    }
+    .portfolio-card:hover .card-body {
+        top: 30%;
+    }
+    .footer-about .input-group input {
+        width: 380px;
+    }
+}
+
+@media (max-width:480px)  {
+    .facts-item {
+        height: 70px !important;
+    }
+    .padding-only {
+        padding-left: 35px !important;
+        transform: translateX(-10px);
+    }
+    .fact-item-icon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .carousel-caption .btn-primary, .carousel-caption .btn-outline-light, 
+    #about-us-slider .btn-primary, .contact-button {
+        padding: 5px 20px !important;
+    }
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    h5 {
+        font-size: 0.9rem !important;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    .carousel-caption h5 {
+        max-width: 380px;
+    }
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 345px;
+    }
+    .footer-about .input-group input {
+        width: 320px;
+    }
+    .portfolio-card:hover .card-body {
+        top: 25%;
+    }
+    .contact-box {
+        margin-bottom: unset !important;
+    }
+    .contact-form {
+        padding: 30px !important;
+    }
+    .contact-form form input {
+        height: 40px !important;
+    }
+    .footer-about input {
+        padding: 8px !important;
+    }
+    .footer-notice {
+        font-size: 14px;
+    }
+    /* pages */
+    .service-card  {
+        height: 340px;
+    }
+    .testimonial-card {
+        height: 390px;
+    }
+    .contact-form {
+        padding: 15px !important;
+    }
+}
+@media (max-width:414px)  {
+    .display-1 {
+        font-size: calc(1.0rem + 2.5vw) !important;
+    }
+    .carousel-caption h5 {
+        max-width: 330px;
+        margin-bottom: 10px !important;
+    }
+    .for-margin-remove {
+        margin: 0;
+    }
+    .portfolio-card:hover .card-body {
+        top: 0%;
+    }
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 380px;
+    }
+    .owl-nav {
+        left: 38%;
+    }
+    .our-team-slider .owl-nav {
+        left: 36%;
+    }
+    .contact-box:last-child .contact-icon {
+        transform: translateY(-19px);
+    }
+    .footer-about .input-group input {
+        width: 260px;
+    }
+    .back-to-top {
+        right: 25px;
+        bottom: 25px;
+    }
+    /* pages */
+    .team-member:hover .member-social {
+        top: 75%;
+    }
+    .phone-and-mail {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .visit-office-icon {
+        transform: translateY(-27px);
+    }
+    .portfolio-details p {
+        height: 50%;
+    }
+}
+@media (max-width:390px)  {
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 420px;
+    }
+    /* pages */
+    .service-icon img {
+        width: 50px !important;
+    }
+    .service-card  {
+        height: 370px;
+    }
+    .testimonial-card {
+        height: 420px;
+    }
+}
+@media (max-width:375px)  {
+    .carousel-caption h5 {
+        max-width: 300px;
+        height: 50px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .contact-box:last-child .contact-icon {
+        transform: translateY(-30px);
+    }
+    .testimonial-carousel .owl-item .testimonial-item > div {
+        padding: 15px 20px !important;
+    }
+    .footer-about .input-group input {
+        width: unset;
+    }
+    .visit-office-icon {
+        transform: translateY(-40px);
+    }
+}
+@media (max-width:360px)  {
+    .service-item {
+        height: 355px;
+    }
+    .portfolio-card .card-body p {
+        height: 80px;
+        overflow-y: auto;
+    }
+    .testimonial-carousel .owl-item .testimonial-item {
+        height: 420px;
+    }
+    /* pages */
+    .team-member:hover .member-social {
+        top: 70%;
+    }
+    .testimonial-card {
+        height: 440px;
+    }
+    .portfolio-details p {
+        height: 43%;
+    }
+}
+@media (max-width:320px) {
+    .carousel-caption h5 {
+        max-width: 280px;
+    }
+    .owl-nav {
+        left: 36%;
+    }
+    .portfolio-card .card-body p {
+        height: 60px;
+    }
+    .our-team-slider .owl-nav {
+        left: 34%;
+    }
+    .contact-box:last-child .contact-icon {
+        transform: translateY(-55px);
+    }
+    .technology-icon a i{
+        font-size: 20px;
+    }
+    .footer-about .input-group input {
+        width: 160px;
+    }
+    /* pages */
+    .service-card  {
+        height: 390px;
+    }
+    .testimonial-card {
+        height: 490px;
+    }
+    .visit-office-icon {
+        transform: translateY(-65px);
+    }
+}

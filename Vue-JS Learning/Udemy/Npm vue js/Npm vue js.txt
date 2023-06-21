@@ -1,0 +1,17 @@
+start - npm install -g @vue/cli
+create - vue create file-name-here
+
+cd file-name-here
+run - npm run serve
+
+
+
+bootstrap - npm install bootstrap
+firebase - npm install firebase /// for update change date on rules part or make true instead of false.
+vuex - npm install --save vuex /// npm install --save vuex@next - lateat version
+router - npm install --save vue-router
+
+
+
+
+For firebase learn/youtube -- https://youtu.be/84mhLKUM04E

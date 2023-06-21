@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            padding: 50px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        input,select{
+            padding: 5px;
+            width: 250px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Create Box</h2>
+        <input type="text" placeholder="Enter height" v-model="desiredHeight"><br>
+        <input type="text" placeholder="Enter width" v-model="desiredWidth"><br>
+        <input type="text" placeholder="Enter desired colour" v-model="desiredColor"><br>
+        <input type="text" placeholder="Enter text" v-model="text"><br>
+        <input type="text" placeholder="Enter text colour you wish" v-model="textColor"><br>
+        <select v-model="borderRadius">
+            <option value="" selected>Select Border Radius</option>
+            <option value="5px">05</option>
+            <option value="10px">10</option>
+            <option value="25px">25</option>
+            <option value="50px">50</option>
+            <option value="50%">Circle</option>
+        </select>
+        <div class="box" :style="colorFn">
+            {{ text }}
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    desiredColor: '',
+                    desiredWidth: '',
+                    desiredHeight: '',
+                    text: '',
+                    textColor: '',
+                    borderRadius: ''
+                }
+            },
+            computed: {
+                colorFn() {
+                    return {backgroundColor: this.desiredColor,
+                            color: this.textColor,
+                            width: this.desiredWidth + 'px',
+                            height: this.desiredHeight + 'px',
+                            borderRadius: this.borderRadius
+                        }
+                }
+            },
+            methods: {
+
+            }
+        });
+        app.mount('.main')
+    </script>
+</body>
+</html>

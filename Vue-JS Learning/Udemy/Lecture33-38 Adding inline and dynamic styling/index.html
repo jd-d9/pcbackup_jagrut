@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vue Basics</title>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://unpkg.com/vue@next" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Vue Dynamic Styling</h1>
+        </header>
+        <section id="styling">
+            <!-- It much better to give dynamic class instead of give 'inline dynamic style' -->
+            <div class="demo"
+            :class="{active: boxAselect}"
+            @click="clickOnBox('A')">
+            </div>   <!-- if we have multiple class to add dynamically. It is much better to use :class="{demo: true, active: boxAselect}" instead of this :class="boxAselect ? 'demo active' : 'demo'".
+                          also we need static class(here demo) then write it in class attr and add dynamic class as i add <div class="demo" :class="{sctive: boxAselect}" @click="clickOnBox('A')">.
+                          Generally, It's method to add both(static and dynamic) class use array and Add like this <div :class="['demo', {active: boxAselect}]" @click="clickOnBox('A')>" - here demo is static and active is dynamic class. 
+                     -->
+            <div class="demo"
+            :class="{active: boxBselect}"
+            @click="clickOnBox('B')">
+            </div>
+            <div class="demo"
+            :class="{active: boxCselect}"
+            @click="clickOnBox('C')">
+            </div>
+            <!-- we can add dynamic class using computed property value like this:
+                computed:{
+                    addOne() {
+                      return {active: this.boxAselect};
+                    }
+                } 
+                and then simply mention addOne(without parantheses) in :class derative.
+            -->
+        </section>
+    </body>
+</html>

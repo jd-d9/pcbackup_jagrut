@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js learning</title>
+</head>
+<body>
+    <p id="para" style="color:red"></p>
+    <p id="para2" style="color:orange"></p>
+    <button onclick="displaydate()">today</button>
+    <!-- <input type="text" id="field" onkeydown="forcapital()"> -->
+    <button onclick="forcapital()">capital</button>
+    <button onclick="myFunction()">change</button>
+    <p id="demo">hellow Microsoft</p>
+    <p id="field">hello how are You</p>
+    <p id="demotwo"></p>
+    <p class="helloone" style="color: green;"></p>
+    <p class="counterprint" style="color: deeppink;"></p>
+    <input type="password">
+    <button onclick="forvalue()">showvelue</button>
+    <p class="forprintvalue"></p>
+    <p class="forprintvaluearray"></p>
+    <p class="paragraph"></p>
+    <p id="demo24"></p>
+    <p id="demo234"></p>
+    <button onclick="changesorts()">sort-button</button>
+    <p id="demo1234"></p>
+    <script>
+        const fruits = {
+            color:'multicolor',
+            usefor:'health',
+            need:'water'
+        };
+        // document.write(fruits.color);
+        // fruits.need = "moonlight"      we can add value like this
+        // Object.defineProperty(fruits, "need", {value:"sunlight"});       we can add value like this
+        document.getElementById('para').innerHTML = fruits.need;
+        fruits.color = 'blue';
+
+        const person = {
+            color:'brown',
+            eat:'veg',
+            eye:'blue',
+            forName : function(){
+               return this.color +" "+ this.eye + ' hello js';
+            }
+        }
+        document.write(person.forName());
+
+        function displaydate(){
+            document.getElementById('para2').innerHTML = new Date().toLocaleDateString();
+        }
+
+        function forcapital(){
+            let text = document.getElementById('field').innerHTML;
+            document.getElementById('field').innerHTML = text.toUpperCase();
+        }
+
+        document.write('<br/>');
+        let a = 'venus';
+        let b = new String('venus');
+        document.write('== ' + (a == b));
+        document.write(' === ' + (a === b));
+        document.write(typeof(b));
+
+        function myFunction() {
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = text.replace("Microsoft","W3Schools");
+        }
+
+        var personname = new Object();
+            personname.firstName = "John";
+            personname.lastName = "Doe";
+            personname.age = 50;
+            personname.eyeColor = "blue";
+            document.getElementById("demotwo").innerHTML = personname.firstName + " is " + personname.age + " years old.";
+
+        // constructor -----------------------------------------------------    
+        function aboutself(heightone, weightone, colorone) {
+            this.mylength= heightone;
+            this.myload= weightone;
+            this.myskin= colorone;
+            this.changevalue = function(name) {
+                this.myload = name;
+            }
+        }
+        var jagrut = new aboutself(5.7, 45, "cream");
+        aboutself.prototype.nationality = "Indian";   //add value to constructor function - with use of prototype.
+        // jagrut.nationality = "Indian";   //add value to object.
+        //document.querySelector('.helloone').innerHTML = 'my height' + ' = ' + jagrut.mylength;
+        // document.querySelector('.helloone').innerHTML = 'value is ' + ' = ' + Object.values(jagrut);
+        jagrut.changevalue(58);
+        document.querySelector('.helloone').innerHTML = 'value is ' + ' = ' + Object.values(jagrut);
+
+        var hardik = "";
+        for(var bc in jagrut) {
+            hardik += jagrut[bc] + "<br>" ;
+        }
+        console.log(hardik);
+
+        var abcd = new Map([
+            ["apple",500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ])
+        abcd.set("bananas",120)
+        console.log(abcd.get("bananas"));
+
+
+        // counter
+        const obj = {counter:0};
+        Object.defineProperty(obj, "reset", {
+            get : function() {this.counter = 0;}
+        })
+        Object.defineProperty(obj, "increament", {
+            get : function() {this.counter++;}
+        })
+        Object.defineProperty(obj, "decreament", {
+            get : function() {this.counter--;}
+        })
+        Object.defineProperty(obj, "add", {
+            set : function(value) {this.counter += value;}
+        })
+        Object.defineProperty(obj, "subtract", {
+            set : function(value) {this.counter -= value;}
+        })
+        obj.add = 15;
+        obj.subtract = 8;
+        document.querySelector(".counterprint").innerHTML = obj.counter;
+
+        function forvalue() {
+            var varone = document.querySelector('input').value;
+            document.querySelector('.forprintvalue').innerHTML = varone;
+        }
+
+
+        // Array ----------------------
+        let arrayname = ["car1","car2","car3","car4"];
+        arraytext = "<ul>";
+        // let alength = arrayname.length;
+        // for(var i = 0; i < alength; i++){
+        //     arraytext += "<li>" + arrayname[i] + "</li>";
+        // }
+        arrayname.forEach(MyFunction);
+        function MyFunction(value){
+            arraytext += "<li>" + value + "</li>"
+        }
+        arraytext  += "</ul>";
+        document.querySelector('.forprintvaluearray').innerHTML = arraytext + "     ";
+        // typeof(arrayname); --- return object because array is object.
+        // Array.isArray(arrayname); --- either true it's array or false then it's not array.
+
+        // document.querySelector('.paragraph').innerHTML = arrayname.toString();
+        document.querySelector('.paragraph').innerHTML = arrayname.join('*');
+
+
+        const fruits24 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits24.splice(3, 0, "Kiwi", "Lemon",);   // first number detect potion where it add and second number detect how many element we want to delete. -- here add at 3rd and will not delete any value.
+        document.getElementById("demo24").innerHTML = fruits24;
+
+        const fruits124 = [12,18,100,80,52,36,4];                   // using only sort() number arrange like --- 100,12,18,36,4,52,80.
+        var fruits1243 = fruits124.sort(function(a,b){return a-b})  // for ussing a-b arrange number in assending order and using b-a arrange number in descending order.
+        document.getElementById("demo234").innerHTML = fruits1243;
+
+        const fruits111 = ["banana",22,"Kiwi",36,58,71,"Watermelon"]
+        function changesorts(){
+            fruits111.sort(function(){return 0.5 - Math.random()})     // change everytime when click on sort-button.
+            document.getElementById("demo1234").innerHTML = fruits111;
+        }
+    </script>
+</body>
+</html>

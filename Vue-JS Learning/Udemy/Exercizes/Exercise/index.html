@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="exercise">
+    <button @click="toggleParagraph">Toggle</button>
+    <div v-if="isVisible">
+      <p>You either see me ...</p>
+      <p>...or me</p>
+      <p>You either see me ...</p>
+      <p>...or me</p>
+    </div>
+    <!-- difference is v-if totally remove element from dom and v-show set display:none; property -->
+    <ul>
+      <li v-for="car in carsCompanies" :key="car">{{ car }}</li>
+    </ul>
+    <ul>
+      <li v-for="wrt in writer" :key="wrt.title">{{ wrt }}</li>
+    </ul>
+    <ul>
+      <li v-for="test in testObject" :key="test.name">
+        Name: {{ test.name }}
+        Data: {{ test.data }}
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          isVisible: true,
+          carsCompanies: [ 'Ford', 'Tata', 'Hyundai', 'Jaguar' ],
+          writer: {title: 'Lord of the Rings', author: 'J.R.R. Tolkiens', books: '3'},
+          testObject: {name: 'TESTOBJECT', data: [1.67, 1.33, 0.98, 2.21]},
+        }
+      },
+      methods: {
+        toggleParagraph() {
+          this.isVisible = !this.isVisible;
+        }
+      }
+    });
+    app.mount('#exercise')
+  </script>
+</body>
+
+</html>

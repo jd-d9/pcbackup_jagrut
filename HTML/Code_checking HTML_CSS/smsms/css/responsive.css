@@ -1,0 +1,91 @@
+@media (max-width: 1440px)
+{
+    .container {max-width: 1200px;}
+    .contact_inner {background: #fff; padding: 20px 15px;}
+}
+@media (max-width: 1280px)
+{
+    .container {max-width: 1024px;}
+    .contact_inner {padding: 20px 20px;}
+    .about_us img {width: 100%;}
+    .carousel-caption h1, .carousel-caption h2{font-size: 55px;}
+    .home_slider { height: auto;}
+    .services { background-position: center;}
+}
+@media (max-width:1024px)
+{
+    .container {max-width: 100%;}
+    .owl-carousel .owl-nav button.owl-prev { position: relative;margin-top: 20px; left: 43%;}
+    .owl-carousel .owl-nav button.owl-next { position:relative;margin-top: 20px;left: 46%;}
+}
+@media (max-width: 980px)
+{
+    .navbar-brand {padding-left: 20px;}
+    .main_header .navbar {background: #ffffff;  box-shadow: 1px 1px 9px rgba(0,0,0,0.2);  padding: 0px;}
+    .navbar-toggler-icon i { font-size: 30px;}
+    .mobile_display_none { display: none;}
+    .navbar-nav .dropdown-menu {display: block; border: none;}
+    .navbar-nav .nav-link.login_btn {float: left;margin-bottom: 20px; margin-left: 30px;margin-top: 20px;}
+    .carousel-caption h1, .carousel-caption h2 { font-size: 46px;}
+    .about_us , .services, .package{ padding-top: 60px;}
+    .our_packages { margin-bottom: 30px;}
+    .contact_inner {min-height: 145px;}
+    .service-image-wrapper { text-align: center;}
+    .service-title , .service-content p{ min-height: auto;}
+    .service-icon i {font-size: 120px;}
+    .contact_leftform { width: 60%;}
+}
+@media (max-width: 800px)
+{
+    .carousel-caption{top: 20%;}
+    .carousel-caption h1, .carousel-caption h2 {font-size: 42px;line-height: 50px;}
+    .home_slider { padding-bottom: 0px;}
+
+}
+@media (max-width: 767px)
+{
+    .carousel-caption { width: 70%;}
+    .about_us img {width: 50%; margin-bottom: 30px;}
+    .about_us, .services, .package {padding-top: 30px;}
+    .service-content {padding: 20px 25px; margin-bottom: 30px;background: #ffffffbf;}
+    .services { background-position: inherit;}
+    .service-image-wrapper img.img-fluid {max-width: 23%;}
+    .contact_us { background-position: center;}
+}
+@media (max-width: 667px)
+{
+    .carousel-caption h1, .carousel-caption h2 {font-size: 36px;line-height: 44px;}
+
+}
+@media (max-width:600px)
+{ 
+    .main_header .navbar{position: relative;}
+    .copright p{display: block;margin-bottom: 20px;text-align: center;float: none;}
+    .social_icon {float: none;text-align: center;}
+    .social_icon ul li {float: none; display: inline-block;}
+}
+@media (max-width:568px)
+{
+    .carousel-caption {top: 4%;}
+    .carousel-caption {width: 60%;}
+    .carousel-caption h1, .carousel-caption h2 {font-size: 29px;line-height: 37px;}
+    .contact_inner {min-height: auto; background: #ffffff94; border: none;box-shadow:none; margin-bottom: 0px;}
+    .service-image-wrapper img.img-fluid {max-width: 40%;}
+    .contact_leftform {width: 100%;}
+}
+@media (max-width:414px)
+{
+    .owl-carousel .owl-nav button.owl-prev{left: 27%;}
+}
+@media (max-width:375px)
+{
+    .carousel-caption h1, .carousel-caption h2 {font-size: 20px; line-height: 28px;}
+    .service-content {padding: 20px 20px;text-align: center;}
+    .service-icon i { display: none;}
+}
+@media (max-width:360px)
+{
+    .carousel-caption {width: 72%;}
+    .carousel-caption h1, .carousel-caption h2 {font-size: 20px;line-height: 23px;}
+
+}

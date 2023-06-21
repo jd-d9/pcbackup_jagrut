@@ -1,0 +1,525 @@
+@font-face {
+    font-family: Verlag;
+    src: url(Verlag-Book.otf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verlag !important;
+    font-size: 20px;
+}
+.container-fluid{
+    max-width: 1800px !important;
+}
+/* upperNav style start here */
+.upperNav{
+    background-color: #162768;
+    padding: 5px 5px;
+}
+.upperNavInnerOne, .upperNavInnerTwo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.upperNavInnerTwo{
+    justify-content: flex-end !important;
+}
+.upperNavInnerOne a,.upperNavInnerTwo a{
+    text-decoration: none;
+    color: white;
+    margin: 8px 0 0 8px;
+}
+.upperNavInnerOne a:hover,
+.upperNavInnerTwo a:hover{
+    color: #71a137;
+}
+.forRightBorder{
+    border-right: 1px solid white !important;
+    padding-right: 40px;
+    margin-right: 40px;
+}
+.logoBackCircle{
+    position: absolute;
+    background-color: #192c74;
+    z-index: 200;
+    top: -140px;
+    left: 26%;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.logoBackCircle img{
+    margin-top: 55%;
+}
+/* upperNav style end here */
+/* navbar style start here */
+.navbar{
+    background-color: #eceeee !important;
+}
+#navbarTogglerDemo p{
+    border-bottom: 1px solid transparent;
+    margin-bottom: 0;
+    color: #162768;
+}
+#navbarTogglerDemo ul li{
+    position: relative;
+    margin: 0 60px 0 0;
+}
+#navbarTogglerDemo ul li::before{
+    content: "";
+    position: absolute;
+    background-color: #162768;
+    overflow: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+#navbarTogglerDemo ul li:hover::before{
+    opacity: 1;
+    transition: top 0.4s ease-out;
+    top: 97%;
+}
+#navbarTogglerDemo ul li:hover p{
+    color: #71a137;
+    transition: all 0.3s ease-in;
+}
+#navbarTogglerDemo .secoundUl li{
+    margin: 0 0 0 60px !important;
+}
+/* navbar style end here */
+/* static slider style start here */
+.staticSlider{
+    background-image: url(../image/backgroundImage1.png);
+    background-size: cover;
+    background-position: center;
+}
+.leftTextPart, .imagePart{
+    display: table;
+    height: 750px;
+}
+.innerTextPart{
+    display: table-cell;
+    vertical-align: middle;
+}
+.innerTextPart h1{
+    font-size: 65px;
+    color: #192c74;
+    font-weight: 600;
+}
+.innerTextPart h2{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 30px;
+}
+.innerTextPart p{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.innerTextPart .readMoreBtn{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 15px 55px;
+    background-color: #162768;
+}
+.imagePartInner{
+    display: table-cell;
+    vertical-align: bottom;
+}
+.shareBtnDdHead{
+    position: relative;
+    top: 600px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #162768;
+    text-align: center;
+    line-height: 3.5;
+}
+.shareBtnDropDown{
+    position: absolute;
+    bottom: 70px;
+    left: -15px;
+    display: none;
+}
+.shareBtnDropDown ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.shareBtnDropDown ul li{
+    color: white;
+}
+.shareBtnDdHead:hover{
+    background-color: #71a137;
+}
+.shareBtnDdHead:hover .shareBtnDropDown{
+    display: block;
+}
+.btn-green{
+    color: white !important;
+    background-color: #162768;
+}
+.btn-green:hover{
+    background-color: #71a137;
+}
+/* static slider style end here */
+.roundedButton{
+    text-decoration: none;
+    color: #192c74 !important;
+    background-color: white;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 15px 70px;
+}
+.roundedButton:hover, .healthCardRight .roundedButton:hover,
+.innerTextPart .readMoreBtn:hover{
+    color: white !important;
+    background-color: #71a137;
+    transition: all 0.3s ease;
+}
+/* appoiment style start here */
+.appoinment{
+    background-color: white;
+}
+.appoinmentCard{
+    position: relative;
+    background-color: #1d348f;
+    color: white;
+}
+.card-head{
+    position: relative;
+    z-index: 200;
+}
+.card-head h4{
+    font-size: 35px;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    font-weight: 200 !important;
+}
+.card-body{
+    position: relative;
+    z-index: 200;
+    margin-top: 50px;
+}
+.card-body p{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 200 !important;
+    margin: 35px 0;
+}
+.card-footer{
+    margin-top: 80px;
+}
+.appoinmentCardCenter{
+    position: relative;
+    background-color: #172c7f;
+    color: white;
+    transform: translateY(-100px);
+}
+.appoinmentCardRight{
+    position: relative;
+    background-color: #112058;
+    color: white;
+}
+.appoinmentCardRight h3{
+    font-size: 50px;
+}
+.appoinmentCardRight .card-footer{
+    margin-top: 100px;
+}
+.appoinmentCard::after, .appoinmentCardRight::after,
+.appoinmentCardCenter::after{
+    position: absolute;
+    content: url(../image/boxshadow.png);
+    top: 101%;
+    left: 20%;
+}
+.appoinmentCard::before, .appoinmentCardRight::before,
+.appoinmentCardCenter::before{
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 0%;
+}
+.appoinmentCard:hover::before, .appoinmentCardRight:hover::before,
+.appoinmentCardCenter:hover::before{
+    border-bottom-right-radius: 50%;
+    transition: all 0.4s ease;
+    border-top: 100px solid #71a137;
+    border-right: 200px solid #71a137;
+    border-bottom: 40px solid #71a137;
+    border-left: 200px solid #71a137;
+}
+/* appoiment style end here */
+.heading{
+    padding-top: 60px;
+}
+.heading h2{
+    color: #162768;
+    font-size: 50px;
+}
+/* helth center style start here */
+.helthCenter{
+    background-image: url(../image/helthcenterbackimage.png);
+    background-size: cover;
+}
+.helthCenterLeft{
+    display: table;
+    height: 750px;
+}
+.helthCenterLeft img{
+    animation: shakeImage 3s linear infinite;
+}
+@keyframes shakeImage {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-10px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.helthCenterLeftInner{
+    display: table-cell;
+    vertical-align: bottom;
+}
+.healthCardRight{
+    padding-left: 50px;
+    margin-top: 50px;
+}
+.healthCardRight p{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.healthCardRight .roundedButton{
+    background-color: #162768;
+    color: white !important;
+}
+.healthCardRightInner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.healthCardRightInner img{
+    margin: 10px 40px 0 0;
+}
+/* helth center style end here */
+/* program & service style start here */
+.serviceCard{
+    position: relative;
+    border: 2px solid #162768;
+    padding: 20px 30px;
+    margin: 60px 20px;
+}
+.serviceCard::after{
+    position: absolute;
+    content: url(../image/boxshadow.png);
+    top: 100%;
+}
+.serviceCard::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    border: 1px solid #71a137;
+}
+.serviceCard:hover::after{
+    content: "";
+}
+.serviceCard:hover::before{
+    transition: all 0.4s ease;
+    width: 100%;
+    height: 100%;
+}
+.serviceCard:hover{
+    border-color: #71a137;
+    transition: all 0.4s ease;
+}
+/* .serviceCard:hover .cardHeading h6{
+    text-decoration: underline #71a137;
+    transition: all 0.3s ease-in;
+} */
+.serviceCard .cardIcon{
+    position: absolute;
+    top: -70px;
+    left: -60px;
+}
+.serviceCard .cardHeading h6{
+    width: 65%;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    /* text-align: center; */
+    color: #162768;
+    font-size: 40px;
+}
+.serviceCard .cardContent p{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+/* program & service style end here */
+/* contactUs style start here */
+.contactUs .heading{
+    margin-bottom: 50px;
+}
+.contactForm{
+    background-color: #162768;
+    padding: 50px 70px;
+}
+.contactForm input, .contactForm textarea{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+.contactForm input:focus, .contactForm textarea:focus{
+    outline: none;
+    border-color: #71a137;
+}
+.contactForm input::placeholder, .contactForm textarea::placeholder{
+    color: #162768;
+}
+.contactForm input:focus::placeholder, .contactForm textarea:focus::placeholder{
+    color: #71a137;
+}
+.contactSlider{
+    color: white;
+}
+.contactSlider h4{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 50px 0;
+}
+.contactSlider .owl-carousel p{
+    font-size: 25px;
+}
+.contactSlider .owl-carousel .owl-item img {
+    display: unset !important;
+    width: unset !important;
+    margin-bottom: 15px;
+}
+.owl-nav{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.clickForDir{
+    font-size: 30px;
+    color: white !important;
+}
+.clickForDir:hover{
+    color: #71a137 !important;
+    text-decoration: none;
+}
+.mapLocation iframe{
+    width: 100%;
+    height: 1000px;
+}
+/* contactUs style end here */
+/* partners style start here */
+.partnerSlider{
+    margin-top: 50px;
+}
+.partnerSlider .owl-carousel .owl-item img {
+    width: unset !important;
+}
+/* partners style end here */
+/* footer style start here */
+.footer{
+    background-color: #eeeeee;
+}
+.footerLogo{
+    overflow: hidden;
+    height: auto;
+    width: 200px;
+    margin: 50px 0;
+}
+.footerLogo img{
+    width: 100%;
+}
+.footerLeft p{
+    font-size: 25px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+.socialIcons .icon{
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    width: 70px;
+    height: 70px;
+    line-height: 2.5;
+    margin-right: 20px;
+}
+.socialIcons .icon a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.socialIcons .icon:nth-child(1){
+    background-color: #385599;
+}
+.socialIcons .icon:nth-child(2){
+    background-color: #0073af;
+}
+.socialIcons .icon:nth-child(3){
+    background-color: #d4473a;
+}
+.socialIcons .icon:nth-child(4){
+    background-color: #00a7e6;
+}
+.socialIcons .icon:hover{
+    background-color: #71a137;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.footerList h5{
+    font-size: 35px;
+    color: #162768;
+    font-weight: 600;
+    margin: 50px 0 30px;
+}
+.footerList .list{
+    list-style-image: url(../image/feelheart.png);
+    margin: 0 0 40px 0;
+}
+.footerList .list li{
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.footerList .list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.footerList .list li a:hover{
+    color: #71a137;
+}
+.footerNotice{
+    background-color: #162768;
+    color: white;
+    padding: 15px 30px;
+}
+.footerNotice h3{
+    text-align: center;
+}
+/* footer style end here */

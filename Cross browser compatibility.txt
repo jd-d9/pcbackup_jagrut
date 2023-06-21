@@ -1,0 +1,15 @@
+https://www.ravedigital.agency/blog/cross-browser-compatibility/
+
+
+
+1. Cross-browser compatibility is the ability of a website or 
+   web application to function across different browsers and 
+   degrade gracefully when browser features are absent or lacking.
+
+2. Cross browser compatibility is the ability of website to gratefully work on all different browser.
+
+
+
+3. Cross-browser testing is important because you’ll want to ensure that your application, after much 
+   hard work and investment, works properly for all users. This is a crucial step in driving a positive 
+   user experience and revenue for your business.

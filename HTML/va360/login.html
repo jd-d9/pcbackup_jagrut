@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- js files -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- for fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Notice part -->
+    <div class="header-notice">
+        <div class="container header-text">
+            <a href="tel:0333 090 6058" class="contact-class"><i class="fa-solid fa-phone"></i>&nbsp; 0333 090 6058</a>
+            <p>Bespoke Solutions Tailored to Your Business. <a href="javascript:void(0)">Free Consultation</a></p>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/virtualassist360" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/virtual-assist-360" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- header start here -->
+    <header class="container-fluid header p-0 sticky-top">
+        <!-- navigation menu start here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white container-fluid p-0">
+            <div class="container navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="image/logova360.png" class="img-fluid" alt="va360 logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="va360.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about_us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="our_services.html">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="testimonial.html">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation menu end here -->
+    </header>
+    <!-- header end here -->
+    <div class="loginmain">
+        <div class="container lowerarea">
+            <div class="row">
+                <div class="col-lg-3 col-12 ms-auto">
+                    <div class="nav fortabpanelmenu flex-column nav-pills text-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-register-tab" data-bs-toggle="pill" data-bs-target="#v-pills-register" type="button" role="tab" aria-controls="v-pills-register" aria-selected="true">Register</button>
+                        <button class="nav-link" id="v-pills-generalinfo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-generalinfo" type="button" role="tab" aria-controls="v-pills-generalinfo" aria-selected="false">General Info</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                        <button class="nav-link" id="v-pills-status-tab" data-bs-toggle="pill" data-bs-target="#v-pills-status" type="button" role="tab" aria-controls="v-pills-status" aria-selected="false">Status</button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12 ms-auto">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-register" role="tabpanel" aria-labelledby="v-pills-register-tab">
+                            <div class="col-lg-10 col-12 loginformheading text-center mt-lg-5 mt-0">
+                                <div class="heading d-block text-center">
+                                    <h3>Register</h3>
+                                    <h4>REGISTER</h4>
+                                </div>
+                            </div>
+                            <form class="form1 col-lg-10 col-12 contact-form mt-4" action="#v-pills-profile">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="" class="text-dark">Username</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-user-large"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter username"
+                                                aria-label="Enter username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="" class="text-dark">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-envelope-open-text"></i></span>
+                                            <input type="email" class="form-control" placeholder="Enter mail"
+                                                aria-label="Enter mail" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label for="" class="text-dark">Password</label>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-key"></i></span>
+                                            <input type="password" class="form-control" placeholder="Enter password"
+                                                aria-label="Enter password" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-key"></i></span>
+                                            <input type="password" class="form-control" placeholder="Confirm password"
+                                                aria-label="Confirm password" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="nav col-12 text-center">
+                                        <a href="" class="btn learnmore-button ms-auto me-auto me-lg-0" data-bs-toggle="pill" data-bs-target="#v-pills-generalinfo">Continue</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-generalinfo" role="tabpanel" aria-labelledby="v-pills-generalinfo-tab">
+                            <div class="col-lg-10 col-12 text-center mt-lg-5 mt-0">
+                                <div class="heading d-block text-center">
+                                    <h3>Address</h3>
+                                    <h4>ADDRESS</h4>
+                                </div>
+                            </div>
+                            <form class="form3 col-lg-10 col-12 contact-form mt-4">
+                                <div class="row">
+                                    <label for="" class="text-dark">Add Address</label>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="House-no/Floor"
+                                                aria-label="House-no/Floor" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Street"
+                                                aria-label="Street" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <label for="" class="text-dark">Select Country</label>
+                                        <div class="input-group">
+                                            <select name="country" class="form-control">
+                                                <option value="">- select country -</option>
+                                                <option value="ind">India</option>
+                                                <option value="chn">China</option>
+                                                <option value="usa">USA</option>
+                                                <option value="uk">London</option>
+                                                <option value="ck">Canada</option>
+                                                <option value="sa">South afrika</option>
+                                                <option value="clf">California</option>
+                                            </select>
+                                            <!-- <input type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1"> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label for="" class="text-dark">Select state</label>
+                                        <div class="input-group">
+                                            <select name="state" class="form-control">
+                                                <option value="">- select state -</option>
+                                                <option value="arp">Arunachal Pradesh</option>
+                                                <option value="ap">Andhra Pradesh</option>
+                                                <option value="bh">Bihar</option>
+                                                <option value="gj">Gujarat</option>
+                                                <option value="hr">Hariyana</option>
+                                                <option value="hp">Himachal Pradesh</option>
+                                                <option value="jh">Jharkhand</option>
+                                                <option value="kr">Kerala</option>
+                                                <option value="kt">Karnataka</option>
+                                                <option value="mh">Maharastr</option>
+                                                <option value="up">Uttar Pradesh</option>
+                                                <option value="uk">Utarakhand</option>
+                                                <option value="rj">Rajasthan</option>
+                                                <option value="pb">Punjab</option>
+                                            </select>
+                                            <!-- <input type="text" class="form-control" placeholder="State" aria-label="State" aria-describedby="basic-addon1"> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <label for="" class="text-dark">City</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Enter city"
+                                                aria-label="Enter city" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label for="" class="text-dark">Pincode</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" placeholder="Pincode"
+                                                aria-label="Pincode" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="" class="text-dark">Nationality</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Belongs to"
+                                                aria-label="Belongs to" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="nav col-12 text-center">
+                                        <a href="" class="btn learnmore-button ms-auto me-auto me-lg-0" data-bs-toggle="pill" data-bs-target="#v-pills-profile">Continue</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="col-lg-10 col-12 loginformheading text-center mt-lg-5 mt-0">
+                                <div class="heading d-block text-center">
+                                    <h3>Profile</h3>
+                                    <h4>PROFILE</h4>
+                                </div>
+                            </div>
+                            <form class="form2 col-lg-10 col-12 contact-form mt-4">
+                                <div class="addimage col-12 d-flex">
+                                    <div class="text-center">
+                                        <label title="upload image"><i class="fa-regular fa-image"></i><input type="file" class="d-none" accept="image/jpeg,image/png,image/webp,image/svg"></label><br>
+                                        <label title="Choose image" class="forchangeprofile-button">Change Profile<input type="file" class="d-none" accept="image/jpeg,image/png,image/webp,image/svg"></label>
+                                    </div>
+                                    <div class="profiletext">
+                                        <h6>Dwane Johnson</h6>
+                                        <p>Indian</p>
+                                        <p>username : dwen1234</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label for="" class="text-dark">Your name</label>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-file-pen"></i></span>
+                                            <input type="text" class="form-control" placeholder="First name"
+                                                aria-label="First name" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-file-pen"></i></span>
+                                            <input type="text" class="form-control" placeholder="Last name"
+                                                aria-label="Last name" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="" class="text-dark">Mobile Number</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-phone-volume"></i></span>
+                                            <input type="tel" class="form-control" placeholder="Phone number"
+                                                aria-label="Phone number" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="" class="text-dark">Date of birth</label>
+                                        <div class="input-group">
+                                            <input type="date" class="form-control" placeholder="date of birth" aria-label="date of birth" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <label for="" class="text-dark">Gender</label>
+                                        <div class="input-group">
+                                            <input type="radio" name="radioGender" id="formale" aria-label="date of birth" aria-describedby="basic-addon1">
+                                            <label for="formale" class="m-2 me-3 text-dark"><ins class="text-dark text-decoration-none">Male</ins></label>
+                                            <input type="radio" name="radioGender" id="forfemale" aria-label="date of birth" aria-describedby="basic-addon1">
+                                            <label for="forfemale" class="m-2 text-dark"><ins class="text-dark text-decoration-none">Female</ins></label>
+                                        </div>
+                                    </div>
+                                    <div class="nav col-12 text-center">
+                                        <a href="" class="btn learnmore-button ms-auto me-auto me-lg-0" data-bs-toggle="pill" data-bs-target="#v-pills-status">Submit</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-status" role="tabpanel" aria-labelledby="v-pills-status-tab">
+                            <div class="col-lg-10 col-12 text-center mt-lg-5 mt-0">
+                                <div class="heading d-block text-center">
+                                    <h3>Thank You</h3>
+                                    <h4>THANK YOU</h4>
+                                </div>
+                            </div>
+                            <div class="form3 col-lg-10 col-12 mt-4">
+                                <div class="col-md-8 col-9 mx-auto text-center">
+                                    <div class="successbackicon">
+                                        <img src="image/green-tick-icon-0.png" class="img-fluid w-25" alt="image">
+                                    </div>
+                                    <div class="successbacktext">
+                                        <p class="text-dark"><strong
+                                                class="successbacktext-inner">Congratulations</strong><br> Your
+                                            account has been created successfully.</p>
+                                        <a href="va360.html" class="btn learnmore-button">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start here -->
+    <div class="footer p-lg-5 pb-md-2 p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-10">
+                    <div class="leftside">
+                        <img src="image/logova360white.png" class="img-fluid" alt="va360 group logo">
+                        <p class="text-white">
+                            We're here to help. Contact us and we wi'll be happy to answer questions. We're always
+                            available to for a coffee and a chat!
+                        </p>
+                        <div class="footer-icon">
+                            <a href="https://www.facebook.com/virtualassist360" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/company/virtual-assist-360" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-6">
+                    <div class="middle">
+                        <ul>
+                            <li><a href="va360.html">Home</a></li>
+                            <li><a href="#for-ourservices">Services</a></li>
+                            <li><a href="#for-aboutus">About Us</a></li>
+                            <li><a href="#for-contactus">Contact</a></li>
+                            <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-6">
+                    <div class="rightside">
+                        <div class="d-flex justify-content-flex-start align-item-center">
+                            <a href="javascript:void(0)"><img src="image/icon4.png" class="img-fluid location"
+                                    alt="location"></a>
+                            <a href="javascript:void(0)" class="ft-contacttext">VA360, 67 Hogshill Street, DT8 3AG</a>
+                        </div>
+                        <div class="d-flex justify-content-flex-start align-item-center mt-3">
+                            <a href="tel:0333 090 6058"><img src="image/icon3.png" class="img-fluid ms-1"
+                                    alt="location"></a>
+                            <a href="tel:0333 090 6058" class="ft-contacttext">0333 090 6058</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end here -->
+    <!-- copyright notice -->
+    <div class="copyright text-center p-2">
+        <p class="text-white">Copyright &copy; 2020 VA360. All Rights Reserved. Company Registration: 11808947. ICO Reg
+            No. ZA493708</p>
+    </div>
+    <!-- copyright notice end-->
+</body>
+
+</html>

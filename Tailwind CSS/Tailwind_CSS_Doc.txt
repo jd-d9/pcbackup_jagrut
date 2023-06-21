@@ -1,0 +1,296 @@
+Installation:
+npm - npm init ==> to create package.json
+      npm install -D tailwindcss ==> install tailwind in dev dependency
+      npx tailwindcss init ==> to create tailwind.config.json
+      	   - Put "./src/**/*.{html,js}" this path in content:[] value in tailwind.config.json file.
+	   - Than create .html file at same path location(If you create in another location than mention this path in content:[] in tailwind.config.json)
+	   - Than create input.css in src folder and add below dependency in input.css file
+		- @tailwind base;
+		  @tailwind components;
+		  @tailwind utilities;
+      npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch ==> To get output.css file in dist folder  ==> And to run server as well
+	   - Than mention this output.css at head section of .html file
+      Open .html file in browser
+
+cdn - <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+Difference between bootstrap and tailwind css:
+   Bootstrap is used for creating responsive web and mobile applications and allow user to create mobile first approach whereas
+   Tailwind CSS is used to create customized user interfaces with writing less css and without given any silly class name and id to element.
+
+
+* Must Remember values in tailwind css: 1 = 4px/0.25rem (ex. p-1 ==> padding: 4px; / w-1 ==> width: 4px;) ////// px = 1px/0.0625rem (ex. gap-px ==> gap: 1px;)
+					accending-order ==> 0, px, 
+							    0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 
+							    14, 16, 
+							    20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64,
+							    72, 80,
+							    96
+					text-decoration-thickness/underline-offset/border-width/outline-width/outline-offset/ring-width/ring-offset ==> 0 = 0px, 1 = 1px, 2 = 2px, 4 = 4px, 8 = 8px
+					border-radius ==> rounded-sm: 2px, rounded: 4px, rounded-md: 6px, rounded-lg: 8px, rounded-xl: 12px, rounded-2xl: 16px, rounded-3xl: 24px, rounded-full: 9999px
+					max-width ==> max-w-xs: 320px, max-w-sm: 384px, max-w-md: 448px, max-w-lg: 512px, max-w-xl: 576px, max-w-2xl: 672px, max-w-3xl: 768px, max-w-4xl: 896px, max-w-5xl: 1024px, 
+						      max-w-6xl: 1152px, max-w-7xl: 1280px
+					text-size ==> text-xs: 12px, text-sm: 14px, text-base: 16px, text-lg: 18px, text-xl: 20px, text-2xl: 24px, text-3xl: 30px, text-4xl: 36px, text-5xl: 48px, text-6xl: 60px, 
+						      text-7xl: 72px, text-8xl: 96px, text-9xl: 128px
+					columns ==> columns-3xs: 256px, columns-2xs: 288px, columns-xs: 320px, columns-sm: 384px, columns-md: 448px, columns-lg: 512px, columns-xl: 576px, columns-2xl: 672px,
+						    columns-3xl: 768px, columns-4xl: 896px, columns-5xl: 1024px, columns-6xl: 1152px, columns-7xl: 1280px
+					
+
+					
+1. Tailwind CSS can be used to style websites in the fastest and easiest way.
+   Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces.
+   It is a utility-first CSS framework which means we can use utility classes to build custom designs without writing CSS as in the traditional approach.
+   It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.
+   Tailwind encourages a utility-first workflow, where designs are implemented using only low-level utility classes. This is a powerful way to avoid premature abstraction and the pain points that come with it.
+   It’s important to note that you don’t need to use a preprocessor with Tailwind.
+
+2. npm install tailwindcss
+   npm install -D tailwindcss
+   npm install tailwindcss@latest ---> version v3.3
+   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"rel="stylesheet">
+   Limitation of Tailwind: But there are some limitations when CDN is used. Some of them are:
+      	Customize Tailwind's default theme can't be used
+      	Directives like @apply, @variants, etc can't be used
+      	Can't install third-party plugins
+
+3. Designing with constraints. Using inline styles, every value is a magic number. With utilities, you’re choosing styles from a predefined design system, which makes it much easier to build visually consistent UIs.
+   Responsive design: You can’t use media queries in inline styles, but you can use Tailwind’s responsive utilities to build fully responsive interfaces easily.
+   Hover, focus, and other states. Inline styles can’t target states like hover or focus, but Tailwind’s state variants make it easy to style those states with utility classes.
+
+4. It allow us to give class like this
+   <button class="bg-purple-500 rounded-full">
+   1. Hover/focus/active/visited:
+      <button class="bg-purple-500 rounded-full hover:bg-purple-800 focus:outline-none focus:ring active:bg-violet-700" visited:border-ping-200>
+
+   2. Style form elements in different states using modifiers like required, invalid, and disabled:
+      <input type="email" placeholder="text here" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 
+		focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:invalid:border-red-500 focus:invalid:ring-red-500 
+		invalid:border-red-500 invalid:text-red-600
+		disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 "/>
+      Tailwind also includes modifiers for other form states like :read-only, :indeterminate, :checked, and more.
+
+   3. selection: - for select content
+      marker: - for list marker
+      file: - for input type file
+      placeholder: - for custome placeholder
+      before: / after: - for add before/after content or custome design using it
+      first: / last: / odd: / even: - for first/last and odd-even child
+      first-line: / first-letter - for first-line/first-letter
+      backdrop: - style the backdrop of a native <dialog> element using the backdrop modifier
+      dark: - for dark mode styling
+      landscape: / portrait: - use the portrait and landscape modifiers to conditionally add styles when the viewport is in a specific orientation
+      print: - add style whenever we print doc
+      aria-checked:bg-sky-700" - for add style when checked / we can use more aria-attr like disable, exapanded,... same as this
+      rtl: / ltr: - use the rtl and ltr modifiers to conditionally add styles in right-to-left and left-to-right modes respectively when building multi-directional layouts
+      
+   4. We can add error for invalid input as below
+      <form>
+  	  <label class="block">
+    	     <span class="block text-sm font-medium text-slate-700">Email</span>
+    	     <input type="email" class="peer"/>
+    	     <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+      		 Please provide a valid email address.
+    	     </p>
+  	  </label>
+      </form>
+
+5. Responsive : By default, Tailwind uses a mobile-first breakpoint system, similar to what you might be used to in other frameworks like Bootstrap.
+   Breakpoints: (and max-width for container as well)
+	sm	640px	@media (min-width: 640px) { ... }
+	md	768px	@media (min-width: 768px) { ... }
+	lg	1024px	@media (min-width: 1024px) { ... }
+	xl	1280px	@media (min-width: 1280px) { ... }
+	2xl	1536px  @media (min-width: 1536px) { ... }
+
+    <img class="w-16 md:w-32 lg:w-48" src="images/logo.png">
+
+    - We need to use the unprefixed version of a utility, not the sm: prefixed version. Don’t think of sm: as meaning “on small screens”, think of it as “at the small breakpoint.
+      This will center text on mobile, and left align it on screens 640px and wider -:- <div class="text-center sm:text-left"></div>
+
+6. Reusing style in framework with create component and reuse it in project multiple time. 
+   Aspect-ratio: aspect-auto, aspect-square(1/1), aspect-video(16/9)
+
+7. Preflight are removed default margin from heading, paragraph and block-quote tags, make unstyled list(ol/ul), images/svgs are display block
+
+8. For responsive, here multiple columns class with different size like - columns-3xs to columns-7xl, columns-auto, columns-1 to columns-12
+
+9. display property: block, inline-block, inline, flex, inline-flex, table, inline-table, table-caption, table-cell, table-column, table-column-group, table-footer-group, table-header-group, table-row-group, table-row,
+		     flow-root, grid, inline-grid, contents, list-item, hidden(display: none)
+   Visibility property: visible, invisible, collapse
+
+10. Object-fit: object-contain, object-cover, object-fill, object-none, object-scale-down
+    Object-position: object-bottom, object-center, object-left, object-left-bottom, object-left-top, object-right, object-right-bottom, object-right-top, object-top
+
+11. Overflow: overflow-visible, overflow-auto, overflow-hidden, overflow-clip, overflow-scroll, overflow-x-auto, overflow-y-auto,.........
+    Overscroll: overscroll-auto, overscroll-contain, overscroll-none, overscroll-x-auto, overscroll-y-auto,.........
+
+12. Positions: static, absolute, relative, fixed, sticky
+    z-index: z-0, z-10, z-20, z-30, z-40, z-50, z-auto
+    Set value: bottom-0, left-0, top-0, right-0, inset-x-0, inset-y-0, .........
+    Use prefix the class name with a dash to convert it to a negative value ==> (-space-x-4, -top-4).
+
+13. Flex: Flex ==> flex-1, flex-auto, flex-initial, flex-none
+	  Flex-basis ==> basis-0 to basis-96, basis-auto, basis-1/2 to basis-11/12, basis-full
+          Flex-direction ==> flex-row, flex-row-reverse, flex-col, flex-col-reverse
+          Flex-wrap ==> flex-wrap, flex-wrap-reverse, flex-nowrap
+	  Flext-grow ==> grow, grow-0
+	  Flex-shrink ==> shrink, shrink-0
+	  Order ==> order-1 to order-12, order-first, order-last, order-none
+	  Justify-content ==> justify-normal, justify-center, justify-start, justify-end, justify-between, justify-around, justify-evenly, justify-stretch
+	  Justify-items ==> justify-item-start, justify-item-end, justify-item-center, justify-item-stretch
+	  Justify-self ==> justify-self-auto, justify-self-start, justify-self-center, justify-self-end, justify-self-stretch
+	  Align-content ==> content-normal, content-start, content-center, content-end, content-between, content-around, content-evenly, content-baseline, content-stretch
+	  Align-items ==> items-start, items-center, items-end, items-baseline, items-stretch
+	  Align-self ==> self-start, self-center, self-end, self-center, self-stretch, self-baseline, self-auto 
+
+14. Grid: grid-cols-1 to grid-cols-12, grid-cols-none, grid-rows-1 to grid-rows-6, grid-rows-none
+    Collumn start/end: col-auto, col-span-1 to col-span-12, col-span-full, col-start-1 to col-start-13, col-start-auto, col-end-1 to col-end-13, col-end-auto,
+                       row-auto, row-span-1 to row-span-6, row-span-full, row-start-1 to row-start-7, row-start-auto, row-end-1 to row-end-7, row-end-auto
+    Grid-flow: grid-flow-row, grid-flow-col, grid-flow-dence, grid-flow-row-dence, grid-flow-col-dence
+    Grid-auto-columns/rows: auto-cols-auto, auto-cols-min, auto-cols-max, auto-cols-fr, auto-rows-auto, auto-rows-min, auto-rows-max, auto-rows-fr
+    Gap: gap-0 to gap-96, gap-x-0 to gap-x-96, gap-y-0 to gap-y-96, gap-px, gap-x-px, gap-y-px
+    Place-content ==> place-content-center, place-content-start, place-content-end, place-content-around, place-content-evenly, place-content-between, place-content-baseline, place-content-stretch
+    Place-items ==> place-items-center, place-items-start, place-items-end, place-items-baseline, place-items-stretch
+    Place-self ==> place-self-auto, place-self-start, place-self-end, place-self-center, place-self-stretch
+
+15. Padding: p-0 to p-96, ps-0 to ps-96, pe-0 to pe-96, pt-0 to pt-96, pb-0 to pb-96, pl-0 to pl-96, pr-0 to pr-96, px-0 to px-96, py-0 to py-96  ==> (p-0 = 0px, p-px = 1px, p-0.5 = 2px, p-1 = 4px/0.25rem)
+    Margin: m-auto, mx-auto, my-auto, ms-auto, me-auto, ml-auto, mr-auto, mt-auto, mb-auto, m-0 to m-96, mx-0 to mx-96,...............
+    Space: space-x-0 to space-x-96, space-y-0 to space-y-96, space-x-px, space-y-px, space-x-reverse, space-y-reverse
+
+16. Width: w-0 to w-96, w-auto, w-full, w-screen, w-min, w-max, w-fit, w-1/2 to w-11/12
+    Min-width: min-w-0, min-w-min, min-w-max, min-w-full, min-w-fit
+    Max-width: max-w-0, max-w-none, max-w-xs to max-w-7xl, max-w-full, max-w-min, max-w-max, max-w-fit, max-w-prose, max-w-screen-sm, max-w-screen-md, max-w-screen-lg, max-w-screen-xl, max-w-screen-2xl 
+    Height/Min-height/Max-height ==> Same as width
+
+17. Font-family: font-sans, font-serif, font-mono 
+    Font-size: text-xs, text-sm, text-base, text-lg, text-xl to text-9xl
+    Font-style: italic, non-italic
+    Font-weight: font-thin, font-extralight, font-light, font-normal, font-medium, font-semibold, font-bold, font-extarbold, font-black
+    Font-varient-numeric ==> Must read from officail document
+    Letter-spacing: tracking-tighter, tracking-tight, tracking-normal, tracking-wide, tracking-wider, tracking-widest
+    Line-height: leading-3 to leading-10, leading-none, leading-tight, leading-snug, leading-normal, leading-relax, leading-loose
+    Line-clamp: line-clamp-1 to line-clamp-6, line-clamp-none ==> show data in specified number of lines
+    List-style-image: list-image-none
+    List-style-position: list-inside, list-outside
+    List-style-type: list-none, list-decimal, list-disc
+    Text-align: text-left, text-right, text-start, text-end, text-center, text-justify
+    Text-color: text-transparent, text-black, text-white, text-slate-100 to text-slate-900, text-gray-100 to text-gray-900/text-zinc-/text-neutral-/text-stone-/text-red-/text-orange-/text-amber-/text-yellow-/text-lime-/text-green-
+		/text-emrald-/text-teal-/text-cyan-/text-sky-/text-blue-/text-indigo-/text-violet-/text-purple-/text-pink-/text-fuchsia-/text-rose-
+    Text-decoration: underline, line-through, overline, no-underline
+    Text-decoration-color: decoration-blac, decoration-slate-100,............
+    Text-decoration-style: decoration-solid, decoration-double, decoration-dotted, decoration-dashed, decoration-wavy
+    Text-decoration-thickness: decoration-auto, decoration-from-font, decoration-1, decoration-2, decoration-4, decoration-8
+    Text-underline-offset: underline-offset-auto, underline-offset-0, underline-offset-1, underline-offset-2, underline-offset-4, underline-offset-8
+    Text-transform: uppercase, lowercase, capitalize, noraml-case
+    Text-overflow: truncate, text-ellipsis, text-clip
+    Text-indent: indent-0 to indent-96
+    Vertical-align: Controlling the vertical alignment of an inline or table-cell box. ==> align-baseline, align-top, align-middle, align-bottom, align-text-top, align-text-bottom, align-sub, align-super
+    Whitespace: whitespace-normal, whitespace-pre, whitespace-nowrap, whitespace-pre-line, whitespace-pre-wrap, whitespace-break-spaces
+    Word-break: break-normal, break-word, break-all, break-keep
+    Hyphens: Controlling how words should be hyphenated ==> hyphens-none, hyphens-auto, hyphens-manual
+
+18. Background-color: bg-transparent, bg-current, bg-black,........... same as Text-color
+    Background-attachment: bg-fixed, bg-local(to scroll the background image with the container and the viewport), bg-scroll(to scroll the background image with the viewport, but not with the container)
+    Background-clip: bg-clip-border, bg-clip-content, bg-clip-padding, bg-clip-text
+    Background-origin: bg-origin-padding, bg-origin-border, bg-origin-content
+    Background-position: bg-top, bg-center, bg-bottom, bg-top-left, bg-top-right, bg-bottom-left, bg-bottom-right, bg-left, bg-right
+    Background-repeat: bg-repeat, bg-no-repeat, bg-repeat-x, bg-repeat-y, bg-repeat-round, bg-repeat-space
+    Background-size: bg-cover, bg-contain, bg-auto
+    Background-image: bg-gradient-none, bg-gradient-to-t, bg-gradient-to-tr, bg-gradient-to-r, bg-gradient-to-b, bg-gradient-to-br, bg-gradient-to-bl, bg-gradient-to-l, bg-radient-to-tl
+    Gradient-color-stops: from-color-value, via-color-value, to-color-value
+			  We can add area of from/to/via by given this ==> from-10%, via-30%, to-90%
+
+19. Border-radius: rounded-none, rounded, rounded-sm, rounded-md, rounded-lg, rounded-xl, rounded-2xl, rounded-3xl, rounded-full
+		   Give to perticulat corner like this: rounded-t, rounded-b, rounded-l, rounded-r, rounded-t-md, rounded-b-lg, rounded-tr, rounded-bl,..............
+    Border-width: border, border-0, border-2, border-4, border-8, border-x-2, border-y-4, border-t-8, border-b-0,.............
+    Border-color: border-pink-200, border-rose-400, border-t-red-500, border-b-yellow-400,..............
+    Border-style: border-solid, border-dashed, border-dotted, border-double
+    Divide-width: divide-x(remove left and right border), divide-y(remove-top and bottom-border), divide-x-2(width of existed border), divide-x-0, divide-x-4, divide-x-8, divide-y-0,..............
+    Divide-color: divide-slate-100,..............
+    Divide-style: divide-dashed, divide-dotted, divide-solid, divide-double, divide-none
+    Outline-width: outline-0, outline-1, outline-2, outline-4, outline-8
+    Outline-color: outline-slate-100,...........
+    Outline-style: outline, outline-none, outline-dashed, outline-double, outline-dotted
+    Outline-offset: outline-offset-0, outline-offset-1, outline-offset-2, outline-offset-4, outline-offset-8
+    Ring-width: ring, ring-0, ring-1, ring-2, ring-4, ring-8
+    Ring-color: ring-cyan-200,...............
+    Ring-offset: ring-offset-0, ring-offset-1, ring-offset-2, ring-offset-4, ring-offset-8
+    Ring-offset-color: ring-offset-slate-100,................
+
+20. Box-shadow: shadow, shadow-sm, shadow-md, shadow-lg, shadow-xl, shadow-2xl, shadow-inner, shadow-none
+    Box-shadow-color: shadow-slate-100,..............
+    Opacity: opacity-0, opacity-5, opacity-10, opacity-20, opacity-25, opacity-30, opacity-40, opacity-50, opacity-60, opacity-70, opacity-75, opacity-80, opacity-90, opacity-95, opacity-100
+    Mix-blend-mode: mix-blend-normal, mix-blend-multiply, mix-blend-screen, mix-blend-overlay, mix-blend-darken, mix-blend-lighten, mix-blend-difference, mix-blend-exclusive, mix-blend-vue, mix-blend-saturation,
+		    mix-blend-color, mix-blend-luminosity, mix-blend-plus-lighter, mix-blend-color-dodge, mix-blend-color-burn, mix-blend-hard-light, mix-blend-soft-light
+    Background-blend-mode: bg-blend-normal, bg-blend-overlay, bg-blend-darken, bg-blend-multiply, bg-overlay-screen, bg-overlay-lighten,................
+        
+21. Blur: blur, blur-none, blur-sm, blur-md, blur-lg, blur-xl, blur-2xl, blur-3xl
+    Brightness: brightness-0, brightness-50, brightness-75, brightness-90, brightness-95, brightness-100, brightness-105, brightness-110, brightness-125, brightness-150, brightness-200
+    Contrast: contrast-0, contrast-50, contrast-75, contrast-100, contrast-125, contrast-150, contrast-200
+    Grayscale: grayscale-0, grayscale
+    Hue-rotate: hue-rotate-0, hue-rotate-15, hue-rotate-30, hue-rotate-60, vue-rotate-90, vue-rotate-100
+    Invert: invert-0, invert
+    Saturate: saturate-0, saturate-50, saturate-100, saturate-150, saturate-200
+    Sepia: sepia-0, sepia
+    Backdrop-blur: backdrop-blur, backdrop-blur-none, backdrop-blur-sm to backdrop-blur-3xl
+    Backdrop-brighness: backdrop-brightness-0 to backdrop-brightness-200
+    Backdrop-contrast: backdrop-contrast-0 to backdrop-contrast-200
+    Backdrop-grayscale: backdrop-grayscale-0, backdrop-grayscale
+    Backdrop-hue-rotate: backdrop-hue-rotate-0 to backdrop-hue-rotate-180
+    Backdrop-inver: backdrop-invert-0, backdrop-invert
+    Backdrop-opacity: backdrop-opacity-0 to backdrop-opacity-100
+    Backdrop-saturate: backdrop-saturate-0 to backdrop-saturate-100
+    Backdrop-sepia: backdrop-sepia-0, backdrop-sepia
+
+22. Border-collapse: border-collapse, border-separate
+    Border-spacing: border-spacing-0 to border-spacing-96, border-spacing-x-0 to border-spacing-x-96, border-spacing-y-0 to border-spacing-y-96
+    Table-layout: table-auto, table-fixed
+    Caption: caption-top(to position a caption element at the top of a table), caption-bottom(to position a caption element at the bottom of a table)
+    
+23. Transition: transition, transition-none, transition-all, transition-colors, transition-opacity, transition-transform, transition-shadow, transition-opacity
+    Transition-duration: duration-0, duration-75, duration-100, duration-150, duration-200, duration-300, duration-500, duration-700, duration-1000
+    Transition-timing-function: ease-linear, ease-in, ease-out, ease-in-out
+    Transition-delay: delay-0, delay-75, delay-100, delay-150, delay-200, delay-300, delay-500, delay-700, delay-1000
+    Animation: animate-none, animate-spin, animate-ping, animate-pulse, animate-bounce
+
+24. Scale: scale-0 to scale-150, scale-x-0 to scale-x-150, scale-y-0 to scale-y-150
+    Rotate: rotate-0, rotate-1, rotate-2, rotate-6, rotate-12, rotate-45, rotate-90, rotate-180
+    Translate: translate-x-0 to translate-x-96, translate-y-0 to translate-y-96
+    Skew: skew-x-0 to skew-x-12, skew-y-0 to skew-y-12
+    Transform-origin: origin-center, origin-top, origin-top-right, origin-top-left, origin-right, origin-bottom-right, origin-left, origin-bottom-left, origin-bottom
+
+25. Accent-color: Controlling the accented color of a form control
+		  accent-white, accent-black, accent-slate-100, accent-pink-100, accent-rose-100,..........
+    Appearance: Remove default appearance like select-option dropdown symbol
+		appearance-none
+    Cursor: cursor-auto, cursor-default,.............
+    Caret-color: caret-current, caret-transparent,.............
+    Pointer-events: pointer-events-none, pointer-events-auto
+    Resize: for controlling how an element can be resized
+	    resize-none, resize-x, resize-y, resize
+    Scroll-behaviour: scroll-auto, scroll-smooth
+    Scroll-margin: for controlling the scroll offset around items in a snap container
+		   scroll-m-0 to scroll-m-96, scroll-mt-0,...........
+    Scroll-padding:  for controlling an element's scroll offset within a snap container
+    Scroll-snap-align: for align to snap container
+    Touch-action: for controlling how an element can be scrolled and zoomed on touchscreens
+		  touch-auto, touch-none, touch-pan-x, touch-pan-y, touch-pan-left, touch-pan-right, touch-pan-up, touch-pan-y, touch-pinch-zoom, touch-manipulation
+    User-select: for controlling whether the user can select text in an element 
+		 select-none, select-all, select-auto, select-text
+    Will-change: for optimizing upcoming animations of elements that are expected to change
+		 will-change-auto, will-change-scroll, will-change-contents, will-change-transform
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+

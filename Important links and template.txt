@@ -1,0 +1,38 @@
+Time sheet:
+https://docs.google.com/spreadsheets/d/1pIYnVydNfavd5j-tmbOi3plKZOygvILcazQU2wdPfDs/edit#gid=2093826168
+
+
+c-panel login:
+https://d9ithub.com:2083/logout/?locale=en
+
+
+
+Web templates :
+1) oarnge-black --- https://technext.github.io/infinity/#services
+2) creame white orange --- https://preview.uideck.com/items/furnish-opl/
+3) red white gray --- https://html.design/preview/?theme=famms
+4) white gray --- https://technext.github.io/winkel/index.html
+5) white black --- https://technext.github.io/cozastore/index.html
+
+
+
+Important links for Isolated gallary :
+1) https://youtu.be/OeMuUKedtPc
+2) https://youtu.be/5WX7XUj-wgE -------- ready made plugins in this video.
+3) https://youtu.be/ATeWQlY3N04
+
+
+
+Links for hover animations :
+1) https://codepen.io/ishaansaxena/pen/WoJGRK
+2) https://codepen.io/kjbrum/pen/wBBLXx
+3) https://codepen.io/megaton111/pen/XjwVaV
+4) https://freefrontend.com/css-button-hover-effects/
+5) https://www.sliderrevolution.com/resources/css-button-hover-effects/
+
+
+
+
+Links for png icons :
+1) https://www.flaticon.com/search?word=kitchen
+2) https://www.freepik.com/search?format=search&query=svg%20fridge&type=icon

@@ -1,0 +1,19 @@
+https://www.webfx.com/blog/seo/seo-tips-improve-web-design/
+
+
+1. Create user interactive design.
+2. Script/CSS - use external.
+3. Content - write effective content which user like read.
+4. Use image when necessary - must use alt attribute in img tag.
+5. Media compression - small media size is better.
+6. Use unique meta data like title,discription,keword are use unique.
+7. Use h1 tag one time through page and h2-h6 are use many time when it necessary.
+8. Avoid annoing pop-ups.
+9. Maintain white space.
+10. Not use too many fonts.
+11. Minify css and js file(remove extra blank spaces).
+12. Use discriptive menu.
+13. Add text-links in footer section for support navigation.
+14. Be make sure our site will take less time to load.
+15. Don't change template design through different page.
+16. Must make interlinking in page.

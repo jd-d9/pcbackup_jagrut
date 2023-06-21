@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isolated gallary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gallary-menu container">
+            <ul> 
+                <li class="active" data-filter="*">All</li>
+                <li class="" data-filter=".art">Art</li>
+                <li class="" data-filter=".commercial">Commercial</li>
+                <li class="" data-filter=".design">Design</li>
+                <li class="" data-filter=".photography">Photography</li>
+            </ul>
+        </div>
+        <div class="gallary-item">
+            <div class="item art">
+                <span>View More</span>
+                <img src="image/art.jpg" alt="img">
+            </div>
+            <div class="item design">
+                <span>View More</span>
+                <img src="image/des2.jpg" alt="img">
+            </div>
+            <div class="item commercial">
+                <span>View More</span>
+                <img src="image/com.jpg" alt="img">
+            </div>
+            <div class="item photography">
+                <span>View More</span>
+                <img src="image/download.jpg" alt="img">
+            </div>
+            <div class="item photography">
+                <span>View More</span>
+                <img src="image/download (1).jpg" alt="img">
+            </div>
+            <div class="item commercial">
+                <span>View More</span>
+                <img src="image/com13.jpg" alt="img">
+            </div>
+            <div class="item art">
+                <span>View More</span>
+                <img src="image/download (3).jpg" alt="img">
+            </div>
+            <div class="item design">
+                <span>View More</span>
+                <img src="image/des3.jpg" alt="img">
+            </div>
+            <div class="item art">
+                <span>View More</span>
+                <img src="image/des1.jpg" alt="img">
+            </div>
+            <div class="item commercial">
+                <span>View More</span>
+                <img src="image/com12.jpg" alt="img">
+            </div>
+            <div class="item photography">
+                <span>View More</span>
+                <img src="image/download (2).jpg" alt="img">
+            </div>
+            <div class="item photography">
+                <span>View More</span>
+                <img src="image/download (1).jpg" alt="img">
+            </div>
+            <div class="item commercial">
+                <span>View More</span>
+                <img src="image/com13.jpg" alt="img">
+            </div>
+            <div class="item art">
+                <span>View More</span>
+                <img src="image/download (3).jpg" alt="img">
+            </div>
+            <div class="item art">
+                <span>View More</span>
+                <img src="image/art.jpg" alt="img">
+            </div>
+            <div class="item design">
+                <span>View More</span>
+                <img src="image/des2.jpg" alt="img">
+            </div>
+            <div class="item commercial">
+                <span>View More</span>
+                <img src="image/com.jpg" alt="img">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        $('.gallary-item').isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+        $('.gallary-menu ul li').click(function(){
+            $('.gallary-menu ul li').removeClass('active');
+            $(this).addClass('active');
+                var selector = $(this).attr('data-filter');
+                $('.gallary-item').isotope({
+                filter:selector
+            });
+        });
+    </script>
+</body>
+
+</html>

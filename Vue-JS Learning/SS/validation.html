@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        h2{
+            margin-left: 5px;
+        }
+        input{
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        .validate p,p.textlength{
+            margin: 15px 5px;
+        }
+        button{
+            margin: 5px;
+            padding: 5px 8px;
+            background-color: orange;
+            border: none;
+            color: White;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h2>Register</h2>
+        <input type="tel" id="phoneinput" placeholder="Enter Mobile No." oninput="phonefunction()"><br>
+        <input type="email" id="mailinput" placeholder="Enter Mail" oninput="mailfunction()"><br>
+        <input type="password" id="passinputone" placeholder="Enter password" oninput="validInput(),matchpass()">
+        <span class="spantag" onclick="showpass()"><i class="fa-solid fa-eye"></i></span><br>
+        <input type="password" id="passinputtwo" placeholder="Confirm password" oninput="matchpass()" disabled>
+        <input type="submit" value="Submit" class="submitbtn" style="display:none"><br>
+        <span class="error"></span>
+    </form>
+    <div class="validate">
+        <p class="upper"><i class="fa-regular fa-circle-check"></i>&nbsp; Atleast One Uppercase</p>
+        <p class="num"><i class="fa-regular fa-circle-check"></i>&nbsp; Atlest One Number</p>
+        <p class="min"><i class="fa-regular fa-circle-check"></i>&nbsp; Minimum 6 Character</p>
+        <p class="max"><i class="fa-regular fa-circle-check"></i>&nbsp; Maximum 10 Character</p>
+        <p class="splchr"><i class="fa-regular fa-circle-check"></i>&nbsp; One Special Character</p>
+    </div>
+
+    <!-- <input type="text" class="fieldsecond" oninput="submit()">
+    <span class="error"></span>
+    <p class="textlength">Password Length :</p> -->
+
+    <script>
+        var text = document.querySelector('span.error');
+        // for mobile number ------------
+        var phone = document.getElementById('phoneinput');
+        function phonefunction(){
+            if(phone.value == ''){
+                text.style.color = 'red'
+                text.innerHTML = 'Phone Number Required'
+            }
+            else if(phone.value.match(/^\d{10}$/)){
+                text.style.color = 'green'
+                text.innerHTML = 'Phone Number valid'
+            }
+            else{
+                text.style.color = 'red'
+                text.innerHTML = 'Invalid Phone Number'
+            }            
+        }
+        // for mobile number ------------
+        var phone = document.getElementById('phoneinput');
+        function phonefunction(){
+            if(phone.value == ''){
+                text.style.color = 'red'
+                text.innerHTML = 'Phone Number Required'
+            }
+            else if(phone.value.match(/^\d{10}$/)){
+                text.style.color = 'green'
+                text.innerHTML = 'Phone Number valid'
+            }
+            else{
+                text.style.color = 'red'
+                text.innerHTML = 'Invalid Phone Number'
+            }            
+        }
+        // for email ------------
+        var mail = document.getElementById('mailinput');
+        function mailfunction(){
+            if(mail.value == ''){
+                text.style.color = 'red'
+                text.innerHTML = 'Mail Required'
+            }
+            else if(mail.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
+                text.style.color = 'green'
+                text.innerHTML = 'Mail valid'
+            }
+            else{
+                text.style.color = 'red'
+                text.innerHTML = 'Invalid Mail Id'
+            }
+        }
+
+        // for password ----------------
+        var input = document.getElementById('passinputone');
+        var inputtwo = document.getElementById('passinputtwo');
+        var validdiv = document.querySelector('.validate');
+        var ptag = document.getElementsByTagName('p')
+        var sbmtbtn = document.querySelector('.submitbtn');
+        var show = document.querySelector('.spantag');
+        var upper = document.querySelector('.upper');
+        var number = document.querySelector('.num');
+        var minlength = document.querySelector('.min');
+        var maxlength = document.querySelector('.max');
+        var splchar = document.querySelector('.splchr');
+
+        // for hide-show password
+        function showpass(){
+            if(input.type == 'password' && inputtwo.type == 'password'){
+                input.type = 'text';
+                inputtwo.type = 'text';
+                show.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+            }
+            else{
+                input.type = 'password';
+                inputtwo.type = 'password';
+                show.innerHTML = '<i class="fa-solid fa-eye"></i>';
+            }
+        }
+        function validInput(){
+            // for uppercase
+            if(input.value.match(/[A-Z]/)){
+                upper.style.color = 'green';
+            }
+            else{
+                upper.style.color = 'red';
+            }
+            // for number
+            if(input.value.match(/[0-9]/)){
+                number.style.color = 'green';
+            }
+            else{
+                number.style.color = 'red';
+            }
+            // for minlength
+            if(input.value.length >= 6){
+                minlength.style.color = 'green';
+            }
+            else{
+                minlength.style.color = 'red';
+            }
+            // for maxlength
+            if(input.value.length <= 5){
+                maxlength.style.color = 'red';
+            }
+            else if(input.value.length <= 10){
+                maxlength.style.color = 'green';
+            }
+            else{
+                maxlength.style.color = 'red';
+            }
+            // for spl character
+            if(input.value.match(/[\.\,\!\~\@\#\$\%\^\&\*\?\\\_\-]/)){
+                splchar.style.color = 'green';
+            }
+            else{
+                splchar.style.color = 'red';
+            }
+            // for confirm password box
+            if(upper.style.color == 'green' && number.style.color == 'green' && minlength.style.color == 'green' && maxlength.style.color == 'green' && splchar.style.color == 'green'){
+                inputtwo.disabled = false;
+            }
+            else{
+                inputtwo.disabled = true;
+            }
+        }
+        // for match password
+        function matchpass(){
+            if(input.value =='' && inputtwo.value == ''){
+                validdiv.style.display = 'block';
+                sbmtbtn.style.display = 'none';
+            }
+            else if(input.value == inputtwo.value){
+                validdiv.style.display = 'none';
+                sbmtbtn.style.display = 'block';
+            }
+            else{
+                validdiv.style.display = 'block';
+                sbmtbtn.style.display = 'none';
+            }
+        }
+
+
+
+
+        // second ----------
+        function submit() {
+        var text = document.querySelector('span.error');
+        var textlength = document.querySelector('.textlength');
+        var inputfield = document.querySelector('.fieldsecond').value;
+            if(inputfield == ""){
+                text.style.color = 'red';
+                text.innerHTML = 'Please enter password';
+                textlength.innerHTML = 'Password Length : ' + 'First you must enter password!';
+
+            }
+            else{
+                text.style.color = 'green';
+                text.innerHTML = 'Valid input';
+                textlength.innerHTML = 'Password Length : ' + inputfield.length;
+            }
+        }
+    </script>
+</body>
+</html>

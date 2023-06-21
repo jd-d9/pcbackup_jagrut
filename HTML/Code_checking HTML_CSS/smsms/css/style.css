@@ -1,0 +1,110 @@
+@font-face{font-family:'Verlag-Book';src:url('fonts/Verlag-Book.eot?#iefix') format('embedded-opentype'), url('fonts/Verlag-Book.otf') format('opentype'), url('fonts/Verlag-Book.woff') format('woff'), url('fonts/Verlag-Book.ttf') format('truetype'), url('fonts/Verlag-Book.svg#Verlag-Book') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Verlag-Bold';src:url('fonts/Verlag-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Verlag-Bold.otf') format('opentype'), url('fonts/Verlag-Bold.woff') format('woff'), url('fonts/Verlag-Bold.ttf') format('truetype'), url('fonts/Verlag-Bold.svg#Verlag-Bold') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Verlag-Black';src:url('fonts/Verlag-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Verlag-Black.otf') format('opentype'), url('fonts/Verlag-Black.woff') format('woff'), url('fonts/Verlag-Black.ttf') format('truetype'), url('fonts/Verlag-Black.svg#Verlag-Black') format('svg');font-weight:normal;font-style:normal;}
+body{font-family:'Verlag-Book';}
+html{scroll-behavior:smooth;}
+.container {max-width: 1300px;}
+.main_header .navbar{background:rgba(255, 255, 255, 0);}
+.navbar-brand {width: 200px;}
+.navbar-nav .nav-link{color:#000;line-height: 40px;font-size: 18px;padding:0 20px !important;letter-spacing:0.7px;font-family:'Verlag-Bold';}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active{color:#3fbbc0;}
+.navbar-nav .nav-link.login_btn {background: #3fbbc0;color: #fff;line-height: 40px; float: right;border-radius: 4px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3);}
+.main_header .navbar.background_color{background:#ffffff;box-shadow: 1px 1px 9px rgba(0,0,0,0.2);padding: 0px;}
+.nav-item.dropdown:hover .dropdown-menu {display: block;right: 0; left: auto;}
+.navbar-nav .dropdown-toggle::after { display: none;}
+.home_slider{height:100vh;overflow:hidden;}
+.carousel{position:relative;height:100%;}
+.carousel-caption{position:absolute;right:auto;top:28%;left:0%;z-index:10;padding-top:20px;padding-bottom:20px;color:#fff;text-align:left;width:100%;height:fit-content;}
+.carousel-caption h1{font-size:60px;color:#2a2a2a;text-transform:uppercase;line-height:70px;font-family:'Verlag-Black';}
+.carousel-caption h2{font-size:60px;color:#3fbbc0;text-transform:uppercase;line-height:70px;font-family:'Verlag-Black';}
+.carousel-caption h3{font-size:30px;color:#000000;text-decoration:underline;margin-top:40px;font-family:'Verlag-Black';padding-bottom:10px;}
+.carousel-caption p{color:#000;font-size:24px;}
+.carousel-control-prev{width:auto;height:max-content;font-size:40px;top:50%;left:4%;color:#000;display:none;}
+.carousel-control-next{width:auto;height:max-content;font-size:40px;top:50%;right:4%;color:#000;display:none;}
+.btn_green{padding:15px 50px;background:#3fbbc0;border-radius:0px;font-size:20px;color:#fff;margin-top:25px;}
+.btn_green:hover{background:#2a2a2a;color:#fff;}
+.about_us{background-image:linear-gradient(#fff, #fff);padding:75px 15px;}
+img{width:100%;}
+.about_text{color:#000;}
+.about_us img{ width: 70%;}
+.about_text h4{text-align:left;margin-bottom:20px;}
+.about_text h3{font-family:'Verlag-Bold';}
+.about_text p{font-size:20px;}
+.about_text ul{padding:0px;list-style:none;text-align:center;}
+.about_text ul li{background:#0c1537;float:left;width:43%;padding:20px;margin-right:5%;}
+.about_text ul li i{display:block;font-size:45px;color:#3fbbc0;}
+.about_text ul li span{font-size:35px;font-family:'Verlag-Bold';}
+
+.services {padding: 75px 15px; /*background-image: linear-gradient(#d6f3fe, #fff)*/; background: url(../images/3.jpg);background-position: 0 0; background-size: cover;}
+.services h2 {color: #2a2a2a; font-size: 35px;font-family:'Verlag-Bold'; text-align: center;margin-bottom: 75px;}
+.service-icon i{font-size:180px; display:none;position:absolute;right:0;color:#3fbbc01a;z-index:-1;}
+.service-title{margin-top:0;margin-bottom:10px;color:#000;font-family:'Verlag-Bold';min-height: inherit;font-size: 24px;}
+.service-content{position:relative;z-index:0; background:transparent;padding:20px 20px;margin-bottom: 0px; }
+.service-content p{margin-bottom:0;color:#000;font-size:18px;font-weight:500;min-height: inherit;}
+.service-content p .link-more{margin-top:10px;display:block;font-weight:700;font-size:20px;color:#3fbbc0;}
+.service-content p .link-more:hover{color:#000; text-decoration: none;}
+.link-more i{font-weight:700;top:2px;margin-left:5px;position:relative;font-size:16px;}
+.m_b_0 { margin-bottom: 0px;}
+
+.package {padding: 75px 15px;}
+.package h2 {color: #2a2a2a; font-size: 35px;font-family:'Verlag-Bold'; text-align: center;margin-bottom: 75px;}
+.our_packages {width: 100%; padding: 0px;box-shadow: 0px 2px 2px rgba(0,0,0,0.2);border-radius: 0px;background: #fff;}
+.pricing_content {width: 100%; text-align: center; background: #6bcace; border-radius:0px; padding: 20px 0;margin-bottom:20px;}
+.pricing_content h4 {color: #fff; font-size: 20px;letter-spacing: 2px; margin-bottom: 0px;}
+.our_packages h3{font-size: 45px; text-align: center; padding:5px 0 0px; margin-bottom: 0px; color:#fff;}
+.our_packages ul{padding: 0px;list-style: none;}
+.our_packages ul li {margin-bottom: 0;color: #000;font-size: 18px;font-weight: 500; padding: 10px 20px;border-bottom: 1px solid #e2e1e194;}
+.our_packages ul li i{float: right; color: #3fbbc0;font-size: 13px;}
+.price-bottom { text-align: center;}
+.btn-skin {width: 100%;background: #5d5d5d; color: #fff; margin-bottom: 0; font-size: 18px; letter-spacing: 2px; border-radius: 0px; margin-top: 20px;padding: 10px 5px;}
+.btn-skin:hover {background: #3fbbc0; color: #fff;}
+
+/* .Login {background-image: url(../images/bg_2.jpg);background-position: center;;background-repeat: no-repeat;background-size: cover;padding: 0; padding: 150px 0 60px;} */
+/* .Login .container {position: relative; z-index: 1;} */
+.login_inner .row {margin: 0px;}
+.login_inner h2 {text-align: center;}
+.login_form {padding: 0px;}
+.tab-content {padding: 50px 40px;background: #fff;padding: 50px 25px;min-height: 450px; }
+.nav-tabs .nav-item{margin-bottom: -1px;width: 50%;text-align: center;font-size: 20px;background: #a3dee1;color: #000;}
+.nav-tabs .nav-link{ color: #000;padding: 15px 15px;color: #2a2a2a; font-family: 'Verlag-Bold'; font-size: 22px;}
+.nav-tabs .nav-link.active {color: #fff;background-color: #3fbbc0;border-color: #3fbbc0 #3fbbc0 #3fbbc0;border-radius: 0;}
+.forget_password {text-align: right; width: 100%; display: block; font-size: 18px;color: #000;margin-top: 30px;}
+label {color: #000;font-size: 18px; font-weight: 500;}
+.login_inner{ margin: 0 auto;}
+.quote_form{color: #fff;width: 100%;border: 4px solid #3fbbc0;box-shadow: 2px 2px 10px rgba(0,0,0,0.3);}
+.modal-body{ padding: 0px;}
+
+.partner_slider {padding:70px 0px;/* background-image:linear-gradient(#fff, #d6f3fe);*/}
+.partner_slider h2 {color: #2a2a2a; font-size: 35px;font-family:'Verlag-Bold'; text-align: center;margin-bottom: 75px;}
+.partner_slider .slide {background: #fff;border: 3px solid #e2e1e1;padding: 0px 20px;}
+.owl-carousel .owl-nav button.owl-prev{position: absolute;top: 36%;left: -6%;background: #3fbbc0; color: #fff; font-size: 25px;padding: 5px 15px !important; border-radius: 5px;}
+.owl-carousel .owl-nav button.owl-next{position: absolute;top: 36%;right: -6%;background: #3fbbc0; color: #fff; font-size: 25px;padding: 5px 15px !important; border-radius: 5px;}
+
+.contact_us {padding: 100px 15px; background: url(../images/12.jpg);background-position: 0 0; background-size: cover;}
+.contact_us h2{color: #ffffff; font-size: 35px;text-align: center;margin-bottom: 35px; margin-top: 35px;}
+.contact_inner {background: #2d2d2d;  padding: 11px 10px;margin-bottom: 20px; box-shadow: 2px 2px 4px rgba(0,0,0,0.2);}
+.contact_inner .contact_icon {float: left;width: 60px; vertical-align: top;}
+.contact_inner .contact_icon img{width: 100%;float: left;}
+.contact_content {margin-left: 70px;}
+.contact_title {font-size: 20px;margin: 0;margin-bottom: 10px;color: #ffffff;font-family:'Verlag-Bold';}
+.contact_us .form-control {box-shadow: none; background: #fff; border:1px solid #e2e1e1;margin-bottom: 20px;padding: 5px 20px;height: 50px;color: #ffffff;font-size: 18px; font-weight: 300; font-family: 'Verlag';letter-spacing: 1px;}
+.contact_us textarea.form-control { height: auto;}
+.contact_us .btn-skin {padding: 15px 30px; background: #3fbbc0; width: 100%; margin-bottom: 50px;}
+.contact_us .btn-skin:hover { background: #000;}
+.contact_leftform {background: #2a2a2ac7; color: #fff;padding: 0 45px;}
+
+#purchase_model .nav-tabs .nav-item {width:100%;}
+#forget_model .nav-tabs .nav-item {width:100%;}
+.footer {padding: 60px 20px 20px; background: #2a2a2a;}
+.footer .contact_inner {border:none; box-shadow: none; background: transparent; color: #dfdfdf;margin: 0px;}
+.footer .contact_title { color: #dfdfdf;}
+.footer_bottom {width: 100%; border-top: 1px solid #5e5e5e;padding-top: 30px;}
+.copright p {text-align: left;color: #dfdfdf;float: left;letter-spacing: 1px; margin-bottom: 0px;line-height: 40px;}
+.social_icon { float: right;}
+.social_icon ul {display: inline-block; list-style: none; padding: 0px; width: 100%;margin: 0px;}
+.social_icon ul li {float: left;}
+.social_icon ul li a{float: left;width: 40px; height: 40px;text-align: center;line-height: 40px; border: 1px solid #dfdfdf;color: #dfdfdf;margin: 0 3px;border-radius: 50px;}
+.social_icon ul li a:hover {background: #3fbbc0; color: #000; border: 1px solid #3fbbc0;}
+
+
+

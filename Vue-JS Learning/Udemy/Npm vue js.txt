@@ -1,0 +1,9 @@
+start - npm install -g @vue/cli
+create - vue create file-name-here
+
+cd file-name-here
+run - npm run serve
+
+
+router - npm install --save vue-router
+bootstrap - npm install bootstrap

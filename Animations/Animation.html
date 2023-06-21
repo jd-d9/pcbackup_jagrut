@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Border</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 700px;
+            gap: 50px;
+        }
+
+        a {
+            padding: 20px;
+            position: relative;
+            text-decoration: none;
+            overflow: hidden;
+            color: black;
+        }
+
+        a:hover {
+            color: brown;
+            background-color: aliceblue;
+        }
+
+        span {
+            position: absolute;
+            border: 1px solid #95ceff;
+            transition: all 0.3s ease-in;
+        }
+
+        span:nth-child(1) {
+            bottom: -150%;
+            left: 0;
+            height: 100%;
+        }
+
+        a:hover span:nth-child(1) {
+            bottom: 0;
+            transition-delay: 0s;
+        }
+
+        span:nth-child(2) {
+            left: -150px;
+            top: 0;
+            width: 100%;
+        }
+
+        a:hover span:nth-child(2) {
+            left: 0;
+            transition-delay: 0.2s;
+        }
+
+        span:nth-child(3) {
+            top: -150%;
+            right: 0;
+            height: 100%;
+        }
+
+        a:hover span:nth-child(3) {
+            top: 0;
+            transition-delay: 0.4s;
+        }
+
+        span:nth-child(4) {
+            right: -150%;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a:hover span:nth-child(4) {
+            right: 0;
+            transition-delay: 0.6s;
+        }
+
+
+
+
+        button {
+            width: 150px;
+            height: 50px;
+            position: relative;
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+        }
+
+        button::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            z-index: -2;
+            box-shadow: inset 0 0 4px #95ceff;
+        }
+
+        button:hover::before {
+            box-shadow: inset 0 0 100px #95ceff;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Hover Me
+    </a>
+    <button>Hover Me</button>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+// click event on edit button
+let newValue = '';
+// let addIndex = event.target.id;
+$('.tableBody').on('click','.editBtn',function(event) {
+    toggleVariable = true;
+    const index = event.target.id;
+    console.log(index,'index')
+    newValue = storeDataArray.filter((val,ind) => {
+        return index == ind
+    })
+    modalOpen();
+    // $('.idInput').val(newValue[0].id)
+    $('.userIdInput').val(newValue[0].userId)
+    $('.titleInput').val(newValue[0].title)
+    $('.discriptionInput').val(newValue[0].body)
+});
+$('.detailsForm').submit((event) => {
+    event.preventDefault();
+    const myObject = {
+        // 'id': $('.idInput').val(),
+        'userId': $('.userIdInput').val(),
+        'title': $('.titleInput').val(),
+        'body': $('.discriptionInput').val()
+    }
+    $.ajax({
+        type: "POST",
+        url: "https://jsonplaceholder.typicode.com/posts",
+        dataType: 'json',
+        data: myObject,
+        success: function (result) {
+            if(toggleVariable == true){
+                storeDataArray = storeDataArray.map((val,ind) => {
+                    if(newValue[0].id == val.id){
+                        console.log((newValue[0].id),'-----newValue[0].id--------')
+                        console.log((val.id),'-----val.id--------')
+                        return result
+                    }
+                    return val
+                });
+                result.id = newValue[0].id;
+                console.log(result.id,'-----result.id--------')
+                console.log(result,'-----result--------')
+                $('.tableBody > tr#' + (newValue[0].id - 1)).replaceWith(repetedCode(newValue[0].id,newValue[0].id,result.userId,result.title,result.body));
+                console.log(storeDataArray[0].id,'storeDataArray[0].id')
+            }
+            else{
+                storeDataArray.push(result);
+                const arrayLength = storeDataArray.length;
+                $('.tableBody').append(
+                    repetedCode(result.id,arrayLength,result.userId,result.title,result.body)
+                );
+            }
+            // updating index number.
+            $('.tableBody > tr').each(function(ind,tr){
+                $(tr).attr('id',ind).find('.dropdown-item').attr('id',ind);
+            });
+            modalClose();
+        }
+    });
+})
+
+
+// $('.idInput').val(newValue[0].id)
+// 'id': $('.idInput').val(), ---------------- myobject
+

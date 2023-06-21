@@ -1,0 +1,17 @@
+Multiple tab form validation - https://youtu.be/W4-5WM60gWg
+
+https://youtu.be/i1pxPSl9ZHc
+
+https://youtu.be/1yrTszHY-mQ
+
+https://youtu.be/ps0-JAQENXI  -- validation.
+
+https://youtu.be/2QIMUBilooc --
+
+Equivalent of document.ready in js is window.onload, am I right???
+
+
+
+success:function(data){
+target.find(".class").html(data)
+}

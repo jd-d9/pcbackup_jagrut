@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js learning</title>
+    <style>
+        div{
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+        overflow: scroll;
+        }
+    </style>
+        
+</head>
+<body>
+    <button class="alrbtn" onclick="showAlrt()">alert</button>
+    <button class="cnfmbtn" onclick="forCnfm()">Check status</button>
+    <button class="promptbtn" onclick="prmptBx()">Input-box</button>
+    <p class="nameprint"></p>
+    <img src="pic_bulboff.gif" class="bulb" alt="img" onmouseover="bulbon()" onmouseout="bulboff()">
+    <input type="text" class="forcapital" onkeydown="capitalOneTwo()" placeholder="Make capital">
+    <input type='text' id='ipfield'placeholder="Check IP-address"><button id="btnSubmit" onclick="ipAddress()">submit</button>
+    <button class="forDate" onclick="fordate()">Get Date</button>
+    <button ondblclick="PrintPage()">Double click to Print Page</button>
+    <button onclick="GetcurrentUrl()" id="btnClick">Print current URL</button>
+    <button onclick="GetParameterValues('MyID')" id="btnClick">Click me</button>
+    <p class="printUrl"></p>
+    <p class="printUrl1"></p>
+    <input type="radio" name="Gender" onclick="radioValue(this)" value="Male">Male<br>
+    <input type="radio" name="Gender" onclick="radioValue(this)" value="Female">Female<br>
+    <button onclick="screenSize()">Screen Size</button>
+    <input type="text" class="forcelcius" onkeyup="changeCelcius()" placeholder="Change Deg">
+    <p>This example is showing how scroll down event will work</p>
+    <div onscroll="scrollDownEvent()">out for an IT outsourcing partner?Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus quas non, facilis obcaecati maxime. Similique voluptatibus iure cum porro excepturi rem, eum facilis quo.</div>
+    <p>Scrolled <span id="pSpan">0</span> times.</p>
+    <button onclick="setTimeout(displaymsg,2000)">print Msg</button>
+    <p class="prntInterval"></p>
+    <input type="text" id="tablefield"><button onclick="tablenumber()">show table</button><br>
+
+    
+        
+    <script>
+        //alert-
+        function showAlrt(){
+            alert('You just clicked Button');
+        }
+        //confirm-
+        function forCnfm(){
+           var text = confirm('Are sure you created account earlier?');
+            if(text == true){
+                alert('Your account has been created successfully!');
+            }
+            else{
+                alert('please, First Create account');
+            }
+        }
+        //prompbox-
+        function prmptBx(){
+            var uName = window.prompt('please enter your Name');
+            document.querySelector('.nameprint').innerHTML = uName;
+        }
+        //mousehover-
+        function bulbon(){
+            document.querySelector('.bulb').src = 'pic_bulbon.gif';
+
+        }
+        function bulboff(){
+            document.querySelector('.bulb').src = 'pic_bulboff.gif';
+        }
+        //keydown-
+        function capitalOneTwo(){
+            var capitalized = document.querySelector('.forcapital');
+            var capitalizedValue = capitalized.value.toUpperCase();
+            capitalized.value = capitalizedValue;
+        }
+        //ipaddress-
+        function ipAddress(){
+            var IPvalidate = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+            let ipAdd = document.getElementById('ipfield');
+            if(ipAdd.value.match(IPvalidate)){
+                alert("IP address Valid");
+            }
+            else{
+                alert('IP address not-Valid');
+            }
+        }
+        //date-
+        function fordate(){
+            var crntDate = new Date();
+            document.querySelector('.nameprint').innerHTML = crntDate.getTime();
+            document.querySelector('.nameprint').innerHTML = crntDate.getDate();
+            document.querySelector('.nameprint').innerHTML = crntDate.getDay();
+            // document.querySelector('.nameprint').innerHTML = crntDate.setTime(123456000);
+        }
+        //array.reverce()-
+        //conacat- firstarray.concat(secondarray);
+        //window.open('url') - open page = window.open('https://minfolio.caliberthemes.com/minimal/portfolio-item/decoration');
+        //if-else conditions.
+        //Print page - just put window.print();
+        function PrintPage(){
+            window.print();
+        }
+        //array.push('value') - to add in array (at last).
+        //array.unshift('value') - to add in array (at first).
+        //array.pop() - to remove array value (last).
+        //array.shift() - to remove array value (first).
+        //To get current page url - window.location.href.
+        function GetcurrentUrl(){
+            let toprintvalue = document.querySelector('.printUrl')
+            toprintvalue.innerHTML = window.location.href;
+        }
+        //getElementsByClassName() - call by classname
+        //getElementByName() - call by name attr.
+        //window.history.back(); - disable browser back button.
+        //window.history.forward(); - disable browser forward button.
+        //use .disabled = true/false; - for disabled any tag. = document.querySelector('.classname').disabled = true;
+        
+        //Disable mouse right click --------------------------------------------------------------------------------------
+        
+        //Date Countdown Timer -------------------------------------------------------------------------------------------
+        var expiredDate = new Date("Jan 25, 2023 15:37:29").getTime();
+        var t = setInterval(function() {
+        var nowdate = new Date().getTime();
+        var timePeriod = expiredDate - nowdate;
+        var days = Math.floor(timePeriod/ (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timePeriod % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timePeriod % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timePeriod % (1000 * 60)) / 1000);
+        var printcounts = document.querySelector(".printUrl1").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        if (timePeriod < 0){
+                clearInterval(t);
+                document.querySelector(".printUrl1").innerHTML = "EXPIRED";
+            }
+        },100);
+        //get query string value in js ----------------------------------------------------------------------------------
+        function GetParameterValues(param) {
+        var url = window.location.href.slice(window.location.href.indexOf("l") + 1).split("&");
+        for (var i = 0; i < url.length; i++) {
+        var urlparam = url[i].split("=");
+        if (urlparam[0] == param) {
+        return urlparam[1];
+        }
+        }
+        alert(urlparam[1]);
+        }
+        //radio value -
+        function radioValue(Gender) {
+            alert(Gender.value);
+        }
+        //screen width height -
+        function screenSize(){
+            document.querySelector('.printUrl').innerHTML = 'Screen Width : ' + screen.width + 'px and Screen Height : ' + screen.height + 'px';
+        };
+        //refresh after perticular time - put onload="JavaScript:AutoRefresh(3000);" in body tag.
+        function AutoRefresh(j) {
+            setTimeout("location.reload(true);", j);
+        }
+        //change temp.degree -
+        function changeCelcius(){
+            let degree = document.querySelector('.forcelcius').value;
+            document.querySelector('.printUrl').innerHTML = degree * 9 / 5 + 32 + 'f';
+        }
+        //scroll event - 
+        var abc = 0;
+        function scrollDownEvent() {
+            document.getElementById("pSpan").innerHTML = abc += 1;
+        }
+        //video.play() - to play video / video.pause() - to pause video.
+        //setInterval()
+                function displaymsg(){
+                    document.querySelector('.prntInterval').innerHTML = 'Print using setTimeout';
+                };
+        //functuonName(argument){ return Math.max.apply(null,argument);} then call function with array name functionName(arrayname);
+        //use array.sort() - to sort in ascending order / array.reverse() - sort in reverce direction.
+        //try define code to run(to try).
+        //catch define code to handle error.
+        //Array.isArray(arrayname); - to check an object is array or not.
+        function stars(){
+            let rows = 6;
+            for(i=1; i<=rows; i++){
+                for(j=1; j<=i; j++){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+        }stars();
+        function tablenumber(){
+            var inputValue = document.getElementById('tablefield').value;
+            for(var i=1; i<=10; i++){
+                document.write(inputValue.innerHTML = inputValue*i +'<br>');
+            }
+        }
+        //location.reload() - to reload page.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud_app</title>
+    <!-- external links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <!-- external scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+        }
+        .main{
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .slogan{
+            font-size: 18px;
+            line-height: 0.7;
+        }
+        .createBtnDiv{
+            margin-top: 32px;
+        }
+        .dropdown-toggle::after{
+            display: none;
+        }
+        .btn:focus{
+            box-shadow: none;
+        }
+        .dropdown-menu{
+            transform: translate(-155px, 15px) !important;
+        }
+        .dataTables_length{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main mt-5 bg-dark">
+            <div class="mainHeader d-flex justify-content-between p-4">
+                <div>
+                    <h1 class="text-warning">CRUD APP</h1>
+                    <p class="text-light slogan">Manage your data here</p>
+                </div>
+                <div class="createBtnDiv">
+                    <button class="btn btn-warning text-white createBtn" type="button"  id="addRow">CREATE</button>
+                </div>
+            </div>
+            <div class="mainBodyPart bg-secondary p-4">
+                <!-- table start here -->
+                <table id="dataDisplayTable" class="table table-dark table-hover table-striped table-borderless mt-5">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th style="width: 70px !important;">USER ID</th>
+                            <th>TITLE</th>
+                            <th>DISCRIPTION</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tableBody">
+                    </tbody>
+                </table>
+                <!-- table end here -->
+            </div>
+        </div>
+    </div>
+    <!-- modal start here -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Details</h5>
+                    <button type="button" class="btn-close modalCloseBtn"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="detailsForm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="form-lable">USER ID</label>
+                                <input type="text" class="form-control mb-3 userIdInput">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-lable">TITLE</label>
+                                <input type="text" class="form-control mb-3 titleInput">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-lable">DISCRIPTION</label>
+                                <textarea class="form-control mb-4 discriptionInput" rows="4"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-warning text-white w-100 mb-2 submitBtn">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end here -->
+
+    <script>
+        $(document).ready(function() {
+            let counter = 1;
+            let tableRow = $('#dataDisplayTable').DataTable()
+            $('#addRow').on( 'click', function () {
+                console.log('click')
+                $('#dataDisplayTable').DataTable().row.add( [
+                    counter +'.1',
+                    counter +'.2',
+                    counter +'.3',
+                    counter +'.4',
+                    counter +'.5'
+                ] ).draw(false);
+                counter++;
+            });
+        })    
+    </script>
+</body>
+</html>

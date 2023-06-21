@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <title>D9ithub Software Solutions</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <style type="text/css">
+            table {border-collapse: collapse;}
+            @media only screen and (max-width: 640px)  {
+                .deviceWidth {width:440px!important; padding:0;}
+            }
+            @media only screen and (max-width: 479px) {
+                .deviceWidth {width:280px!important; padding:0;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <table width="100%" cellpadding="0" cellspacing="0" align="center" style="text-align: left;font-family: 'Poppins', sans-serif;">
+                <tr>
+                    <td width="100%" valign="top" bgcolor="#fff">
+                        <table width="1000" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto;">
+                            <tr>
+                                <td>
+                                    <h3 style="font-size: 30px;margin:0px; color: #01abea;">Invoice</h3>
+                                    <h4 style="font-size: 16px;margin:0px;color: #838383;">
+                                        Invoice No# <span style="font-size: 16px;color: #000;padding-left: 20px;">1</span> 
+                                    </h4>
+                                    <h4 style="font-size: 16px;margin:0px;color: #838383;">
+                                        Invoice Date <span style="font-size: 16px;color: #000;padding-left: 20px;">April 20, 2021</span> 
+                                    </h4>
+                                </td>
+                                <td></td>
+                                <td style="text-align: right;">
+                                    <img src="d9ithublogo.png" style="height: 80px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background:#fff;height:20px" colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td style="background: #dff2fa;padding: 20px;border-radius: 12px;">
+                                    <h3 style="font-size: 20px;margin:0px;color: #01abea;">Billed By</h3>
+                                    <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                        D9ithub Software Solutions 
+                                    </h4>
+                                    <p style="margin:0px;font-size: 14px">
+                                        C/1102, Titanium City Center, Next To Sachin Tower, 100ft
+                                        Anandnagar Road, Close to Prahladnagar,
+                                        Ahmedabad ,
+                                        Gujarat, India - 380015
+                                    </p>
+                                    <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                        GSTIN: <span style="padding-left: 10px;">24AANFD8242J1Z7</span> 
+                                    </h4>
+                                    <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                        PAN: <span style="padding-left: 10px;">AANFD8242J</span> 
+                                    </h4>
+                                </td>
+                                <td style="background:#fff;width: 20px;"></td>
+                                <td style="background: #dff2fa;padding: 20px;border-radius: 12px;">
+                                    <h3 style="font-size: 20px;margin:0px;color: #01abea;">Billed To</h3>
+                                    <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                        Encora Digital India Private Limited
+                                    </h4>
+                                    <p style="margin:0px;font-size: 14px">
+                                        Block-B, 10th Floor, Siddhi Vinayak Business Tower, Beside
+                                        Kataria Arcade, O. S.G. Highway, Makarba,
+                                        Ahmedabad ,
+                                        Gujarat, India - 380051
+                                    </p>
+                                    <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                        GSTIN: <span style="padding-left: 10px;">24AATCS8062Q1ZC</span> 
+                                    </h4>
+                                    <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                        PAN: <span style="padding-left: 10px;">AATCS8062Q</span> 
+                                    </h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background:#fff;height:20px" colspan="3"></td>
+                            </tr>
+                        </table>
+                        <table width="1000" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto;">
+                            <tr>
+                                <td colspan="2" style="width:100%;">
+                                    <table style="width: 100%;border: 1px solid #01abea;">
+                                        <tr style="background: #01abea;">
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;width: 30px;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">No.</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">Item</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">GST</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">Quantity</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">Rate</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">Amount</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">CGST</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">SGST</p>
+                                            </td>
+                                            <td style="padding:10px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #fff;font-size: 14px;line-height: 23px;">Total</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">1</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">Demo title</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">18%</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">1</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹100</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹100</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹9</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹9</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹118</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">2</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">Demo title</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">18%</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">1</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹100</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹100</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹9</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹9</p>
+                                            </td>
+                                            <td style="padding:5px;vertical-align: middle;text-align: center;">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">₹118</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:10px;vertical-align: middle;" colspan="9">
+                                                <p style="margin: 0px;color: #000;font-size: 14px;line-height: 23px;">Sooryen Work</p>
+                                                <img src="d9ithublogo.png" style="height: 80px;" alt="" title="">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table style="width: 100%;">
+                                        <tr style="vertical-align: top;">
+                                            <td style="width:70%;padding:10px 0px 0 0px;text-align:left">
+                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                                    Total In Words: ONE HUNDRED EIGHTEEN RUPEES ONLY 
+                                                </h4>
+                                                <p style="height:20px;margin: 0px;"></p>
+                                                <div style="background: #dff2fa;padding: 20px;border-radius: 12px;width: 70%;">
+                                                    <h3 style="font-size: 18px;margin:0px;color: #01abea;">Bank Details</h3>
+                                                    <table style="width: 100%;">
+                                                        <tr>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                                                    Account Holder Name
+                                                                </h4>
+                                                            </td>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 400;">
+                                                                    Digvijaysinh Narendrasinh Vaghela
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                                                    Account Number
+                                                                </h4>
+                                                            </td>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 400;">
+                                                                    68012030470
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                                                    IFSC
+                                                                </h4>
+                                                            </td>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 400;">
+                                                                    MAHB0001924
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                                                    Account Type
+                                                                </h4>
+                                                            </td>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 400;">
+                                                                    Savings
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 600;">
+                                                                    Bank
+                                                                </h4>
+                                                            </td>
+                                                            <td>
+                                                                <h4 style="font-size: 14px;margin:0px;color: #000;font-weight: 400;">
+                                                                    Bank Of Maharashtra
+                                                                </h4>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                            <td style="padding:10px 0px 0 0px;text-align:left">
+                                                <div style="width:50%; float: left;">
+                                                    <p style="margin: 0px;color: #000;font-size: 14px;line-height: 30px;font-weight:600;padding-left: 20px;">
+                                                        Amount<br/>
+                                                        SGST<br/>
+                                                        CGST
+                                                    </p>
+                                                    <p style="margin: 0px;color: #000;font-size: 14px;line-height: 30px;font-weight:600;border-top: 2px solid #01abea;padding-left: 20px;">
+                                                        Total (INR)<br/>
+                                                    </p>
+                                                </div>
+                                                <div style="width:50%;float: right; text-align: right;">
+                                                    <p style="margin: 0px;color: #000;font-size: 14px;line-height: 30px;font-weight:600;padding-right: 20px;">
+                                                        ₹ 100<br/>
+                                                        ₹ 9<br/>
+                                                        ₹ 9
+                                                    </p>
+                                                    <p style="margin: 0px;color: #000;font-size: 14px;line-height: 30px;font-weight:600;border-top: 2px solid #01abea;padding-right: 20px;">
+                                                        ₹ 118<br/>
+                                                    </p>
+                                                </div>
+                                                <div style="width:100%; float: left;text-align: center; padding-top: 20px;">
+                                                    <img src="signature.png" style="height:70px;" alt="" title="">
+                                                    <p style="margin: 0px;color: #000;font-size: 14px;line-height: 30px;font-weight:600;">
+                                                        Authorised Signatory
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2" style="height: 20px;"></td></tr>
+                            <tr>
+                                <td style="padding: 0px 0px;border-radius: 12px;" colspan="2">
+                                    <h3 style="font-size: 18px;margin:0px;color: #01abea;">Terms and Conditions</h3>
+                                    <div style="padding-left: 20px;">
+                                        <p style="margin:0px;font-size: 14px">1. Terms eld -1</p>
+                                        <p style="margin:0px;font-size: 14px">2. Terms eld - 2</p>
+                                        <p style="margin:0px;font-size: 14px">3. Terms eld - 3</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2" style="height: 20px;"></td></tr>
+                            <tr>
+                                <td style="padding: 0px 0px;border-radius: 12px;" colspan="2">
+                                    <h3 style="font-size: 18px;margin:0px;color: #01abea;">Additional Notes</h3>
+                                    <div style="padding-left: 20px;">
+                                        <p style="margin:0px;font-size: 14px">Notes Field</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2" style="height: 20px;"></td></tr>
+                            <tr>
+                                <td style="padding: 0px 0px;border-radius: 12px;" colspan="2">
+                                    <h3 style="font-size: 18px;margin:0px;color: #01abea;">Attachments</h3>
+                                    <div style="padding-left: 20px;">
+                                        <p style="margin:0px;font-size: 14px">
+                                            1.  <a href="#" style="color:#01abea;">thumbnail_Outlook-tzp2cuhn.png</a>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2" style="height: 20px;"></td></tr>
+                            <tr>
+                                <td style="width: 100%;padding:0; background: #01abea;text-align: center;">
+                                    <table style="width: 100%;">
+                                        <tr style="vertical-align: middle;">
+                                            <td style="padding: 10px 10px 10px 10px;text-align: center;">
+                                                <p style="margin: 0px;color: #ffffff;font-size: 14px;">For any enquiry, reach out via email at <a href="mailto:d9ithub@gmail.com" style="color:#000;">d9ithub@gmail.com</a> or call on <a href="tel:+91 93746-86975" style="color:#000;">+91 93746-86975</a></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

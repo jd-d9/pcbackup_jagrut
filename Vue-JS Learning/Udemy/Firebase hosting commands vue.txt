@@ -1,0 +1,37 @@
+For firebase-hosting:
+1) firebase login - if not login than redirect on login page.
+   (if get any error like this: Error: Failed to list Firebase projects. See firebase-debug.log for more info than run below command)
+   1) firebase login --reauth
+
+2) firebase init
+   - Are you ready proceed? - yes
+   - Hosting configure and deploy firebase with github repo. - select
+   - Use an existing project - select
+   - What do you want use as your public directory? - dist
+   - Configure as a single page app(rewrite all urls to /index.html)? - yes
+   - Set up automatic builds and deploys with github - no
+   - File dist/index.html already exists. Overwrite? - no
+
+3) npm run build
+
+4) firebase serve - if want to check hosting in localhost.
+
+5) firebase deploy - for deployment.
+   Hosting URL: https://find-coach-app-c6542.web.app - Give this type hosting url.
+
+
+
+
+
+
+After changes code we run following command for deploy:
+1) npm run build
+2) firebase deploy
+   Check same hosting url changes will be updated.
+
+
+
+
+
+Reference: 
+https://youtu.be/433xkOPosTs

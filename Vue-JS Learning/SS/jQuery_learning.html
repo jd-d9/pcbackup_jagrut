@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery learning</title>
+    <style>
+        .redone{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 20px;
+        }
+        .greenone{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 20px;
+        }
+        .orangenone{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1tag">Click for hide me.</h1>
+    <p id="para">Hello world</p>
+    <p class="paragraph">Use on event</p>
+    <button class="btn">Button</button><br><br>
+    <input type="text" id="inputfield">
+    <div class="redone"></div>
+    <button id="forfade">fade div</button>
+    <div class="greenone"></div>
+    <button id="forslide">slide div</button>
+    <div class="orangenone"></div>
+    <button id="foranimate">animate div</button>
+    <p class="paraGraph">using chaining method</p>
+    <button id="forchaining">chaining</button><br><br>
+
+    <input type="text" class="inputvalue" placeholder="search here...">
+    <div class="searchdiv">
+        <p>hello world</p>
+        <p>Ahmedabad</p>
+        <p>Surat</p>
+        <p>Baroda</p>
+        <strong>Learn jQuery</strong>
+        <p>d9ithub</p>
+        <h4>Hello vues</h4>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        // $(function() {      // also we can use this function on insted of -- $(document).ready -- function.
+        // })
+
+        $(document).ready(function() {
+            // jq events
+            $(".h1tag").mouseenter(function() {
+                $(this).css({"color" : "red"});
+            });
+            $(".h1tag").mouseleave(function() {
+                $(this).css("color","green");
+            });
+            // $(".h1tag").hover(function() {
+            //     $(this).css({"color" : "aqua"});
+            // });
+            $(".btn").click(function() {
+                $("#para").css({"color" : "blue", "background-color" : "gray"})
+            });
+            $(".btn").dblclick(function() {
+                $("#para").css({"color" : "orange", "background-color" : "black"})
+            });
+            // mousedown() - when the left, middle or right mouse button is pressed down
+            // mouseup() - when the left, middle or right mouse button is released
+            $("#inputfield").focus(function(){
+                $(this).css({"background-color" : "lightgray"})
+            });
+            $("#inputfield").blur(function(){
+                $(this).css({"background-color" : ""})
+            });
+            $(".paragraph").on({
+                mouseenter: function() {
+                    $(this).css({"font-size" : "25px"});
+                },
+                mouseleave: function() {
+                    $(this).css("background-color","lightgray");
+                },
+                click: function() {
+                    $(this).css("background-color","orange");
+                }
+            });
+
+            // jq effects
+            // $("#forfade").click(function() {
+            //     $(".redone").hide(1000);
+            // });
+            // $("#forfade").click(function() {
+            //     $(".redone").show(1000);
+            // });
+            // $("#forfade").click(function() {
+            //     $(".redone").toggle(1000);
+            // });
+            $("#forfade").click(function() {
+                $(".redone").fadeToggle(1000);           // fadeIn(),fadeOut(),fadeToggle(),fadeTo(opacity)
+            });
+            $("#forslide").click(function() {
+                $(".greenone").slideToggle('slow');      // slideUp(),slideDown(),slideToggle()
+            });
+            $("#foranimate").click(function() {
+                // $(".orangenone").animate({
+                //     height : 'toggle'                    // also add all css styles in animate effect
+                // })
+                const div = $(".orangenone");            // for multiple animate effects make like this.   
+                div.animate({height: "150px", opacity: "0.4"}, "slow");
+                div.animate({width: "150px", opacity: "0.4"}, "slow");
+                div.animate({height: "100px", opacity: "0.4"}, "slow");
+                div.animate({width: "100px", opacity: "1"}, "slow");
+            });
+            $("#forchaining").click(function() {
+                $(".paraGraph").css("color","red").slideUp(1000).slideDown(1000, function() {
+                    $(".paraGraph").css("color","");
+                });
+            });
+            $(".inputvalue").on("keyup", function() {
+                let value = $(".inputvalue").val().toLowerCase();
+                $(".searchdiv *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax jQuery</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- external js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        table th,table td{
+            padding: 10px 15px!important;
+        }
+        .loader{
+            display: none;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+        .loaderInner{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+            border-left: 5px solid gray;
+            border-top: 5px solid gray;
+            animation: loader 1.5s linear infinite;
+        }
+        @keyframes loader {
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-5">
+        <h1 class="text-center text-secondary mb-4"><i class="fa-solid fa-arrow-right-arrow-left"></i> Go REST API</h1>
+        <table class="table table-hover table-bordered table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Sr.No</th>
+                    <th scope="col">ID</th>
+                    <th scope="col" style="width:100px !important;">USER ID</th>
+                    <th scope="col">TITLE</th>
+                    <th scope="col">DISCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+
+            </tbody>
+          </table>          
+    </div>
+    <div class="loader">
+        <div class="loaderInner"></div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url: "https://gorest.co.in/public/v2/posts",
+                type: "GET",
+                success: function(result){
+                    result.map((val,ind) => {
+                        $('.tableBody').append(
+                            `<tr>
+                                <th>${ind + 1}</th>
+                                <td>${val.id}</td>
+                                <td style="width:100px !important;">${val.user_id}</td>
+                                <td>${val.title}</td>
+                                <td>${val.body}</td>
+                            </tr>`
+                        );
+                    })
+                },
+                error: function(){
+                    alert('file isn\'t loaded')
+                }
+            })
+        })
+    </script>
+</body>
+</html>

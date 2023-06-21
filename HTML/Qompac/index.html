@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qompac</title>
+    <!-- external css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- external js links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</head>
+<body>
+    <!-- left sidebar start here -->
+    <div id="mySidenav" class="sidenav">
+        <div class="overflow-scroll forScrollLeftBarOnly">
+            <div class="sidebarLogo">
+                <a href="javascript:void(0)">
+                    <img src="image/headicon.svg" class="img-fluid" alt="logo">
+                    <h4 class="logoText mb-0">Qompac UI</h4>
+                </a>
+            </div>
+            <p class="sidebarHesdings">&nbsp; -</p>
+            <ul class="sidebarHome">
+                <li class="activeSidebar position-relative">
+                    <a href="javascript:void(0)">
+                        <div class="position-relative d-inline">
+                            <img src="image/dashboard.svg" alt="dashboard">
+                            <img src="image/dashboardhover.svg" class="hoverImage" alt="dashboardhover">
+                        </div>
+                        <p class="logoText mb-0">Dash Board</p>
+                    </a>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/analytic.svg" alt="analytic">
+                        <p class="logoText mb-0">Analytics</p>
+                    </a>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/crypto.svg" alt="crypto">
+                        <p class="logoText mb-0">Crypto</p>
+                    </a>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/menustyle.svg" alt="menustyle">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Menu Style</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Horizontal</li>
+                                        <li>Dual Compact</li>
+                                        <li>Boxed Horizontal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <hr class="hr-horizontal">
+            <p class="sidebarHesdings">&nbsp; -</p>
+            <ul class="sidebarHome">
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/specialpages.svg" alt="specialpages">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Special Pages</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Billing</li>
+                                        <li>Calender</li>
+                                        <li>Kanban</li>
+                                        <li>Pricing</li>
+                                        <li>Time Line</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/authskin.svg" alt="authskin">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Auth Skins</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Login</li>
+                                        <li>Register</li>
+                                        <li>Confirm Mail</li>
+                                        <li>Lock Screen</li>
+                                        <li>Recovery Password</li>
+                                        <li>Two Factor</li>
+                                        <li>Account Deactivation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">                    
+                        <img src="image/users.svg" alt="users">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseusers" aria-expanded="false" aria-controls="flush-collapseusers">Users</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseusers" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>User Profile</li>
+                                        <li>Add User</li>
+                                        <li>User List</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">                    
+                        <img src="image/utility.svg" alt="utility">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseutilities" aria-expanded="false" aria-controls="flush-collapseutilities">Utilities</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseutilities" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Error 404</li>
+                                        <li>Error 500</li>
+                                        <li>Maintenance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">                    
+                        <img src="image/plugin.svg" alt="plugin">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseplugins" aria-expanded="false" aria-controls="flush-collapseplugins">Plugins</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseplugins" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Appex Chart</li>
+                                        <li>Button Hover</li>
+                                        <li>Choice Js</li>
+                                        <li>Flatpickr</li>
+                                        <li>FSlightbox</li>
+                                        <li>Gallary Hover</li>
+                                        <li>Image Croper</li>
+                                        <li>Loading</li>
+                                        <li>Rating</li>
+                                        <li>Select2</li>
+                                        <li>Sweet Alert</li>
+                                        <li>Quill</li>
+                                        <li>Uppy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">                    
+                        <img src="image/blankpage.svg" alt="blankpage">
+                        <p class="logoText mb-0">Blank Page</p>
+                    </a>
+                </li>
+            </ul>
+            <hr class="hr-horizontal">
+            <p class="sidebarHesdings">&nbsp; -</p>
+            <ul class="sidebarHome">
+                <li class="position-relative">
+                    <a href="javascript:void(0)">                    
+                        <img src="image/uielement.svg" alt="uielement">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseuielements" aria-expanded="false" aria-controls="flush-collapseuielements">UI Elements</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseuielements" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Avatar</li>
+                                        <li>Alert</li>
+                                        <li>Badge</li>
+                                        <li>Breadcrumb</li>
+                                        <li>Buttons</li>
+                                        <li>Buttons Group</li>
+                                        <li>Offcanvas</li>
+                                        <li>Colors</li>
+                                        <li>Cards</li>
+                                        <li>Carousel</li>
+                                        <li>Grid</li>
+                                        <li>Images</li>
+                                        <li>List Group</li>
+                                        <li>Modal</li>
+                                        <li>Notification</li>
+                                        <li>Pagination</li>
+                                        <li>Popover</li>
+                                        <li>Typography</li>
+                                        <li>Tabs</li>
+                                        <li>Tooltips</li>
+                                        <li>Video</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">                    
+                        <img src="image/widgets.svg" alt="widgets">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapsewidgets" aria-expanded="false" aria-controls="flush-collapsewidgets">Widgets</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapsewidgets" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Widget Basic</li>
+                                        <li>Widgets Chart</li>
+                                        <li>Widget Card</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/maps.svg" alt="maps">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseMaps" aria-expanded="false" aria-controls="flush-collapseMaps">Maps</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseMaps" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Google</li>
+                                        <li>Vector</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">                    
+                        <img src="image/elements.svg" alt="elements">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseelement" aria-expanded="false" aria-controls="flush-collapseelement">Elements</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseelement" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Elements</li>
+                                        <li>Wizard</li>
+                                        <li>Validation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/table.svg" alt="table">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapsetables" aria-expanded="false" aria-controls="flush-collapsetables">Table</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapsetables" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Bootstrap Table</li>
+                                        <li>Data Table</li>
+                                        <li>Bordered Table</li>
+                                        <li>Fancy Table</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="position-relative">
+                    <a href="javascript:void(0)">
+                        <img src="image/icons.svg" alt="icons">
+                        <p class="accordion-button collapsed logoText mb-0"  data-bs-toggle="collapse" data-bs-target="#flush-collapseIcons" aria-expanded="false" aria-controls="flush-collapseIcons">Icons</p>
+                    </a>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div id="flush-collapseIcons" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordian-body">
+                                    <ul>
+                                        <li>Solid</li>
+                                        <li>Outlined</li>
+                                        <li>Dualtone</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="toggleButton">
+                <img src="image/aerrotoggleicon.svg" alt="aerrotoggleicon">
+            </button>
+        </div>
+    </div>
+    <!-- left sidebar end here -->
+    <button class="btn rightSideBarButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <img src="image/settingbutton.svg" alt="settingbutton">
+    </button>
+    <!-- rightsidebar start here -->
+    <div class="offcanvas offcanvas-end rightSideBar" tabindex="-1" id="offcanvasRight" data-bs-scroll="true" data-bs-backdrop="true" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header pb-0">
+            <h4 id="offcanvasRightLabel">Setting Pannel</h4>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pt-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div>
+                        <h5 class="text-center mb-4">Style Setting</h5>
+                        <div>
+                            <!-- Theme start here -->
+                            <div class="mb-4">
+                                <h5 class="mb-3">Theme</h5>
+                                <div class=" mb-3">
+                                    <div class="form-check mb-0 w-100">
+                                        <input class="form-check-input" type="radio" value="light" name="theme_scheme" id="color-mode-light" checked="true">
+                                        <label class="form-check-label d-flex align-items-center justify-content-between" for="color-mode-light">
+                                           <span>Light Theme</span> 
+                                            <div class="text-primary ">
+                                                <img src="image/rsimage1.svg" alt="rightsideimage1">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class=" mb-3">
+                                    <div class="form-check mb-0 w-100 ">
+                                        <input class="form-check-input" type="radio" value="dark" name="theme_scheme" id="color-mode-dark">
+                                        <label class="form-check-label d-flex align-items-center justify-content-between" for="color-mode-dark">
+                                           <span>Dark Theme</span>
+                                           <div class="text-primary ">
+                                                <img src="image/rsimage2.svg" alt="rightsideimage2">
+                                           </div>                                    
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-check mb-0 w-100">
+                                    <input class="form-check-input" type="radio" value="auto" name="theme_scheme" id="color-mode-auto">
+                                    <label class="form-check-label d-flex align-items-center justify-content-between" for="color-mode-auto">
+                                        <span>Device Default</span> 
+                                        <div class="text-primary ">
+                                            <img src="image/rsimage3.svg" alt="rightsideimage3">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <hr class="hr-horizontal">
+                            <!-- Menu color start here -->
+                            <div>
+                                <h5 class="mt-4 mb-3">Menu Color</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <input type="radio" value="sidebar-white" class="btn-check" name="sidebar_color" id="sidebar-white">
+                                        <label class="btn btn-border d-block" for="sidebar-white">Light</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" value="sidebar-dark" class="btn-check" name="sidebar_color" id="sidebar-dark">
+                                        <label class="btn btn-border d-block" for="sidebar-dark">Dark</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" value="sidebar-color" class="btn-check" name="sidebar_color" id="sidebar-color" checked="true">
+                                        <label class="btn btn-border d-block" for="sidebar-color">Color</label>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <hr class="hr-horizontal">
+                            <!-- Menu Style start here -->
+                            <div>
+                                <h5 class="mt-4 mb-3">Menu Style</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-center">
+                                        <input type="checkbox" class="btn-check" id="sidebar-mini" checked="true">
+                                        <label class="btn btn-border d-block" for="sidebar-mini">Mini</label>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="checkbox" class="btn-check" id="sidebar-hover" checked="true">
+                                        <label class="btn btn-border d-block" for="sidebar-hover">Hover</label>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="checkbox" class="btn-check" id="sidebar-soft">
+                                        <label class="btn btn-border d-block" for="sidebar-soft">Soft</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr-horizontal">
+                            <!-- Active Menu Style start here -->
+                            <div class="mb-4">
+                                <h5 class="mt-4 mb-3">Active Menu Style</h5>
+                                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                    <div class="text-center mb-3">
+                                        <input type="radio" value="sidebar-default navs-rounded" class="btn-check" name="sidebar_active_menu_style" id="navs-rounded">
+                                        <label class="btn btn-border-large d-block" for="navs-rounded">Rounded One</label>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <input type="radio" value="sidebar-default navs-rounded-all" class="btn-check" name="sidebar_active_menu_style" id="navs-rounded-all">
+                                        <label class="btn btn-border-large d-block" for="navs-rounded-all">Rounded All</label>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="radio" value="sidebar-default navs-pill" class="btn-check" name="sidebar_active_menu_style" id="navs-pill" checked="true">
+                                        <label class="btn btn-border-large d-block" for="navs-pill">Pill One Side</label>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="radio" value="sidebar-default navs-pill-all" class="btn-check" name="sidebar_active_menu_style" id="navs-pill-all">
+                                        <label class="btn btn-border-large d-block" for="navs-pill-all">Pill All</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr-horizontal">
+                            <!-- Color start here -->
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="mt-4 mb-3">Color Customizer</h5>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#custom-color" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-color" class="customButton">Custom</a>
+                                        <div data-setting="radio">
+                                            <input type="radio" value="theme-color-default" class="btn-check" name="theme_color" id="theme-color-default">
+                                            <label class="btn button-customize bg-transparent px-2 border-0" for="theme-color-default" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Reset Color" aria-label="Reset Color">
+                                                <img src="image/custome.svg" alt="custome image">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="custom-color">
+                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                        <label class="text-secondary" for="custom-primary-color">Primary</label>
+                                        <input class="" name="theme_color" data-extra="primary" type="color" id="custom-primary-color" value="#7016d0">
+                                    </div>
+                                    <div class="form-group d-flex d-flex justify-content-between align-items-center my-3">
+                                        <label class="text-secondary" for="custom-secondary-color">Secondary</label>
+                                        <input class="" name="theme_color" data-extra="secondary" type="color" id="custom-secondary-color" value="#08B1BA">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div data-setting="radio">
+                                        <input type="radio" value="theme-color-blue" class="btn-check" name="theme_color" id="theme-color-1">
+                                        <label class="btn btn-border-small d-block bg-transparent" for="theme-color-1">
+                                            <img src="image/themecolor1.svg" alt="themecolor1">
+                                        </label>
+                                    </div>
+                                    <div data-setting="radio">
+                                        <input type="radio" value="theme-color-gray" class="btn-check" name="theme_color" id="theme-color-2">
+                                        <label class="btn btn-border-small d-block bg-transparent" for="theme-color-2">
+                                            <img src="image/themecolor2.svg" alt="themecolor2">
+                                        </label>
+                                    </div>
+                                    <div data-setting="radio">
+                                        <input type="radio" value="theme-color-red" class="btn-check" name="theme_color" id="theme-color-3">
+                                        <label class="btn btn-border-small d-block bg-transparent" for="theme-color-3">
+                                            <img src="image/themecolor3.svg" alt="themecolor3">
+                                        </label>
+                                    </div>
+                                    <div data-setting="radio">
+                                        <input type="radio" value="theme-color-yellow" class="btn-check" name="theme_color" id="theme-color-4">
+                                        <label class="btn btn-border-small d-block bg-transparent" for="theme-color-4">
+                                            <img src="image/themecolor4.svg" alt="themecolor4">
+                                        </label>
+                                    </div>
+                                    <div data-setting="radio">
+                                        <input type="radio" value="theme-color-pink" class="btn-check" name="theme_color" id="theme-color-5">
+                                        <label class="btn btn-border-small d-block bg-transparent" for="theme-color-5">
+                                            <img src="image/themecolor5.svg" alt="themecolor5">
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            <hr class="hr-horizontal">
+                            <!-- page style start here -->
+                            <div>
+                                <h5 class="d-inline-block mb-3 me-2">Page Style</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <input type="radio" value="container" class="btn-check" name="page_layout" id="page-layout-boxed">
+                                        <label class="btn btn-border-large d-block" for="page-layout-boxed">Boxed</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" value="container-fluid" class="btn-check" name="page_layout" id="page-layout-full-width" checked="true">
+                                        <label class="btn btn-border-large d-block" for="page-layout-full-width">Full Width</label>
+                                    </div>
+                                  </div>
+                            </div>
+                            <hr class="hr-horizontal">
+                            <!-- Direction start here -->
+                            <div>
+                                <h5 class="mb-3 mt-4">Direction</h5>
+                                <div class=" mb-3" data-setting="radio">
+                                    <div class="form-check mb-0 w-100">
+                                        <input class="form-check-input custom-redio-btn" type="radio" value="ltr" name="theme_scheme_direction" data-prop="dir" id="theme-scheme-direction-ltr" checked="true">
+                                        <label class="form-check-label d-flex align-items-center justify-content-between" for="theme-scheme-direction-ltr">
+                                            <span>LTR</span>
+                                            <img src="image/ltrimage.svg" alt="ltrimage">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3" data-setting="radio">
+                                    <div class="form-check mb-0 w-100">
+                                        <input class="form-check-input custom-redio-btn" type="radio" value="rtl" name="theme_scheme_direction" data-prop="dir" id="theme-scheme-direction-rtl">
+                                        <label class="form-check-label d-flex align-items-center justify-content-between " for="theme-scheme-direction-rtl">
+                                            <span>RTL</span>
+                                            <img src="image/rtlimage.svg" alt="rtlimage">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rightsidebar end here -->
+    <div class="contantarea">
+        <!-- navbar start here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid">
+                <span class="showname" href="#">Home</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-first-ul">
+                        <li class="nav-item">
+                            <div class="nav-link hoverheadmenu activeclass">
+                                <a href="javascript:void(0)" class="anchoreHead">
+                                    <div class="position-relative d-inline">
+                                        <img src="image/home.svg" alt="home"> Home
+                                        <img src="image/homehover.svg" class="hoverImage" alt="homehover">
+                                    </div>
+                                </a>
+                                <ul class="hoverdropdown">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Analytics</a></li>
+                                    <li><a href="#">Crypto</a></li>
+                                    <li class="hoverheadmenuTwo">Menu Style
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Horizontal Dashboard</a></li>
+                                            <li><a href="#">Dual Compact</a></li>
+                                            <li><a href="#">Boxed Horizontal</a></li>
+                                        </ul>
+                                    <i class="fa-solid fa-angle-right float-end"></i></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link hoverheadmenu">
+                                <a href="javascript:void(0)" class="anchoreHead">
+                                    <div class="position-relative d-inline">
+                                        <img src="image/pages.svg" alt="pages"> Pages
+                                        <img src="image/pageshover.svg" class="hoverImage" alt="pageshover">
+                                    </div>
+                                </a>
+                                <ul class="hoverdropdown">
+                                    <li class="hoverheadmenuTwo">Special Pages
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Billing</a></li>
+                                            <li><a href="#">Calender</a></li>
+                                            <li><a href="#">Kanban</a></li>
+                                            <li><a href="#">Pricing</a></li>
+                                            <li><a href="#">Timeline</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">Auth Skins
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Sign In</a></li>
+                                            <li><a href="#">Sign Up</a></li>
+                                            <li><a href="#">Email Verified</a></li>
+                                            <li><a href="#">Reset Password</a></li>
+                                            <li><a href="#">Lockscreen</a></li>
+                                            <li><a href="#">Two Factore</a></li>
+                                            <li><a href="#">Account Deactivate</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">User
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">User Profile</a></li>
+                                            <li><a href="#">User Add</a></li>
+                                            <li><a href="#">User List</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>                                    
+                                    <li class="hoverheadmenuTwo">Utilities
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Maintenance</a></li>
+                                            <li><a href="#">404</a></li>
+                                            <li><a href="#">505</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">Plugins
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Button Hover</a></li>
+                                            <li><a href="#">Choice Js</a></li>
+                                            <li><a href="#">FSlightbox</a></li>
+                                            <li><a href="#">Select2</a></li>
+                                            <li><a href="#">Sweetalert</a></li>
+                                            <li><a href="#">Flatpickr</a></li>
+                                            <li><a href="#">Apexcharts</a></li>
+                                            <li><a href="#">Gallary Hover</a></li>
+                                            <li><a href="#">Image Croper</a></li>
+                                            <li><a href="#">Loader</a></li>
+                                            <li><a href="#">Rating</a></li>
+                                            <li><a href="#">Quill</a></li>
+                                            <li><a href="#">Uppy</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link hoverheadmenu">
+                                <a href="javascript:void(0)" class="anchoreHead">
+                                    <div class="position-relative d-inline">
+                                        <img src="image/elementsnavbar.svg" alt="elementnavbar"> Elements
+                                        <img src="image/elementsnavbarhover.svg" class="hoverImage" alt="elementhover">
+                                    </div>
+                                </a>
+                                <ul class="hoverdropdown">
+                                    <li class="hoverheadmenuTwo">UI Elements
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Avatars</a></li>
+                                            <li><a href="#">Alerts</a></li>
+                                            <li><a href="#">Badge</a></li>
+                                            <li><a href="#">breadcrumb</a></li>
+                                            <li><a href="#">Lockscreen</a></li>
+                                            <li><a href="#">Buttons</a></li>
+                                            <li><a href="#">Button Group</a></li>
+                                            <li><a href="#">Box Shadow</a></li>
+                                            <li><a href="#">Colors</a></li>
+                                            <li><a href="#">Cards</a></li>
+                                            <li><a href="#">Carousel</a></li>
+                                            <li><a href="#">Grid</a></li>
+                                            <li><a href="#">Images</a></li>
+                                            <li><a href="#">List Groups</a></li>
+                                            <li><a href="#">Modal</a></li>
+                                            <li><a href="#">Notification</a></li>
+                                            <li><a href="#">Pagination</a></li>
+                                            <li><a href="#">Popover</a></li>
+                                            <li><a href="#">Typography</a></li>
+                                            <li><a href="#">Tabs</a></li>
+                                            <li><a href="#">Tooltips</a></li>
+                                            <li><a href="#">Video</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">Widgets
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Widget Basic</a></li>
+                                            <li><a href="#">Widget Chart</a></li>
+                                            <li><a href="#">Widget Card</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">Map
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Google</a></li>
+                                            <li><a href="#">Vectore</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">Form
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Element</a></li>
+                                            <li><a href="#">Wizard</a></li>
+                                            <li><a href="#">Validation</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">Table
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Bootstrap Table</a></li>
+                                            <li><a href="#">Data Table</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                    <li class="hoverheadmenuTwo">Icons
+                                        <ul class="hoverdropdownTwo">
+                                            <li><a href="#">Solid</a></li>
+                                            <li><a href="#">Outlined</a></li>
+                                            <li><a href="#">Dual Tone</a></li>
+                                        </ul>
+                                        <i class="fa-solid fa-angle-right float-end"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0 secondul">
+                        <li class="nav-item">
+                            <div class="dropdown search-dropdown">
+                                <a class="btn dropdown-toggle" id="dropdownMenuButtonSearchButton" data-bs-toggle="dropdown" href="#">
+                                    <div class="position-relative d-inline">
+                                        <img src="image/search.svg" alt="search">
+                                        <img src="image/searchhover.svg" class="hoverImage" alt="searchhover">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSearchButton">
+                                    <li><a class="dropdown-item" href="#"><input type="search" class="form-control serchInput text-secondary" placeholder="search here..."></a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="useraccount">
+                                                <div>
+                                                    <div class="account-image">
+                                                        <img src="image/client.png" alt="account">
+                                                    </div>
+                                                </div>
+                                                <div class="account-details ms-3 mt-1">
+                                                    <h6 class="fw-bold">Austin Robertson</h6>
+                                                    <p class="text-secondary">Paige001</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="useraccount">
+                                                <div>
+                                                    <div class="account-image">
+                                                        <img src="image/client2.png" alt="account">
+                                                    </div>
+                                                </div>
+                                                <div class="account-details ms-3 mt-1">
+                                                    <h6 class="fw-bold">Monty Carlo</h6>
+                                                    <p class="text-secondary">Carlo.m</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="useraccount">
+                                                <div>
+                                                    <div class="account-image">
+                                                        <img src="image/client3.png" alt="account">
+                                                    </div>
+                                                </div>
+                                                <div class="account-details ms-3 mt-1">
+                                                    <h6 class="fw-bold">Paule Molive</h6>
+                                                    <p class="text-secondary">Paul.45</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="useraccount">
+                                                <div>
+                                                    <div class="account-image">
+                                                        <img src="image/client4.png" alt="account">
+                                                    </div>
+                                                </div>
+                                                <div class="account-details ms-3 mt-1">
+                                                    <h6 class="fw-bold">Monty Carlo</h6>
+                                                    <p class="text-secondary">Carlo.m</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" id="dropdownMenuButtonLangButton" data-bs-toggle="dropdown" href="#">
+                                    <div class="position-relative d-inline">
+                                        <img src="image/lang.svg" alt="language">
+                                        <img src="image/langhover.svg" class="hoverImage" alt="langhover">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLangButton">
+                                    <li><a class="dropdown-item" href="#"><svg width="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.9702 19.757L15.3502 5.27201C15.1884 4.62224 14.8136 4.04541 14.2856 3.63359C13.7576 3.22177 13.1068 2.99871 12.4372 3.00001H11.5602C10.8911 2.99938 10.2411 3.22275 9.71368 3.63452C9.18629 4.04628 8.81191 4.62274 8.65022 5.27201L5.03022 19.757C4.9679 20.0135 5.00954 20.2843 5.14605 20.5102C5.28257 20.7362 5.50288 20.899 5.75895 20.9631C6.01502 21.0273 6.28606 20.9875 6.51297 20.8527C6.73988 20.7178 6.90424 20.4986 6.97022 20.243L8.28022 15H15.7202L17.0302 20.243C17.0962 20.4986 17.2606 20.7178 17.4875 20.8527C17.7144 20.9875 17.9854 21.0273 18.2415 20.9631C18.4976 20.899 18.7179 20.7362 18.8544 20.5102C18.9909 20.2843 19.0325 20.0135 18.9702 19.757V19.757ZM8.78022 13L10.5912 5.75801C10.6449 5.5414 10.7696 5.34903 10.9454 5.21163C11.1213 5.07423 11.3381 4.99972 11.5612 5.00001H12.4392C12.6624 4.99972 12.8792 5.07423 13.055 5.21163C13.2308 5.34903 13.3556 5.5414 13.4092 5.75801L15.2192 13H8.78022Z" fill="currentColor"></path>
+                                        </svg>   LTR</a></li>
+                                    <li><a class="dropdown-item" href="#"><svg width="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4C10.08 4 8.5 5.58 8.5 7.5C8.5 8.43 8.88 9.28 9.5 9.91C7.97 10.91 7 12.62 7 14.5C7 17.53 9.47 20 12.5 20C14.26 20 16 19.54 17.5 18.66L16.5 16.93C15.28 17.63 13.9 18 12.5 18C10.56 18 9 16.45 9 14.5C8.99823 13.7298 9.2513 12.9806 9.71978 12.3692C10.1883 11.7578 10.8458 11.3186 11.59 11.12L16.8 9.72L16.28 7.79L11.83 9C11.08 8.9 10.5 8.28 10.5 7.5C10.5 6.66 11.16 6 12 6C12.26 6 12.5 6.07 12.75 6.2L13.75 4.47C13.22 4.16 12.61 4 12 4Z" fill="currentColor"></path>
+                                        </svg>   RTL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" id="dropdownMenuButtonNotificationButton" data-bs-toggle="dropdown" href="#">
+                                    <div class="position-relative d-inline">
+                                        <img src="image/notification.svg" alt="notification">
+                                        <img src="image/notificationhover.svg" class="hoverImage" alt="notificationhover">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu ul-notification p-0" aria-labelledby="dropdownMenuButtonNotificationButton">
+                                    <li class="">
+                                        <div class="p-3 card-header d-flex justify-content-between">
+                                            <h5 class="text-white mb-0">All Notifications</h5>
+                                        </div>
+                                        <div class="p-0 card-body">
+                                            <a href="#">
+                                                <div class="notificationcontent d-flex align-items-center">
+                                                    <img class="p-1" src="image/heart.png" alt="heart">
+                                                    <div class="ms-2 w-100">
+                                                        <h6 class="mb-0">Emma Watson Bni</h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-0 text-secondary">95 MB</p>
+                                                            <small class="float-end text-secondary">Just Now</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="notificationcontent d-flex align-items-center">
+                                                    <img class="p-1" src="image/shopyfie.png" alt="shopify">
+                                                    <div class="ms-2 w-100">
+                                                        <h6 class="mb-0 ">New customer is join</h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-0 text-secondary">Cyst Bni</p>
+                                                            <small class="float-end text-secondary">5 days ago</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="notificationcontent d-flex align-items-center">
+                                                    <img class="p-1" src="image/sound.png" alt="sound">
+                                                    <div class="ms-2 w-100">
+                                                        <h6 class="mb-0">Two customer is left</h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-0 text-secondary">Cyst Bni</p>
+                                                            <small class="float-end text-secondary">2 days ago</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="notificationcontent d-flex align-items-center">
+                                                    <img class="p-1" src="image/twitter.png" alt="twitter">
+                                                    <div class="ms-2 w-100">
+                                                        <h6 class="mb-0 ">New Mail from Fenny</h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-0 text-secondary">Cyst Bni</p>
+                                                            <small class="float-end text-secondary">3 days ago</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link fw-bold hoverheadmenu forRemoveHoverOnly">
+                                <a href="javascript:void(0)" class="anchoreHead">
+                                    <div class="position-relative d-inline">
+                                        <img src="image/sun.svg" alt="themesun">
+                                        <img src="image/sunhover.svg" class="hoverImage" alt="sunhover">
+                                    </div>
+                                </a>
+                                <ul class="hoverdropdown forThemeDdWidthOnly">
+                                    <li>
+                                        <a href="#">
+                                            <img src="image/sun.svg" alt="theme">&nbsp; &nbsp; Light
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="image/darktheme.svg" alt="theme">&nbsp; &nbsp; Dark
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="image/themeauto.svg" alt="theme">&nbsp; &nbsp; Auto
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fullScreenButton" href="#">
+                                <div class="position-relative d-inline">
+                                    <img src="image/fullscreen.svg" alt="fullscreen">
+                                    <img src="image/fullscreenhover.svg" class="hoverImage" alt="fullscreenhover">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="useraccount my-2">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" id="dropdownMenuAccountButton" data-bs-toggle="dropdown" href="#">
+                                <div class="account-image">
+                                    <img src="image/client.png" alt="account">
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu p-1" aria-labelledby="dropdownMenuAccountButton">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy setting</a></li>
+                                <li><hr class="dropdown-devider my-1"></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="account-details ms-3 mt-1">
+                            <h6 class="fw-bold">Austin Robertson</h6>
+                            <p class="text-secondary mb-0">Marketing Administrator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end here -->
+        <div class="innercontent p-4">
+            <div class="row">
+                <div class="col-8">
+                    <h3>Quick Insights</h3>
+                    <p class="mb-0 text-secondary">Financial Dashboard</p>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex gap-3">
+                        <div class="dropdown ms-auto">
+                            <button class="btn btn-secondary dropdown-toggle text-secondary bg-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Past 30 Days &nbsp;&nbsp;</button>
+                            <ul class="dropdown-menu dropdownMenuButton1" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#"><input type="text"></a></li>
+                                <li><a class="dropdown-item" href="#">Past 30 Days</a></li>
+                                <li><a class="dropdown-item" href="#">Past 60 Days</a></li>
+                                <li><a class="dropdown-item" href="#">Past 90 Days</a></li>
+                                <li><a class="dropdown-item" href="#">Past 1 year</a></li>
+                                <li><a class="dropdown-item" href="#">Past 2 year</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-group mb-0 datePickerBox">
+                            <input type="text" name="datefilter" value="01 Jan 2018 to 23 Feb 2018" />
+                        </div>
+                        <button class="btn btn-primary text-white analyticbtn" type="button">Analytics</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <div class="card transactioncard">
+                        <div class="card-body">
+                            <div class="mb-5">
+                                <div class="mb-2 d-flex justify-content-between align-items-center">
+                                    <span class="text-dark">Last Transaction</span>
+                                    <a class="badge rounded-pill bg-soft-primary" href="javascript:void(0)">View Report</a>
+                                </div>
+                                <div class="">
+                                    <h2 class="mb-2">$46,996</h2>
+                                    <p class="text-secondary">This Month</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap flex-column">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-soft-primary rounded">
+                                        <img src="image/imageOne.svg" alt="imageOne">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="mb-2">Balance</h6>
+                                            <h6 class="text-body">$2,386</h6>
+                                        </div>
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-purple" data-toggle="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width: 23%"></div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <div class="bg-soft-info rounded">
+                                        <img src="image/imageTwo.svg" alt="imageTwo">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="mb-2">Transfer</h6>
+                                            <h6 class="text-body">$4,765</h6>
+                                        </div>
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-info" data-toggle="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <div class="bg-soft-success rounded">
+                                        <img src="image/imageThree.svg" alt="imageThree">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="mb-2">Recived</h6>
+                                            <h6 class="text-body">$8,224</h6>
+                                        </div>
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <div class="bg-soft-danger rounded">
+                                        <img src="image/imageFour.svg" alt="imageFour">
+                                    </div>
+                                    <div class="w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="mb-2">Outstanding</h6>
+                                            <h6 class="text-body">$1,224</h6>
+                                        </div>
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-danger" data-toggle="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-4">
+                    <div class="card sales-ordercard">
+                        <div class="flex-wrap card-header d-flex justify-content-between border-0 pt-3">
+                            <div class="header-title">
+                                <h5 class="card-title">Sales Order</h5>           
+                            </div>
+                            <div class="dropdown">
+                                <span class="dropdown-toggle text-secondary" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false" role="button">Monthly</span>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton7">
+                                    <a class="dropdown-item" href="javascript:void(0)">This Week</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">This Month</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">This Year</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="table-responsive border rounded">
+                                <table id="basic-table" class="table mb-0 table-striped">
+                                    <thead>
+                                        <tr class="text-secondary">
+                                            <th>COMPANIES</th>
+                                            <th>CONTACTS</th>
+                                            <th>ORDER</th>
+                                            <th>COMPLETION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded bg-soft-primary img-fluid me-3" src="image/heart.png" alt="heart">
+                                                    <h6>Addidis Sportwear</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-group">
+                                                    <a href="#" class=""><div class="icon">SP</div></a>
+                                                    <a href="#" class=""><div class="icon">PP</div></a>
+                                                    <a href="#" class=""><div class="icon">MM</div></a>
+                                                </div>
+                                            </td>
+                                            <td class="text-secondary">$14,000</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>60%</h6>
+                                                </div>
+                                                <div class="progress w-100">
+                                                    <div class="progress-bar bg-purple" data-toggle="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded bg-soft-primary img-fluid avatar-40 me-3" src="image/music.png" alt="sound">
+                                                    <h6>Netflixer Platforms</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-group">
+                                                    <a href="#"><div class="icon">SP</div></a>
+                                                    <a href="#"><div class="icon">PP</div></a>
+                                                </div>
+                                            </td>
+                                            <td class="text-secondary">$30,000</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>25%</h6>
+                                                </div>
+                                                <div class="progress w-100">
+                                                    <div class="progress-bar bg-purple" data-toggle="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded bg-soft-primary img-fluid avatar-40 me-3" src="image/shopyfie.png" alt="shopify">
+                                                    <h6>Shopifi Stores</h6>
+                                                </div>
+                                            </td>
+                                            <td>                                 
+                                                <div class="media-group">
+                                                    <a href="#" class="iq-media-1"><div class="icon">PP</div></a>
+                                                    <a href="#" class="iq-media-1"><div class="icon">TP</div></a>
+                                                </div>
+                                            </td>
+                                            <td class="text-secondary">$8,500</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>100%</h6>
+                                                </div>
+                                                <div class="progress w-100">
+                                                    <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded bg-soft-primary img-fluid avatar-40 me-3" src="image/sound.png" alt="sound">
+                                                    <h6>Bootstrap Technologies</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-group">
+                                                    <a href="#"><div class="icon">SP</div></a>
+                                                    <a href="#"><div class="icon">PP</div></a>
+                                                    <a href="#"><div class="icon">MM</div></a>
+                                                    <a href="#"><div class="icon">TP</div></a>
+                                                </div>
+                                            </td>
+                                            <td class="text-secondary">$20,500</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>100%</h6>
+                                                </div>
+                                                <div class="progress w-100">
+                                                    <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded bg-soft-primary img-fluid avatar-40 me-3" src="image/twitter.png" alt="twitter">
+                                                    <h6>Community First</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-group">
+                                                    <a href="#"><div class="icon">MM</div></a>
+                                                </div>
+                                            </td>
+                                            <td class="text-secondary">$9,800</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>75%</h6>
+                                                </div>
+                                                <div class="progress w-100">
+                                                <div class="progress-bar bg-purple" data-toggle="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card sales-analysiscard">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 pt-3">
+                            <div class="header-title">
+                                <h5 class="card-title">Sales Analysis</h5>           
+                            </div>
+                            <div class="dropdown">
+                                <span class="dropdown-toggle text-secondary" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false" role="button">All Tasks</span>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton7">
+                                    <a class="dropdown-item " href="javascript:void(0)">This Week</a>
+                                    <a class="dropdown-item " href="javascript:void(0)">This Month</a>
+                                    <a class="dropdown-item " href="javascript:void(0)">This Year</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div id="sales-chart-04" class="sales-chart-04" style="min-height: 417.7px;"><div id="apexcharts2dxvetop" class="apexcharts-canvas apexcharts2dxvetop apexcharts-theme-light" style="width: 533px; height: 417.7px;"><svg id="SvgjsSvg1338" width="533" height="417.70000000000005" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;">
+                                <foreignObject x="0" y="0" width="533" height="417.70000000000005"><div class="apexcharts-legend apexcharts-align-center apx-legend-position-bottom" xmlns="http://www.w3.org/1999/xhtml" style="inset: auto 0px 1px; position: absolute; max-height: 225px;"><div class="apexcharts-legend-series" rel="1" seriesname="Themeforestxx15x" data:collapsed="false" style="margin: 2px 5px;"><span class="apexcharts-legend-marker" rel="1" data:collapsed="false" style="background: rgb(112, 22, 208) !important; color: rgb(112, 22, 208); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;"></span><span class="apexcharts-legend-text" rel="1" i="0" data:default-text="Themeforest%3A%2015%25" data:collapsed="false" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;">Themeforest: 15%</span></div><div class="apexcharts-legend-series" rel="2" seriesname="Dribblexx40x" data:collapsed="false" style="margin: 2px 5px;"><span class="apexcharts-legend-marker" rel="2" data:collapsed="false" style="background: rgb(172, 164, 188) !important; color: rgb(172, 164, 188); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;"></span><span class="apexcharts-legend-text" rel="2" i="1" data:default-text="Dribble%3A%2040%25" data:collapsed="false" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;">Dribble: 40%</span></div><div class="apexcharts-legend-series" rel="3" seriesname="Figmax45x" data:collapsed="false" style="margin: 2px 5px;"><span class="apexcharts-legend-marker" rel="3" data:collapsed="false" style="background: rgb(63, 240, 185) !important; color: rgb(63, 240, 185); height: 12px; width: 12px; left: 0px; top: 0px; border-width: 0px; border-color: rgb(255, 255, 255); border-radius: 12px;"></span><span class="apexcharts-legend-text" rel="3" i="2" data:default-text="Figma%2045%25" data:collapsed="false" style="color: rgb(55, 61, 63); font-size: 12px; font-weight: 400; font-family: Helvetica, Arial, sans-serif;">Figma 45%</span></div></div></foreignObject>
+                                <g id="SvgjsG1340" class="apexcharts-inner apexcharts-graphical" transform="translate(12, 0)"><defs id="SvgjsDefs1339"><clipPath id="gridRectMask2dxvetop"><rect id="SvgjsRect1342" width="517" height="389" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMask2dxvetop"></clipPath><clipPath id="nonForecastMask2dxvetop"></clipPath><clipPath id="gridRectMarkerMask2dxvetop"><rect id="SvgjsRect1343" width="515" height="391" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><radialGradient id="SvgjsRadialGradient1349" gradientUnits="userSpaceOnUse" cx="255.5" cy="193.5" r="182.78048780487808"><stop id="SvgjsStop1350" stop-opacity="1" stop-color="rgba(112,22,208,1)" offset="0.8"></stop><stop id="SvgjsStop1351" stop-opacity="1" stop-color="rgba(112,22,208,1)" offset="1"></stop><stop id="SvgjsStop1352" stop-opacity="1" stop-color="rgba(112,22,208,1)" offset="1"></stop></radialGradient><radialGradient id="SvgjsRadialGradient1355" gradientUnits="userSpaceOnUse" cx="255.5" cy="193.5" r="182.78048780487808"><stop id="SvgjsStop1356" stop-opacity="1" stop-color="rgba(172,164,188,1)" offset="0.8"></stop><stop id="SvgjsStop1357" stop-opacity="1" stop-color="rgba(172,164,188,1)" offset="1"></stop><stop id="SvgjsStop1358" stop-opacity="1" stop-color="rgba(172,164,188,1)" offset="1"></stop></radialGradient><radialGradient id="SvgjsRadialGradient1361" gradientUnits="userSpaceOnUse" cx="255.5" cy="193.5" r="182.78048780487808"><stop id="SvgjsStop1362" stop-opacity="1" stop-color="rgba(63,240,185,1)" offset="0.8"></stop><stop id="SvgjsStop1363" stop-opacity="1" stop-color="rgba(63,240,185,1)" offset="1"></stop><stop id="SvgjsStop1364" stop-opacity="1" stop-color="rgba(63,240,185,1)" offset="1"></stop></radialGradient></defs><g id="SvgjsG1344" class="apexcharts-pie"><g id="SvgjsG1345" transform="translate(51.099999999999994, 38.69999999999999) scale(0.8)"><circle id="SvgjsCircle1346" r="100.52926829268294" cx="255.5" cy="193.5" fill="transparent"></circle><g id="SvgjsG1347" class="apexcharts-slices"><g id="SvgjsG1348" class="apexcharts-series apexcharts-pie-series" seriesName="Themeforestxx15x" rel="1" data:realIndex="0"><path id="SvgjsPath1353" d="M 255.5 10.719512195121922 A 182.78048780487808 182.78048780487808 0 0 1 403.3725208742892 86.06432486146844 L 336.82988648085905 134.41037867380763 A 100.52926829268294 100.52926829268294 0 0 0 255.5 92.97073170731706 L 255.5 10.719512195121922 z" fill="url(#SvgjsRadialGradient1349)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-0" index="0" j="0" data:angle="54" data:startAngle="0" data:strokeWidth="2" data:value="15" data:pathOrig="M 255.5 10.719512195121922 A 182.78048780487808 182.78048780487808 0 0 1 403.3725208742892 86.06432486146844 L 336.82988648085905 134.41037867380763 A 100.52926829268294 100.52926829268294 0 0 0 255.5 92.97073170731706 L 255.5 10.719512195121922 z" stroke="#ffffff"></path></g><g id="SvgjsG1354" class="apexcharts-series apexcharts-pie-series" seriesName="Dribblexx40x" rel="2" data:realIndex="1"><path id="SvgjsPath1359" d="M 403.3725208742892 86.06432486146844 A 182.78048780487808 182.78048780487808 0 0 1 199.01772302814987 367.3345739784362 L 224.43474766548243 289.1090156881399 A 100.52926829268294 100.52926829268294 0 0 0 336.82988648085905 134.41037867380763 L 403.3725208742892 86.06432486146844 z" fill="url(#SvgjsRadialGradient1355)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-1" index="0" j="1" data:angle="144" data:startAngle="54" data:strokeWidth="2" data:value="40" data:pathOrig="M 403.3725208742892 86.06432486146844 A 182.78048780487808 182.78048780487808 0 0 1 199.01772302814987 367.3345739784362 L 224.43474766548243 289.1090156881399 A 100.52926829268294 100.52926829268294 0 0 0 336.82988648085905 134.41037867380763 L 403.3725208742892 86.06432486146844 z" stroke="#ffffff"></path></g><g id="SvgjsG1360" class="apexcharts-series apexcharts-pie-series" seriesName="Figmax45x" rel="3" data:realIndex="2"><path id="SvgjsPath1365" d="M 199.01772302814987 367.3345739784362 A 182.78048780487808 182.78048780487808 0 0 1 255.46809878695598 10.719514979027934 L 255.48245433282577 92.97073323846537 A 100.52926829268294 100.52926829268294 0 0 0 224.43474766548243 289.1090156881399 L 199.01772302814987 367.3345739784362 z" fill="url(#SvgjsRadialGradient1361)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-2" index="0" j="2" data:angle="162" data:startAngle="198" data:strokeWidth="2" data:value="45" data:pathOrig="M 199.01772302814987 367.3345739784362 A 182.78048780487808 182.78048780487808 0 0 1 255.46809878695598 10.719514979027934 L 255.48245433282577 92.97073323846537 A 100.52926829268294 100.52926829268294 0 0 0 224.43474766548243 289.1090156881399 L 199.01772302814987 367.3345739784362 z" stroke="#ffffff"></path></g></g></g></g><line id="SvgjsLine1366" x1="0" y1="0" x2="511" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1367" x1="0" y1="0" x2="511" y2="0" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1341" class="apexcharts-annotations"></g></svg>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card todo-listcard">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 pt-3">
+                            <div class="header-title">
+                                <h5 class="card-title">To-Do List</h5>
+                            </div>
+                            <div class="dropdown">
+                                <span class="dropdown-toggle text-secondary" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false" role="button">All Tasks</span>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton7">
+                                    <a class="dropdown-item " href="javascript:void(0)">This Week</a>
+                                    <a class="dropdown-item " href="javascript:void(0)">This Month</a>
+                                    <a class="dropdown-item " href="javascript:void(0)">This Year</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="w-100">
+                                    <h6 class="fw-bold">School Dashboard</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress w-50">
+                                            <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; transition: width 2s ease 0s;"></div>
+                                        </div>
+                                        <small class="ms-2 text-secondary">80% completed</small>
+                                    </div>
+                                    <small class="text-secondary">Due in 3 Days</small>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" class="text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis"></i>                                            
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">This Week</a></li>
+                                            <li><a class="dropdown-item" href="#">This Month</a></li>
+                                            <li><a class="dropdown-item" href="#">This Year</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="w-100">
+                                    <h6 class="fw-bold">Fashion Theme</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress w-50">
+                                            <div class="progress-bar bg-danger" data-toggle="progress-bar" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" style="width: 18%; transition: width 2s ease 0s;"></div>
+                                        </div>
+                                        <small class="ms-2 text-secondary">15% completed</small>
+                                    </div>
+                                    <small class="text-secondary">Due in 4 Days</small>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="#" class="text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">This Week</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between  mb-3">
+                                <div class="w-100">
+                                    <h6 class="fw-bold">Sidebar Patterns</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress w-50">
+                                            <div class="progress-bar bg-primary" data-toggle="progress-bar" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" style="width: 18%; transition: width 2s ease 0s;"></div>
+                                        </div>
+                                        <small class="ms-2 text-secondary">50% completed</small>
+                                    </div>
+                                    <small class="text-secondary">Due in 2 Days</small>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="#" class="text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">This Week</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between  mb-3">
+                                <div class="w-100">
+                                    <h6 class="fw-bold">Menu Bar Update</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress w-50">
+                                            <div class="progress-bar bg-secondary" data-toggle="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%; transition: width 2s ease 0s;"></div>
+                                        </div>
+                                        <small class="ms-2 text-secondary">35% completed</small>
+                                    </div>
+                                    <small class="text-secondary">Due in 5 Days</small>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="#" class="text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">This Week</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="w-100">
+                                    <h6 class="fw-bold">Blog Theme</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress w-50">
+                                            <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%; transition: width 2s ease 0s;"></div>
+                                        </div>
+                                        <small class="ms-2 text-secondary">100% completed</small>
+                                    </div>
+                                    <small class="text-secondary">Due in 1 Days</small>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="#" class="text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">This Week</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // for hover on left side bar
+            $('#mySidenav').hover(() => {
+                $('#mySidenav').css({'width' : '225px'})
+                $('.logoText').css({'transition': 'all 0.3s ease', 'display': 'inline-block', 'opacity': '1', 'transition':'all 0.3s ease'})
+                $('.sidenav').children().children('p.sidebarHesdings').eq(0).text('HOME').css({'transition':'all 0.3s ease'})
+                $('.sidenav').children().children('p.sidebarHesdings').eq(1).text('PAGES').css({'transition':'all 0.3s ease'})
+                $('.sidenav').children().children('p.sidebarHesdings').eq(2).text('ELEMENTS').css({'transition':'all 0.3s ease'})
+                $('.toggleButton').css({'left': '215px','transition':'all 0.47s ease'})
+                $('.accordion-collapse ul li').css({'padding': '7px 30px 7px 5px'})
+            },() => {
+                $('#mySidenav').css({'width' : ''})
+                $('.contantarea').css({'margin-left' : ''})
+                $('.logoText').css({'transition': 'all 0.3s ease', 'display': '', 'opacity': '0'})
+                $('.sidenav').children().children('p.sidebarHesdings').eq(0).html('&nbsp; -').css({'transition':'all 0.3s ease'})
+                $('.sidenav').children().children('p.sidebarHesdings').eq(1).html('&nbsp; -').css({'transition':'all 0.3s ease'})
+                $('.sidenav').children().children('p.sidebarHesdings').eq(2).html('&nbsp; -').css({'transition':'all 0.3s ease'})
+                $('.toggleButton').css({'left': '', 'transform':'rotate(180deg)', 'transition':'all 0.47s ease'})
+                $('.accordion-collapse ul li').css({'padding': '7px 30px 7px 250px'})
+            });
+
+            // for toggle content area - in out main area
+            let toggleVar = false;
+            $('.toggleButton').click(() => {
+                if(toggleVar == false){
+                    toggleVar = true;
+                    $('#mySidenav').unbind('mouseenter mouseleave');
+                    $('.toggleButton').css({'transform':'rotate(0deg)', 'transition':'all 0.3s ease'})
+                    $('.contantarea').animate({'margin-left' : '225px', 'transition':'all 0.3s ease'})
+                    $('#mySidenav').css({'width' : '225px'})
+                }
+                else{
+                    $('#mySidenav').hover(() => {
+                        $('#mySidenav').css({'width' : '225px'})
+                        $('.logoText').css({'transition': 'all 0.3s ease', 'display': 'inline-block', 'opacity': '1', 'transition':'all 0.3s ease'})
+                        $('.sidenav').children().children('p.sidebarHesdings').eq(0).text('HOME').css({'transition':'all 0.3s ease'})
+                        $('.sidenav').children().children('p.sidebarHesdings').eq(1).text('PAGES').css({'transition':'all 0.3s ease'})
+                        $('.sidenav').children().children('p.sidebarHesdings').eq(2).text('ELEMENTS').css({'transition':'all 0.3s ease'})
+                        $('.toggleButton').css({'left': '215px','transition':'all 0.47s ease'})
+                        $('.accordion-collapse ul li').css({'padding': '7px 30px 7px 5px'})
+                    },() => {
+                        console.log('hover out')
+                        $('#mySidenav').css({'width' : ''})
+                        $('.contantarea').css({'margin-left' : ''})
+                        $('.logoText').css({'transition': 'all 0.3s ease', 'display': '', 'opacity': '0'})
+                        $('.sidenav').children().children('p.sidebarHesdings').eq(0).html('&nbsp; -').css({'transition':'all 0.3s ease'})
+                        $('.sidenav').children().children('p.sidebarHesdings').eq(1).html('&nbsp; -').css({'transition':'all 0.3s ease'})
+                        $('.sidenav').children().children('p.sidebarHesdings').eq(2).html('&nbsp; -').css({'transition':'all 0.3s ease'})
+                        $('.toggleButton').css({'left': '', 'transform':'rotate(180deg)', 'transition':'all 0.47s ease'})
+                        $('.accordion-collapse ul li').css({'padding': '7px 30px 7px 250px'})
+                    });
+                    $('.toggleButton').css({'transform':'rotate(180deg)', 'transition':'all 0.3s ease'})
+                    $('.contantarea').animate({'margin-left' : '67px', 'transition':'all 0.3s ease'})
+                    toggleVar = false;
+                }
+            });
+
+            // for date picker
+            $('input[name="datefilter"]').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
+            $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+            });
+            $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                $(this).val('');
+            });
+
+            // for make fullscreen and regular screen
+            let toggleScreen = false;
+            $('.fullScreenButton').click(() => {
+                document.fullScreenElement && null !== document.fullScreenElement || !document.mozFullScreen && !document.webkitIsFullScreen ? document.documentElement.requestFullScreen ? document.documentElement.requestFullScreen() : document.documentElement.mozRequestFullScreen ? document.documentElement.mozRequestFullScreen() : document.documentElement.webkitRequestFullScreen && document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT) : document.cancelFullScreen ? document.cancelFullScreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitCancelFullScreen && document.webkitCancelFullScreen();
+                if(toggleScreen == false){
+                    $('.fullScreenButton').html(`<div class="position-relative d-inline">
+                                                    <img src="image/minimize.svg" alt="miniscreen">
+                                                    <img src="image/minimizehover.svg" class="hoverImage" alt="miniscreenhover">
+                                                </div>`);
+                    toggleScreen = true;
+                }else{
+                    $('.fullScreenButton').html(`<div class="position-relative d-inline">
+                                                    <img src="image/fullscreen.svg" alt="fullscreen">
+                                                    <img src="image/fullscreenhover.svg" class="hoverImage" alt="fullscreenhover">
+                                                </div>`);
+                    toggleScreen = false;
+                }
+            })
+        })
+    </script>
+</body>
+</html>

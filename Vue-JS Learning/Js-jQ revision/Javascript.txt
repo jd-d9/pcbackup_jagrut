@@ -1,0 +1,195 @@
+- Javascript is most popular programming language across the world. It commanly use to create web page, program the behavior of web page and mainly use for validation purpose. 
+  It allow us to add dynamic behavior on response to user's action. With js we can change html content, elements styles, elements attribute. It define with <script></script> tag or file with .js extention
+
+- We can use js in <head> and <body> tag or in both, But mainly use it at the end of <body> tag because it improve display speed(because script slow down display speed) so after html/style was rendered it will start render.
+
+- Advantage of add external javascript file is js file will speed up page load and our html structure look clear and easier to read and maintain.
+
+- document - In JavaScript, the document key refers to the Document Object Model (DOM) representation of the currently loaded web page in the browser.
+	     It provides a way to interact with the DOM and manipulate the content and styling of a web page dynamically.
+
+- Javascript display data in many different way such as 1) Writing into html element with innerHtml(), 
+							2) Display in browser with document.write(), 
+							3) Display with an alert using window.alert() - In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. So window key is option we can only write alert(),
+							4) Writing into browser console using console.log() - mainly use for debugging purpose,
+							5) For printing current page window.print() - can write only print().
+
+- Javascript statement - JavaScript statements are the commands to tell the browser to what action to perform. Statements are separated by semicolon (;).
+			 JavaScript statements are composed by Values, Operators, Expressions, Keywords and Comments.
+			 This statement tells the browser to write "Hello World." inside an HTML element with id="demo": document.getElementById("demo").innerHTML = "Hello World.";
+
+- Two type of value in javascript : 1) Literals - fixed values
+					- Number literals are write with decimal or without decimal(10.05 or 1005)
+  				    2) Variable - variable values
+					- Variable are container to storing data. Variable is use to store data value; Variable are declare with var, let and const keyword. Assign value to variable with equal sign(let a = 3;).
+
+- var - It's function-scope and it allow re-declaring and re-assigning as well. It access out of block even declaring in block.
+  let - It's block-scope and it allow only re-assigning value. It don't allow re-declaring in same block and didn't access value out side the block.
+  const -  It's also block-scope as let and it did't allow re-declaring and re-assigning value. We can change value of constant array/object.
+
+- Operator - Use derive some actions to variable or value.
+	     1) Arihmetic operator(+,-,*,/,%,**,++,--) - To compute two or more values.
+	     2) Assignment operator(=, +=,-=,*=,/=,%=,**=) - To assign value.
+	     3) Comparison operator(==,===,!=,!==,>,>=,<,<=,?) - To compare value.
+	     4) String operator
+	     5) Logical operator(&&,||,!)
+	     6) Bitwise operator
+
+- Datatype - Data types describe the different types or kinds of data that we're gonna be working with and storing in variables.
+	     1) String - declare with (''or "")
+	     2) Number - decimal or without decimal numbers (101, 10.1)
+	     3) Boolean - Give only two value (true or False)
+	     4) Undefined
+	     5) Null
+	     6) Object
+	     7) Bigint
+	     8) Symbol 
+
+- Function - function is block of code design to perform task or perticular action. Work with function is define code or block code once and use it many time. 
+	     It defines with function keyword and follow by function name and parantheses() with or without parameter/arguments.
+	     It execute on various events like click and automatically(self) too.
+	     When JavaScript reaches a "return" statement, the function will stop executing.
+	     function functionName(argument1, argument2) {
+		//block of code;
+	     }
+	     functionName();
+
+- Object - Object is collection of properties or Object are variable which containe multiple value. Value write in name:value pair(name and value separated bt colon:)
+	   const objactName = {
+				type: 'sedan',
+				color: 'multiple',
+				weight: 55
+			      };
+	   Access value like this objactName.propertyName or objactName['propertyName']. here, objactName.weight or objactName['weight'] ==> 55.
+
+- new - If we declare any variable with "new" keyword than variable is created in an object. Don't declare string,number and bolean with new keyword it complicate our code and decreasing execution speed.
+
+- Event - Event refers an action. Like we can change <p> tag text with click on button. In button onclick event fired.
+	  1) onclick - when click on element.
+	  2) onchange - when html element was changed.
+	  3) onmouseover - when cursor enter on element.
+	  4) onmouseout - when cursor leave element.
+	  5) onkeydown - when user press any keyboard key.
+	  6) onkeyup - when key realied.
+	  7) onload - when browser finish page loading.
+
+- String methods - All string method return new string instead of modifying existing.
+		   1) string.length - give length
+		   2) string.slice(start, end) - extrect part of string and give extrected part in new string.
+		   3) substring(), 4) substr() - same as slice().
+	 	   5) replace('old-value', 'new-value') - replace old value with new value.
+		   6) replaceAll('old-value', 'new-value') - replace all old-values to new values.
+		   7) toUpperCase() - convert text into upercase.
+		   8) toLowerCase() - convert text into lowercase.
+ 		   9) concat() - use to join to string.  ex: 'para'.concat('', 'graph') ==> para graph.
+		   10) trim() - remove white-space from both side of string.
+		   11) trimStart() - remove white-space from only start string.
+		   12) trimEnd() - remove white-space from only end of string.
+		   13) STRING.padStart(4, 'value') - It pads the string with 'value' (multiple times) until it reaches a given length from starting side.  ==> valuevaluevaluevalueSTRING.
+		   14) STRING.padEnd(4, 'value') - It work on ending side.
+		   15) charAt(indexNumber) - it give character stay on specified indexNumber.
+		   16) charCodeAt(indexNumber) - it give unicode of character stay on specified index.
+		   17) split() - string can be converted to array.
+
+- string search methods - 1) indexOf('value') - Give index position of first occurance of string in string.
+			  2) lastIndexOf('value') - Give index position of last occurance of string in string.
+			  3) search('value') - The search() method search and returns the position of the first occurrence of a string in a string.
+			  4) match('value') - match() method returns an array containing the results of first matching a string against a string.
+			  5) matchAll('value') - asme as match() but it return all matches.
+			  6) includes() - includes return true if specified value is available otherwhise return false.
+			  7) startWith() - return true if string start with specified value.
+			  8) endWith() - return true if string end with specified value.
+
+- template leteral - Derive by `backticks` and It allow to write multiline string and write variable with ${} aswell.
+
+- Number methods - 1) number.toString() - return number as a string.
+		   2) number.toExponential(specifynumber) - return number rounded by specifynumber.
+		   3) number.toFixed(specifynumber) - it ronds a numberfigure till specifynumber.
+		   4) number.toPrecision(specifylength) - returns a string, with a number written with a specifylength.
+		   5) number.valueOf() - return number as number.
+		   6) Number() - It is use convert javascript variable into number.
+	    	   7) parseInt() - convert and return integer value.
+		   8) parseFloat() - return float value.
+
+- Array[] - Array is special varialbe which can hold more than one value. If we have list of item/value than it difficult to declare in different variable so, we use array to store all values. 
+	    Arrays are special type of objects with numbered index. Access an array element by referring to the index number: Array[0] ==> return first value in result.
+
+- Array methods - Array.toString() - convert array into string(comma separated).
+		  Array.join('*') - convert array into string separated with definr value(here, *)
+		  Array.push() - add value at last.
+		  Array.pop() - remove last value.
+		  Array.unShift() - add value at first.
+		  Array.shift() - remove first value.
+		  Array.length - give array length.
+		  Array.concat() - concating array with another array.
+		  Array.flat() - flat() method creates a new array with sub-array elements concatenated to a specified depth.
+		  Array.splice(indexNum, number-of-item-delete, 'value1', 'value2') - used to add new items to an array on specifyindex.
+		  Array.slice(indexNum, number-of-item-delete) - to remove elements on specified index number.
+		  Array.sort() - sort array into ascending order.
+		  Array.reverse() - sort array reverse.
+		  Math.max.apply(null, arrayName) - find max value from the array value.
+		  Math.min.apply(null, arrayName) - find min value from the array value.
+
+- Array iteretion - Array iteration methods operate on every array item.
+		    map() - map() method creates a new array by performing a function on each array element. The map() method does not change the original array.
+		    forEach() - It calls a function (a callback function) once for each array element.
+		    filter() - filter() method creates a new array with array elements that pass a test. To find any value through perticular actions.
+		    find() - find() method returns the value of the first array element that passes a test function.
+		    reduce() - reduce() method runs a function on each array element to produce (reduce it to) a single value.
+		    every() - every() method checks if all array values pass a test.
+		    some() - some() method checks if some array values pass a test.
+		    indexOf() - indexOf() method searches an array for an element value and returns index number/position and return -1 if value is not found.
+		    findIndex() - findIndex() method returns the index of the first array element that passes a test function.
+		    ...(spread-operator) - To add new value without remove existing value.
+
+- Date - new Date() - give fulldate like: Thu Mar 30 2023 18:20:06 GMT+0530 (India Standard Time).
+
+- Math - Math object allows you to perform mathematical tasks on numbers.
+
+- Math.random() - Always return number between 0 and 1.
+
+- for - loops through a block of code a number of times.
+  for/in - loops through the properties of an object. - Key return value.
+  for/of - loops through the values of an iterable object. - Key return index-number.
+  while - If condition false then not execute code.
+  do/while - If condition is false atleast one time code will execute.
+
+- break - it use to jumpout from switch case and bleak loop as well.
+
+- Sync - It wait for previous task completion.
+  Async - It run in background and don't wait for previous task complition.
+
+- Ajax - Asynchronous JavaScript And XML.
+	 Read data from server after the page load. Send data to web server - in background. Update web page without reloading page.
+	 AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+	 - A browser built-in XMLHttpRequest object (to request data from a web server).
+	 
+	 Ajax Object Methods: 
+	 - XMLHttpRequest - The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+	 - open(methods, url/file, Sync/Async(optional)) - Specifies the request.
+	 - send() - Sends the request to the server. Used to GET request.
+	 - send(string) - Sends the request to the server. Used to POST request.
+
+	 Ajax Object Properties:
+	 - onload - Defines a function to be called when the request is recieved (loaded).
+	 - onreadystatechange - Defines a function to be called when the readyState property changes.
+	 - readyState - hold status of XMLHttpRequest. ==> 0: request not initialized
+							   1: server connection established
+							   2: request received
+							   3: processing request
+							   4: request finished and response is ready
+	 - responseText - Returns the response data as a string.
+	 - responseXML - Returns the response data as XML data.
+	 - status - Returns the status-number of a request. ==> 200: "OK"
+							        403: "Forbidden"
+							        404: "Not Found"
+	 - statusText - Returns the status-text (e.g. "OK" or "Not Found").
+
+- JSON - Stand for JavaScript Object Notation. JSON is plain text written in JavaScript object notation.
+	 It is data-interchange format. JSON is text format for storing and transporting data.
+	 - JSON.parse() - convert JSON-string to javascript-objects. ==> when receiving data from server data is in string formt so we have use JSON.parse() to convert into object.
+	 - JSON.stringyfy() - convert javascript-object to JSON-string. ==> often use when send data to server.
+
+
+
+ 

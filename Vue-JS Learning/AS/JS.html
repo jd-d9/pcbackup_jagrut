@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <style>
+        fkjk{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <button class="btnhover" onclick="firstanimate()">button</button>
+    <p class="printit"></p>
+    <p class="printittwo"></p>
+    <p class="printitthree"></p>
+    <input type="number" placeholder="enter number for city" class="forSwitch"><button onclick="clickedbutton()">click</button>
+    <p class="printitfour"></p>
+    <h2 class="fordate"></h2>
+    <button onclick="console.log('open window button clicked')">open window</button>
+    <h2 class="analog"></h2>
+    <script>
+        class cars{
+            constructor(name,year) {
+                this.name = name;
+                this.year = year;
+            }
+            age(a){
+                return a - this.year;
+            }
+        }
+        let d = new Date();
+        let year = d.getFullYear();
+        let mycars = new cars('rapid', 1999);
+        document.querySelector('.printit').innerHTML = 'my age is ' + mycars.age(year) + ' years';
+        
+
+        //array map method:
+        var arr = [10,20,30,40,50,60]
+        let b = arr.map(function functionOne(a){
+            return a * 8;
+        });
+        document.querySelector('.printittwo').innerHTML = b;
+
+        //array reduce method :
+        var arrayOne = [12,14,16,18,20,22]
+        let xr = arrayOne.reduce(function functionTwo(abc){
+            return abc + 2;
+        });
+        document.querySelector('.printitthree').innerHTML = xr;
+
+        class employee{
+            constructor(name,year,from,color){
+                this.name = name;
+                this.year = year;
+                this.from = from;
+                this.color = color;
+            }
+            totalexpr(){
+                return "hello i'm " + hardik.name + " and this is best company ever";
+            }
+            fullname(){
+                return "fullname " + hardik.name + "patel."
+            }
+        }
+        hardik = new employee("Hardik",15,"Morbi","brown");
+        console.log("hello i'm " + hardik.name + " and this is best company ever " + "fullname " + hardik.name + " patel."); 
+        
+        var jdarry = [-15,25,12,18,39,65,100]
+        // var jagrut = Math.cbrt(27);
+        var jagrut = Math.min(...jdarry);    // for check multiple value add ...dots befor array name./Otherwise give NaN error.
+        document.write("math value is " + jagrut);
+
+        function clickedbutton(){
+            var forSwitch = Number(document.querySelector(".forSwitch").value);
+            let txt = document.querySelector(".printitfour")
+            switch(forSwitch){
+                case 1:
+                    txt.innerHTML = "Ahmedabad";
+                break;
+                case 2:
+                    txt.innerHTML = "Surat";
+                break;
+                case 3:
+                    txt.innerHTML = "Vadodara";
+                break;
+                case 4:
+                    txt.innerHTML = "Rajkot";
+                break;
+                default:
+                    txt.innerHTML = "enter valid number";
+            }
+        }
+        var forPrint = "";
+        for(let i = 0; i < jdarry.length; i++){
+            forPrint += jdarry[i] + '<br/>';
+        }
+        document.write(forPrint);
+
+        var abcd = Math.random();
+        document.write(Math.floor(abcd * 10));
+
+        let fruits = new Set([1,2,3,4,5,6,7]);
+        console.log(fruits);
+
+        var date = new Date();
+        var time = date.getHours();
+        console.log(time);
+        var fordateprint = document.querySelector('.fordate');
+        fordateprint.innerHTML = date;
+        if(time >= 16 && time <= 24){
+            fordateprint.style.color = 'blue';
+        }
+        else if(time > 8 && time < 16){
+            fordateprint.style.color = 'red';
+        }
+        else{
+            fordateprint.style.color = 'green';
+        }
+
+        
+        class bikes{
+            constructor(nameone,yearone,colorone){
+                this.nameone = nameone;
+                this.yearone = yearone;
+                this.colorone = colorone;
+            }
+            bikeage(){
+                let d = new Date();
+                return d.getFullYear() - this.yearone;;
+            }
+            bikecolor(){
+                return "bike color is green"
+            }
+        }
+        let spld = new bikes('spld',2011,'black');
+        console.log(spld.bikeage())
+        document.write("<br/>" + spld.bikeage());
+        document.write("<br/>" + spld.bikecolor());
+
+        const jsnobj = {
+            name : "jd",
+            height : 5.6,
+            color : "brown"
+        }
+        // console.log(typeof(jsnobj));
+        var jd08 = JSON.stringify(jsnobj);
+        console.log(typeof(jd08));
+
+        var jd08 = JSON.parse(jd08);
+        console.log(typeof(jd08));
+
+        class products{
+            constructor(brand){
+                this.brandname = brand;
+            }
+            present(){
+                return "I use " + this.brandname + " products.";
+            }
+        }
+        let himalaya = new products('Patanjali');
+        console.log(himalaya.present());
+
+        var one = document.createElement("h1");
+        var two = one.innerHTML = "jagrut bhai";
+        console.log(one);
+
+
+        var dspl = document.querySelector('.analog');
+        var interval = setInterval(analog,1000);
+        function analog(){
+            let dt = new Date().toLocaleString();
+            dspl.innerHTML = dt;
+            let mt = new Date().getMinutes();
+            let sc = new Date().getSeconds();
+            var index = 0;
+            const colors = ['red','green','blue','brown','black','orange','yellow'];
+            const fclr = colors.length;
+            for(let a=0; a<=fclr; a++){
+                // setInterval(() => {
+                //     a = a++;
+                // console.log(key);
+                // },1000);
+                let changeit = colors[a];
+                dspl.style.color += changeit;
+            }
+
+            // if(sc % 2 == 1){
+            //     dspl.style.color = 'red';
+            // }
+            // else if(sc % 3 == 2){
+            //     dspl.style.color = 'blue';
+            // }
+            // else if(sc % 4 == 2){
+            //     dspl.style.color = 'gray';
+            // }
+            // else if(sc % 5 == 2){
+            //     dspl.style.color = 'brown';
+            // }
+            // else{
+            //     dspl.style.color = 'green';
+            // }
+        }
+</script>
+</body>
+</html>

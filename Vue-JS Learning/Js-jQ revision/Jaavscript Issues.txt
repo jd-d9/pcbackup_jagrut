@@ -1,0 +1,4 @@
+- Using document.write() after an HTML document is loaded, will delete all existing HTML - js output tab.
+- Bitwise operator.
+- Bigint/symbol datatype.
+- for-in, for-of loop difference.

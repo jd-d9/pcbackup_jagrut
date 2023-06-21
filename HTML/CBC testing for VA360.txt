@@ -1,0 +1,40 @@
+mac safari-16/15.5/14.1/13.1/12.1/11.1/10.1/ - dephiana not work. - working now.
+mac safari 9.1 - top property issue in slider
+mac safari 8/7.1/6.2 - animation/bootstrap/bootstrap-slider not work.
+mac crome107 - dephiana not work. - working now.
+mac crome104/101 - dephiana not work. - Now working well.
+mac mozila107 - dephiana not work. - Working now.
+mac edge107/84 - dephiana not work. - working now.
+mac opera92/84 - dephiana not work. - Working now.
+
+win11 safari5.1 - continue loading
+win10 safari5.1 - can't open page error
+win10 - IE11 - background-clip/bootstrap-slider not working(ss35)
+win8.1 - IE10 - bootstrap slider not working.(ss32)
+win8 - IE10 bootstrap/background-clip/bootstrap-slider not working(ss33)
+win8 - safari5.1 - safari can't open this page
+win7 - safari5.1 - safari can't open this page
+win7 - IE9 - dephiana/bootstrap/background-clip/bootstrap-slider/transform-property not working(ss34) - dephiana work now.
+win7 - IE10 - bootstrap/background-clip/bootstrap-slider not working
+win7 - IE11 - dephiana/background-clip/bootstrap-slider not working - dephiana work now.
+XP - safari5.1 - can't open page error.
+XP - safari5 - can't open page error.
+XP - IE8 - IE can't display page.
+XP - IE7 - IE can't display page.
+XP - IE6 - IE can't display page.
+
+samsung galaxy s20 - working.
+google pixel 7 - dephiana not work. - working
+moto g7 - working.
+vivo y21 - working.
+oppo reno6 - dephiana not work. - working
+huawei p30 - dephiana not work. - working
+oneplus 7T - dephiana not work. - working
+xiomi8 - dephiana not work. - Working now.
+realme8 - dephiana not work. - working
+
+ipad pro-12/
+iphone14-16/13pro-15.4/13-15.4/13mini-15/12pro-16/12pro-14/12-14/11pro-16/8-15/SE-15 safari - dephiana not work - Working Now.
+iphone11-13/XSmax-12/XS-12/8-12/7-12/6S-12/X-11/SE-13/XR-12 - dephiana not work/webp not work. - working now.(ss-37/38)
+
+

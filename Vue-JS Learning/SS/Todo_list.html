@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+        .listinner {
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 12px #9f9f9f;
+            overflow: hidden;
+        }
+        .backimage{
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url(download1.jpg);
+            background-size: cover;
+        }
+        h2,h3 {
+            color: orange;
+        }
+        .createbtn {
+            background-color: orange;
+            color: white;
+        }
+        .createbtn:hover{
+            background-color: rgb(255, 177, 33);
+            color: white;
+            box-shadow: 0 0 10px #9f9f9f;
+            transition: all 0.4s ease;
+        }
+        .input-field{
+            border-color: orange;
+        }
+        .forrequirederror{
+            float: right !important;
+        }
+        .displayemptytodo{
+            color: black;
+            border-bottom: 2px solid;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+        .displayemptytodo h4{
+            font-weight: 700;
+        }
+        .tabletag,.tabletag tr{
+            display: block !important;
+            font-size: 23px;
+            font-weight: 500;
+            color: orange;
+        }
+        .tabletag tr p{
+            width: 370px;
+            overflow-x: auto;
+        }
+        .tabletag tr i:first-child{
+            color: green;
+            margin-right: 26px;
+            font-size: 20px;
+
+        }
+        .tabletag tr i:last-child{
+            color: red;
+            font-size: 20px;
+        }
+        .toast{
+            box-shadow: 0 0 10px #9f9f9f;
+            position: absolute !important;
+            right: 40px !important;
+            bottom: 60px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto mt-5">
+                <div class="listinner">
+                    <div class="backimage p-5">
+                        <div class="d-flex justify-content-between mt-5">
+                            <h2 class="text-center mt-5">TO DO LIST</h2>
+                            <button class="btn createbtn mt-5" onclick="openModel()">Create</button>
+                        </div>
+                    </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Add Work</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="clearFun()"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <input type="text" class="form-control mb-1 p-2 input-field" placeholder="Type here...">
+                                        <span class="forrequirederror"></span><br>
+                                        <button class="btn createbtn" id="submitbtn" onclick="submitData(event)">submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <table class="tabletag">
+                            <div class="displayemptytodo d-flex justify-content-between"></div>
+                        </table>
+                    </div>
+                </div>
+                <!-- toast message -->
+                <div class="toast align-items-center bg-light" data-bs-delay="3000" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">To do edit</strong>
+                        <small class="text-muted">just now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body text-success">
+                        List edited Successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let items = [];
+        let getLocal = JSON.parse(localStorage.getItem('d9'));
+        getLocal == null ? items = [] : items = getLocal;
+            console.log(getLocal,'getlocalabove');
+        
+        let model = document.getElementById('staticBackdrop');
+        let myModal = new bootstrap.Modal(model);
+        let toast = document.querySelector('.toast');
+        let myToast = bootstrap.Toast.getOrCreateInstance(toast);
+        let itemsLen = items.length;
+
+        // for empty to do list.
+        if(getLocal !== ''){
+            document.querySelector('.displayemptytodo').style = '';
+            document.querySelector('.displayemptytodo').innerHTML = `<h4>Title</h4><h4>Action</h4>`;
+        }
+        //for open model.
+        function openModel(){
+            myModal.show();
+        }
+        //for close model.
+        function closeModel(){
+            myModal.hide();
+        }
+        // global function.
+        function localStorageData(){
+            localStorage.setItem('d9',JSON.stringify(items));
+        }
+        // clear Function.
+        function clearFun(){
+            document.querySelector('.input-field').value = '';
+            document.querySelector('.input-field').style.border = '';
+            document.querySelector('.forrequirederror').innerHTML = '';
+        }
+        // display item in tr.
+        function forLoadingContant(){
+            items.map((val,ind) => {
+                let tableRow = document.createElement('tr');
+                let tableTag = document.querySelector('.tabletag');
+                let appendRow = tableTag.appendChild(tableRow);
+                appendRow.innerHTML = `
+                        <div class="d-flex justify-content-between">
+                            <p id="${ind}">${val}</p>
+                            <div>
+                                <i class="fa-solid fa-pen-to-square" onclick="editItemValue(${ind})"></i>
+                                <i class="fa-solid fa-trash-can" onclick="deleteItemValue(${ind})"></i>
+                            </div>
+                        </div> 
+                    `;
+                console.log(ind , 'dsdsdaad');
+            })
+        }forLoadingContant();
+
+        // add todo using submit button.
+        function submitData(event){
+            event.preventDefault();
+            let inputValue = document.querySelector('.input-field').value;
+            let newInputValue = items.map((val, ind) => {
+                    if (val == newArray) {
+                        return inputValue;
+                    }
+                    return val;
+            });
+            let updatedInputValue = newInputValue.find((val) => {
+                return val == inputValue
+            });
+
+            if(inputValue == ''){
+                document.querySelector('.input-field').style.border = '1px solid red';
+                document.querySelector('.forrequirederror').style.color = 'red';
+                document.querySelector('.forrequirederror').innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>' + ' Must enter value';
+                return false;
+            }
+            else if(updatedInputValue == inputValue && newArray !== ''){
+                let paraGraph = document.getElementById(paragraphId);
+                paraGraph.innerHTML = inputValue;
+                items = newInputValue;
+                localStorageData();
+                closeModel();
+                myToast.show();
+                clearFun();
+            }
+            else{
+                document.querySelector('.forrequirederror').innerHTML = '';
+                document.querySelector('.input-field').style.border = '1px solid orange';
+                printFunction();
+            }
+        }
+
+        function printFunction(){
+            let inputValue = document.querySelector('.input-field').value;
+            
+            getLocal = JSON.parse(localStorage.getItem('d9'));
+            console.log(getLocal,'getlocal');
+            
+            const localLength = getLocal.length;
+            const index = localLength          // -----------------------------------------------------------
+            console.log(localLength,'local length');
+
+            let existingValue = items.findIndex((value) => {
+                return value.toLowerCase() === inputValue.toLowerCase();
+            })
+            if(existingValue === -1){
+                let tableRow = document.createElement('tr');
+                let tableTag = document.querySelector('.tabletag');
+                let appendRow = tableTag.appendChild(tableRow);
+                appendRow.innerHTML = `
+                        <div class="d-flex justify-content-between">
+                            <p id="${index}">${inputValue}</p>
+                            <div>
+                                <i class="fa-solid fa-pen-to-square" onclick="editItemValue(${index})"></i>
+                                <i class="fa-solid fa-trash-can" onclick="deleteItemValue(${index})"></i>
+                            </div>
+                        </div>
+                    `;
+                console.log(index,'index');
+                items.push(inputValue);
+                localStorageData();
+                clearFun();
+                closeModel();
+            }
+            else{
+                document.querySelector('.forrequirederror').style.color = 'red';
+                document.querySelector('.forrequirederror').innerHTML = 'Value already exist in list, Please enter new value.';
+                return false;
+            }
+        }
+
+        // delete todo item.
+        function deleteItemValue(ind){
+            let newArray = items.filter((val,index) => {
+                return index !== ind;
+            })
+            document.querySelector('.tabletag').innerHTML = '';
+            items = newArray;
+            localStorageData();
+            forLoadingContant();
+        }
+
+        // edit todo item.
+        let newArray = '';
+        let paragraphId = '';
+        function editItemValue(ind){
+            console.log(ind,'edit ind - index')
+            openModel();
+            newArray = items.filter((items,index) => {
+                return ind == index;
+            })
+            paragraphId = ind;        // for p tag unique id.
+            // console.log(newIndex,'newarray index') 
+            console.log(newArray,'newarray')
+            document.querySelector('.input-field').value = newArray;
+        }
+    </script>
+</body>
+
+</html>

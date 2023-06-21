@@ -1,0 +1,133 @@
+@media (max-width: 1152px)  {
+    /* upperNav style */
+    .upper-nav-inner-one img, .upper-nav-inner-two img{
+        height: 15px;
+    }
+    /* navbar style */
+    #navbarTogglerDemo ul li img{
+        height: 25px;
+    }
+    /* static slider style */
+    .left-text-part, .image-part{
+        height: 480px;
+    }
+    .image-part-inner img{
+        height: 390px;
+    }
+    .inner-text-part h1{
+        font-size: 35px;
+    }
+    .inner-text-part h2{
+        font-size: 25px;
+    }
+    /* appoinment style */
+    .card-head img{
+        height: 23px;
+    }
+    .card-head h4{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .card-body{
+        margin: 20px 0;
+    }
+    .card-footer{
+        margin-top: 30px;
+    }
+    .appoinment-card-center .card-footer{
+        margin-top: 28px;
+    }
+    .appoinment-card-right h3{
+        font-size: 30px;
+    }
+    .appoinment-card-right .card-footer{
+        margin-top: 40px;
+    }
+    /* program & service style */
+    .service-card .cardHeading h6{
+        font-size: 20px;
+        width: 65%;
+    }
+    .service-card .card-icon img{
+        height: 115px;
+    }
+    .service-card .card-icon{
+        top: -35px;
+        left: -25px;
+    }
+    .service-card .cardContent p{
+        margin-top: 65px;
+    }
+    /* contact-us style */
+    .contact-form input, .contact-form textarea{
+        padding: 5px 15px;
+    }
+    .contact-slider h4{
+        font-size: 20px;
+    }
+    .map-location iframe{
+        width: 500px;
+        height: 560px;
+    }
+    /* footer style */
+    .footer-list h5{
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+    .footer-list .list{
+        transform: translateX(-5px);
+    }
+    .footer-notice{
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1200px)  {
+    /* upperNav style */
+    .logo-back-circle{
+        top: -80px;
+        width: 170px;
+        height: 170px;
+    }
+    .logo-back-circle img{
+        margin-top: 50%;
+        height: 50px;
+    }
+    /* navbar style */
+    #navbarTogglerDemo ul li{
+        padding: 0 6px;
+    }
+    /* owl-nav-button */
+    .left-owl-nav,.right-owl-nav{
+        height: 40px;
+    }
+    /* partners style */
+    .our-partners .owl-nav{
+        left: -3.5%;
+        width: 107%;
+    }
+    .our-partners .owl-carousel .owl-item img {
+        width: 250px !important;
+    }
+    /* contact-us style */
+    .map-location iframe{
+        width: 507px;
+    }
+    /* footer style */
+    .footer-logo{
+        width: 150px;
+    }
+    .social-icons .icon{
+        width: 40px;
+        height: 40px;
+        line-height: 2.8;
+    }
+    .social-icons .icon a{
+        font-size: 16px;
+    }
+}

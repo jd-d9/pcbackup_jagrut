@@ -1,0 +1,38 @@
+- jQuery - jQuery is 'writeless, do-more' javascript library.
+	 - Purpose of jQuery is make much easier to use javascript in our website. jQuery simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+	 - To use jQuery in our website add cdn link in script tag or download file from jQuery.com.
+	 - $ sign use to define jQuery.
+- $(document).ready() - It is used to make a function available after the document is loaded. Whatever code you write inside the $(document).ready() method will run once the page DOM is ready to execute JavaScript code.
+
+- $('selector-name') - $ sign with parantheses is use to point css-selector.
+
+- jQuery events - All the different visitors' actions that a web page can respond to are called events.
+		- mouse-events ==> click, dblclick, mouseenter, mouseleave, hover
+		- keyboard-events ==> keyup, keydown, keypress
+		- form-events ==> submit, change, focus, blur
+		- dom-events ==> load, resize, scroll, unload
+
+- Effects - hide(), show(), toggle(), slideDown(), slideUp(), slideToggle(), fadeIn(), fadeOut(), fadeToggle(), fadeTo(duration, opacity), animate(), stop()
+
+- Callback - Callback function execute after specified event completed. ==> $('p.intro').hide(1000, function() {alert('Now element is hidden');})
+
+- Chaining - It allow us to use multiple event on single element within single line statement. ==> $('p').css('color','red').slideUp(1000).slideDown(2000);
+
+- Dom manipulating - text() - set or return text-content of selected element.
+		   - html() -  set or return html markup content of selected element.
+		   - val() - set and return value of form field.
+		   - attr('attr-name') - use to get attribute of selected element.
+		   - addClass('classname') - use to add class on selected element.
+		   - removeClass('classname') - use to remove class from selected element.
+		   - append() - Inserts content at the end of selected elements.
+		   - prepend() - Inserts content at the beginning of the selected elements.
+		   - appendTo() - Inserts HTML elements at the end of selected elements.
+		   - prependTo() - Inserts HTML elements at the beginning of selected elements
+		   - remove() - Remove element and inner content.
+		   - empty() - Remove only inner-content not element(make element empty).
+		   - filter() - Return element that match criteria.
+		   - not() - Return element that do not match criteria(opposit of filter). 
+
+
+
+
